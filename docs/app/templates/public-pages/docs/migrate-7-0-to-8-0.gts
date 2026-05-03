@@ -51,7 +51,7 @@ import { LinkTo } from '@ember/routing';
         add in your component on the options
         <code>data-optgroup="true"</code>. See our
         <a
-          href="https://github.com/cibernox/ember-power-select/blob/8ffe2bc74373f7b1ec8e244bff218c39ba70c19e/ember-power-select/src/components/power-select/options.hbs#L23"
+          href="https://github.com/ember-power-addons/ember-power-select/blob/8ffe2bc74373f7b1ec8e244bff218c39ba70c19e/ember-power-select/src/components/power-select/options.hbs#L23"
           target="_blank"
           rel="noopener noreferrer"
         >options.hbs</a>

@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+http://github.com/cibernox/ember-power-select.git"
+    "url": "git+http://github.com/ember-power-addons/ember-power-select.git"
   },
   "license": "MIT",
   "author": {
@@ -104,7 +104,7 @@
     "babel-plugin-ember-template-compilation": "^4.0.0",
     "concurrently": "^9.2.1",
     "dom-element-descriptors": "^0.5.1",
-    "ember-basic-dropdown": "git+https://github.com/cibernox/ember-basic-dropdown#b90e03d0b8ab6d5c61093fabc3024c806d2585d9",
+    "ember-basic-dropdown": "git+https://github.com/ember-power-addons/ember-basic-dropdown#b90e03d0b8ab6d5c61093fabc3024c806d2585d9",
     "ember-concurrency": "^5.2.0",
     "ember-modifier": "^4.3.0",
     "ember-page-title": "^9.0.3",

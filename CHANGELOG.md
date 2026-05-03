@@ -21,15 +21,15 @@
 ## v8.12.1 (2025-12-07)
 
 #### :bug: Bug Fix
-* [#1955](https://github.com/cibernox/ember-power-select/pull/1955) Fix rendering bug when input field is in trigger ([@mkszepp](https://github.com/mkszepp))
-* [#1952](https://github.com/cibernox/ember-power-select/pull/1952) Typing on trigger should always return an array for multiple select ([@mkszepp](https://github.com/mkszepp))
+* [#1955](https://github.com/ember-power-addons/ember-power-select/pull/1955) Fix rendering bug when input field is in trigger ([@mkszepp](https://github.com/mkszepp))
+* [#1952](https://github.com/ember-power-addons/ember-power-select/pull/1952) Typing on trigger should always return an array for multiple select ([@mkszepp](https://github.com/mkszepp))
 
 #### :memo: Documentation
-* [#1956](https://github.com/cibernox/ember-power-select/pull/1956) Update installation docs and fixes in readme ([@mkszepp](https://github.com/mkszepp))
-* [#1953](https://github.com/cibernox/ember-power-select/pull/1953) Move docs to vite ([@mkszepp](https://github.com/mkszepp))
+* [#1956](https://github.com/ember-power-addons/ember-power-select/pull/1956) Update installation docs and fixes in readme ([@mkszepp](https://github.com/mkszepp))
+* [#1953](https://github.com/ember-power-addons/ember-power-select/pull/1953) Move docs to vite ([@mkszepp](https://github.com/mkszepp))
 
 #### :house: Internal
-* [#1957](https://github.com/cibernox/ember-power-select/pull/1957) Update to @embroider/addon-dev v8 ([@mkszepp](https://github.com/mkszepp))
+* [#1957](https://github.com/ember-power-addons/ember-power-select/pull/1957) Update to @embroider/addon-dev v8 ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -37,14 +37,14 @@
 ## v8.12.0 (2025-11-03)
 
 #### :rocket: Enhancement
-* [#1949](https://github.com/cibernox/ember-power-select/pull/1949) Add `@labelTag` to allow overriding the default label tag ([@kexposito](https://github.com/kexposito))
+* [#1949](https://github.com/ember-power-addons/ember-power-select/pull/1949) Add `@labelTag` to allow overriding the default label tag ([@kexposito](https://github.com/kexposito))
 
 #### :bug: Bug Fix
-* [#1950](https://github.com/cibernox/ember-power-select/pull/1950) Fix `@placeholder` for multiple select field with `@searchEnabled={{true}}` and `@searchFieldPosition="before-options"` ([@mkszepp](https://github.com/mkszepp))
-* [#1948](https://github.com/cibernox/ember-power-select/pull/1948) Allow void in all `on` events ([@mkszepp](https://github.com/mkszepp))
+* [#1950](https://github.com/ember-power-addons/ember-power-select/pull/1950) Fix `@placeholder` for multiple select field with `@searchEnabled={{true}}` and `@searchFieldPosition="before-options"` ([@mkszepp](https://github.com/mkszepp))
+* [#1948](https://github.com/ember-power-addons/ember-power-select/pull/1948) Allow void in all `on` events ([@mkszepp](https://github.com/mkszepp))
 
 #### :memo: Documentation
-* [#1947](https://github.com/cibernox/ember-power-select/pull/1947) Convert docs to gts ([@mkszepp](https://github.com/mkszepp))
+* [#1947](https://github.com/ember-power-addons/ember-power-select/pull/1947) Convert docs to gts ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 2
 - Kevin Expósito ([@kexposito](https://github.com/kexposito))
@@ -53,13 +53,13 @@
 ## v8.11.0 (2025-10-01)
 
 #### :rocket: Enhancement
-* [#1939](https://github.com/cibernox/ember-power-select/pull/1939) Add `@multiple` parameter to `<PowerSelect>` and deprecate `<PowerSelectMultiple>` ([@mkszepp](https://github.com/mkszepp))
+* [#1939](https://github.com/ember-power-addons/ember-power-select/pull/1939) Add `@multiple` parameter to `<PowerSelect>` and deprecate `<PowerSelectMultiple>` ([@mkszepp](https://github.com/mkszepp))
 
 #### :bug: Bug Fix
-* [#1943](https://github.com/cibernox/ember-power-select/pull/1943) Add check to avoid auto focus for input field in trigger ([@mkszepp](https://github.com/mkszepp))
+* [#1943](https://github.com/ember-power-addons/ember-power-select/pull/1943) Add check to avoid auto focus for input field in trigger ([@mkszepp](https://github.com/mkszepp))
 
 #### :memo: Documentation
-* [#1942](https://github.com/cibernox/ember-power-select/pull/1942) Update docs to new multiple select field way ([@mkszepp](https://github.com/mkszepp))
+* [#1942](https://github.com/ember-power-addons/ember-power-select/pull/1942) Update docs to new multiple select field way ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -67,8 +67,8 @@
 ## v8.10.0 (2025-09-30)
 
 #### :rocket: Enhancement
-* [#1940](https://github.com/cibernox/ember-power-select/pull/1940) Add support for shadow dom ([@mkszepp](https://github.com/mkszepp))
-* [#1938](https://github.com/cibernox/ember-power-select/pull/1938) Remove use of `ember-lifeline` (addon & docs) ([@mkszepp](https://github.com/mkszepp))
+* [#1940](https://github.com/ember-power-addons/ember-power-select/pull/1940) Add support for shadow dom ([@mkszepp](https://github.com/mkszepp))
+* [#1938](https://github.com/ember-power-addons/ember-power-select/pull/1938) Remove use of `ember-lifeline` (addon & docs) ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -76,10 +76,10 @@
 ## v8.9.0 (2025-09-16)
 
 #### :rocket: Enhancement
-* [#1937](https://github.com/cibernox/ember-power-select/pull/1937) Allow `ember-truth-helpers` v5 as dependency ([@mkszepp](https://github.com/mkszepp))
+* [#1937](https://github.com/ember-power-addons/ember-power-select/pull/1937) Allow `ember-truth-helpers` v5 as dependency ([@mkszepp](https://github.com/mkszepp))
 
 #### :memo: Documentation
-* [#1935](https://github.com/cibernox/ember-power-select/pull/1935) Fix ember-concurrency usages in docs (replace `@task`) ([@mkszepp](https://github.com/mkszepp))
+* [#1935](https://github.com/ember-power-addons/ember-power-select/pull/1935) Fix ember-concurrency usages in docs (replace `@task`) ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -87,7 +87,7 @@
 ## v8.8.0 (2025-08-18)
 
 #### :rocket: Enhancement
-* [#1933](https://github.com/cibernox/ember-power-select/pull/1933) Allow `ember-concurrency` v5 ([@mkszepp](https://github.com/mkszepp))
+* [#1933](https://github.com/ember-power-addons/ember-power-select/pull/1933) Allow `ember-concurrency` v5 ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -95,7 +95,7 @@
 ## v8.7.3 (2025-06-03)
 
 #### :bug: Bug Fix
-* [#1884](https://github.com/cibernox/ember-power-select/pull/1884) Inputfield in trigger - Avoid clearing input field when dropdown is open ([@mkszepp](https://github.com/mkszepp))
+* [#1884](https://github.com/ember-power-addons/ember-power-select/pull/1884) Inputfield in trigger - Avoid clearing input field when dropdown is open ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -103,7 +103,7 @@
 ## v8.7.2 (2025-05-26)
 
 #### :bug: Bug Fix
-* [#1882](https://github.com/cibernox/ember-power-select/pull/1882) Fix before options component (add input when position is undefined) & Add tests for `@beforeOptionsComponent` with search field ([@mkszepp](https://github.com/mkszepp))
+* [#1882](https://github.com/ember-power-addons/ember-power-select/pull/1882) Fix before options component (add input when position is undefined) & Add tests for `@beforeOptionsComponent` with search field ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -111,14 +111,14 @@
 ## v8.7.1 (2025-05-13)
 
 #### :bug: Bug Fix
-* [#1879](https://github.com/cibernox/ember-power-select/pull/1879) Fix empty ariaLabelledBy ([@mkszepp](https://github.com/mkszepp))
-* [#1877](https://github.com/cibernox/ember-power-select/pull/1877) Remove ember-source and glimmer tracking as a peer dependency ([@runspired](https://github.com/runspired))
+* [#1879](https://github.com/ember-power-addons/ember-power-select/pull/1879) Fix empty ariaLabelledBy ([@mkszepp](https://github.com/mkszepp))
+* [#1877](https://github.com/ember-power-addons/ember-power-select/pull/1877) Remove ember-source and glimmer tracking as a peer dependency ([@runspired](https://github.com/runspired))
 
 #### :memo: Documentation
-* [#1872](https://github.com/cibernox/ember-power-select/pull/1872) DOCS: Add `@required` and `attributes` ([@andrew-paterson](https://github.com/andrew-paterson))
+* [#1872](https://github.com/ember-power-addons/ember-power-select/pull/1872) DOCS: Add `@required` and `attributes` ([@andrew-paterson](https://github.com/andrew-paterson))
 
 #### :house: Internal
-* [#1873](https://github.com/cibernox/ember-power-select/pull/1873) Remove incorrect lock files ([@mkszepp](https://github.com/mkszepp))
+* [#1873](https://github.com/ember-power-addons/ember-power-select/pull/1873) Remove incorrect lock files ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 3
 - Andrew Paterson ([@andrew-paterson](https://github.com/andrew-paterson))
@@ -128,11 +128,11 @@
 ## v8.7.0 (2025-01-27)
 
 #### :rocket: Enhancement
-* [#1867](https://github.com/cibernox/ember-power-select/pull/1867) Allow `@ember/test-helpers` v5.x and update ember-cli to 6.1 ([@mkszepp](https://github.com/mkszepp))
+* [#1867](https://github.com/ember-power-addons/ember-power-select/pull/1867) Allow `@ember/test-helpers` v5.x and update ember-cli to 6.1 ([@mkszepp](https://github.com/mkszepp))
 
 #### :house: Internal
-* [#1868](https://github.com/cibernox/ember-power-select/pull/1868) Update `ember-basic-dropdown` to `^8.5.0` ([@mkszepp](https://github.com/mkszepp))
-* [#1867](https://github.com/cibernox/ember-power-select/pull/1867) Allow `@ember/test-helpers` v5.x and update ember-cli to 6.1 ([@mkszepp](https://github.com/mkszepp))
+* [#1868](https://github.com/ember-power-addons/ember-power-select/pull/1868) Update `ember-basic-dropdown` to `^8.5.0` ([@mkszepp](https://github.com/mkszepp))
+* [#1867](https://github.com/ember-power-addons/ember-power-select/pull/1867) Allow `@ember/test-helpers` v5.x and update ember-cli to 6.1 ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -140,7 +140,7 @@
 ## v8.6.2 (2024-12-27)
 
 #### :bug: Bug Fix
-* [#1866](https://github.com/cibernox/ember-power-select/pull/1866) Fix a11y error for single select with search field position trigger ([@mkszepp](https://github.com/mkszepp))
+* [#1866](https://github.com/ember-power-addons/ember-power-select/pull/1866) Fix a11y error for single select with search field position trigger ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -148,7 +148,7 @@
 ## v8.6.1 (2024-12-19)
 
 #### :bug: Bug Fix
-* [#1865](https://github.com/cibernox/ember-power-select/pull/1865) Fix multiple select error `TypeError Cannot read properties of null (reading 'length')` ([@johanrd](https://github.com/johanrd))
+* [#1865](https://github.com/ember-power-addons/ember-power-select/pull/1865) Fix multiple select error `TypeError Cannot read properties of null (reading 'length')` ([@johanrd](https://github.com/johanrd))
 
 #### Committers: 1
 - [@johanrd](https://github.com/johanrd)
@@ -156,7 +156,7 @@
 ## v8.6.0 (2024-12-11)
 
 #### :rocket: Enhancement
-* [#1864](https://github.com/cibernox/ember-power-select/pull/1864) Add `@searchFieldPosition` argument ([@mkszepp](https://github.com/mkszepp))
+* [#1864](https://github.com/ember-power-addons/ember-power-select/pull/1864) Add `@searchFieldPosition` argument ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -164,10 +164,10 @@
 ## v8.5.0 (2024-12-05)
 
 #### :rocket: Enhancement
-* [#1863](https://github.com/cibernox/ember-power-select/pull/1863) Pass destinationElement to basic-dropdown ([@andreyfel](https://github.com/andreyfel))
+* [#1863](https://github.com/ember-power-addons/ember-power-select/pull/1863) Pass destinationElement to basic-dropdown ([@andreyfel](https://github.com/andreyfel))
 
 #### :bug: Bug Fix
-* [#1862](https://github.com/cibernox/ember-power-select/pull/1862) Remove incorrect `Element` from args in `PowerSelectMultipleTrigger` ([@mkszepp](https://github.com/mkszepp))
+* [#1862](https://github.com/ember-power-addons/ember-power-select/pull/1862) Remove incorrect `Element` from args in `PowerSelectMultipleTrigger` ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 2
 - Andrey Fel ([@andreyfel](https://github.com/andreyfel))
@@ -176,13 +176,13 @@
 ## v8.4.0 (2024-11-12)
 
 #### :rocket: Enhancement
-* [#1859](https://github.com/cibernox/ember-power-select/pull/1859) Allow `@glimmer/component` v2 ([@mkszepp](https://github.com/mkszepp))
+* [#1859](https://github.com/ember-power-addons/ember-power-select/pull/1859) Allow `@glimmer/component` v2 ([@mkszepp](https://github.com/mkszepp))
 
 #### :memo: Documentation
-* [#1858](https://github.com/cibernox/ember-power-select/pull/1858) Remove `ember-prism`, use `primsjs` in docs ([@mkszepp](https://github.com/mkszepp))
+* [#1858](https://github.com/ember-power-addons/ember-power-select/pull/1858) Remove `ember-prism`, use `primsjs` in docs ([@mkszepp](https://github.com/mkszepp))
 
 #### :house: Internal
-* [#1857](https://github.com/cibernox/ember-power-select/pull/1857) Replace scss to css compiler while rollup ([@mkszepp](https://github.com/mkszepp))
+* [#1857](https://github.com/ember-power-addons/ember-power-select/pull/1857) Replace scss to css compiler while rollup ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -190,7 +190,7 @@
 ## v8.3.1 (2024-09-09)
 
 #### :rocket: Enhancement
-* [#1853](https://github.com/cibernox/ember-power-select/pull/1853) Allow `@ember/test-helpers` to v4 ([@mkszepp](https://github.com/mkszepp))
+* [#1853](https://github.com/ember-power-addons/ember-power-select/pull/1853) Allow `@ember/test-helpers` to v4 ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -198,19 +198,19 @@
 ## v8.3.0 (2024-07-31)
 
 #### :rocket: Enhancement
-* [#1843](https://github.com/cibernox/ember-power-select/pull/1843) Copy custom group properties in `group-utils` copyGroup function ([@lukasnys](https://github.com/lukasnys))
+* [#1843](https://github.com/ember-power-addons/ember-power-select/pull/1843) Copy custom group properties in `group-utils` copyGroup function ([@lukasnys](https://github.com/lukasnys))
 
 #### :bug: Bug Fix
-* [#1846](https://github.com/cibernox/ember-power-select/pull/1846) Use correct typing for rootEventType ([@mkszepp](https://github.com/mkszepp))
+* [#1846](https://github.com/ember-power-addons/ember-power-select/pull/1846) Use correct typing for rootEventType ([@mkszepp](https://github.com/mkszepp))
 
 #### :memo: Documentation
-* [#1842](https://github.com/cibernox/ember-power-select/pull/1842) Docs: remove test helper setup ([@wozny1989](https://github.com/wozny1989))
-* [#1841](https://github.com/cibernox/ember-power-select/pull/1841) Add `ember-inflector` in docs to fix docs page (cause ember-data bug) ([@mkszepp](https://github.com/mkszepp))
-* [#1810](https://github.com/cibernox/ember-power-select/pull/1810) Fix direct links to sub pages ([@mkszepp](https://github.com/mkszepp))
+* [#1842](https://github.com/ember-power-addons/ember-power-select/pull/1842) Docs: remove test helper setup ([@wozny1989](https://github.com/wozny1989))
+* [#1841](https://github.com/ember-power-addons/ember-power-select/pull/1841) Add `ember-inflector` in docs to fix docs page (cause ember-data bug) ([@mkszepp](https://github.com/mkszepp))
+* [#1810](https://github.com/ember-power-addons/ember-power-select/pull/1810) Fix direct links to sub pages ([@mkszepp](https://github.com/mkszepp))
 
 #### :house: Internal
-* [#1840](https://github.com/cibernox/ember-power-select/pull/1840) Add push dist workflow ([@mkszepp](https://github.com/mkszepp))
-* [#1806](https://github.com/cibernox/ember-power-select/pull/1806) Add missing addon blueprint config & update blueprint ([@mkszepp](https://github.com/mkszepp))
+* [#1840](https://github.com/ember-power-addons/ember-power-select/pull/1840) Add push dist workflow ([@mkszepp](https://github.com/mkszepp))
+* [#1806](https://github.com/ember-power-addons/ember-power-select/pull/1806) Add missing addon blueprint config & update blueprint ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 5
 - Adam Woźny ([@wozny1989](https://github.com/wozny1989))
@@ -222,9 +222,9 @@
 ## v8.2.0 (2024-05-06)
 
 #### :rocket: Enhancement
-* [#1802](https://github.com/cibernox/ember-power-select/pull/1802) Replace `@ember/runloop` with `ember-lifeline` ([@mkszepp](https://github.com/mkszepp))
-* [#1801](https://github.com/cibernox/ember-power-select/pull/1801) Use `ember-modifier` instead of `@ember/render-modifiers` ([@mkszepp](https://github.com/mkszepp))
-* [#1795](https://github.com/cibernox/ember-power-select/pull/1795) Remove last Ember.Array (A()) using in addon, examples & tests ([@mkszepp](https://github.com/mkszepp))
+* [#1802](https://github.com/ember-power-addons/ember-power-select/pull/1802) Replace `@ember/runloop` with `ember-lifeline` ([@mkszepp](https://github.com/mkszepp))
+* [#1801](https://github.com/ember-power-addons/ember-power-select/pull/1801) Use `ember-modifier` instead of `@ember/render-modifiers` ([@mkszepp](https://github.com/mkszepp))
+* [#1795](https://github.com/ember-power-addons/ember-power-select/pull/1795) Remove last Ember.Array (A()) using in addon, examples & tests ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - Markus Sanin ([@mkszepp](https://github.com/mkszepp))
@@ -232,11 +232,11 @@
 ## v8.1.0 (2024-03-18)
 
 #### :rocket: Enhancement
-* [#1746](https://github.com/cibernox/ember-power-select/pull/1746) Type improvements ([@bendemboski](https://github.com/bendemboski))
-* [#1743](https://github.com/cibernox/ember-power-select/pull/1743) Migrate test helpers to TypeScript ([@andreyfel](https://github.com/andreyfel))
+* [#1746](https://github.com/ember-power-addons/ember-power-select/pull/1746) Type improvements ([@bendemboski](https://github.com/bendemboski))
+* [#1743](https://github.com/ember-power-addons/ember-power-select/pull/1743) Migrate test helpers to TypeScript ([@andreyfel](https://github.com/andreyfel))
 
 #### :house: Internal
-* [#1744](https://github.com/cibernox/ember-power-select/pull/1744) Remove NodeJs info (not necessary for v2 addon) ([@mkszepp](https://github.com/mkszepp))
+* [#1744](https://github.com/ember-power-addons/ember-power-select/pull/1744) Remove NodeJs info (not necessary for v2 addon) ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 3
 - Andrey Fel ([@andreyfel](https://github.com/andreyfel))
@@ -246,7 +246,7 @@
 ## v8.0.2 (2024-03-13)
 
 #### :bug: Bug Fix
-* [#1742](https://github.com/cibernox/ember-power-select/pull/1742) Fix theme imports for vanilla js ([@mkszepp](https://github.com/mkszepp))
+* [#1742](https://github.com/ember-power-addons/ember-power-select/pull/1742) Fix theme imports for vanilla js ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - [@mkszepp](https://github.com/mkszepp)
@@ -254,10 +254,10 @@
 ## v8.0.1 (2024-03-12)
 
 #### :bug: Bug Fix
-* [#1739](https://github.com/cibernox/ember-power-select/pull/1739) Fix rollup config (style.js -> styles.js) ([@mkszepp](https://github.com/mkszepp))
+* [#1739](https://github.com/ember-power-addons/ember-power-select/pull/1739) Fix rollup config (style.js -> styles.js) ([@mkszepp](https://github.com/mkszepp))
 
 #### :memo: Documentation
-* [#1740](https://github.com/cibernox/ember-power-select/pull/1740) Mark ember-power-select-is-equal as public & add as note in migrate docs ([@mkszepp](https://github.com/mkszepp))
+* [#1740](https://github.com/ember-power-addons/ember-power-select/pull/1740) Mark ember-power-select-is-equal as public & add as note in migrate docs ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - [@mkszepp](https://github.com/mkszepp)
@@ -267,7 +267,7 @@
 For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate-7-0-to-8-0)
 
 #### :memo: Documentation
-* [#1727](https://github.com/cibernox/ember-power-select/pull/1727) Minor Typo correction. ([@incredible-dev](https://github.com/incredible-dev))
+* [#1727](https://github.com/ember-power-addons/ember-power-select/pull/1727) Minor Typo correction. ([@incredible-dev](https://github.com/incredible-dev))
 
 #### Committers: 2
 - Sanjeev Singh ([@incredible-dev](https://github.com/incredible-dev))
@@ -276,19 +276,19 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 ## v8.0.0-beta.8 (2024-03-05)
 
 #### :boom: Breaking Change
-* [#1690](https://github.com/cibernox/ember-power-select/pull/1690) Improve a11y & make easier to fullfill all requirements out of the box ([@mkszepp](https://github.com/mkszepp))
+* [#1690](https://github.com/ember-power-addons/ember-power-select/pull/1690) Improve a11y & make easier to fullfill all requirements out of the box ([@mkszepp](https://github.com/mkszepp))
 
 #### :rocket: Enhancement
-* [#1690](https://github.com/cibernox/ember-power-select/pull/1690) Improve a11y & make easier to fullfill all requirements out of the box ([@mkszepp](https://github.com/mkszepp))
+* [#1690](https://github.com/ember-power-addons/ember-power-select/pull/1690) Improve a11y & make easier to fullfill all requirements out of the box ([@mkszepp](https://github.com/mkszepp))
 
 #### :bug: Bug Fix
-* [#1717](https://github.com/cibernox/ember-power-select/pull/1717) Fix `BeforeOptions` search input having invalid `aria-activedescendant` when no results are found ([@alex-ju](https://github.com/alex-ju))
-* [#1716](https://github.com/cibernox/ember-power-select/pull/1716) Fix `BeforeOptions` search input missing `aria-expanded` ([@alex-ju](https://github.com/alex-ju))
-* [#1715](https://github.com/cibernox/ember-power-select/pull/1715) Fix `NoMatchesMessage` component missing splattributes ([@alex-ju](https://github.com/alex-ju))
-* [#1714](https://github.com/cibernox/ember-power-select/pull/1714) fix: `Type error: (n.selected || []).slice is not a function` in multiple select ([@johanrd](https://github.com/johanrd))
+* [#1717](https://github.com/ember-power-addons/ember-power-select/pull/1717) Fix `BeforeOptions` search input having invalid `aria-activedescendant` when no results are found ([@alex-ju](https://github.com/alex-ju))
+* [#1716](https://github.com/ember-power-addons/ember-power-select/pull/1716) Fix `BeforeOptions` search input missing `aria-expanded` ([@alex-ju](https://github.com/alex-ju))
+* [#1715](https://github.com/ember-power-addons/ember-power-select/pull/1715) Fix `NoMatchesMessage` component missing splattributes ([@alex-ju](https://github.com/alex-ju))
+* [#1714](https://github.com/ember-power-addons/ember-power-select/pull/1714) fix: `Type error: (n.selected || []).slice is not a function` in multiple select ([@johanrd](https://github.com/johanrd))
 
 #### :memo: Documentation
-* [#1694](https://github.com/cibernox/ember-power-select/pull/1694) docs: update repo link to variables ([@derrabauke](https://github.com/derrabauke))
+* [#1694](https://github.com/ember-power-addons/ember-power-select/pull/1694) docs: update repo link to variables ([@derrabauke](https://github.com/derrabauke))
 
 #### Committers: 4
 - Alex ([@alex-ju](https://github.com/alex-ju))
@@ -301,22 +301,22 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 ## v8.0.0-beta.6 (2024-02-12)
 
 #### :boom: Breaking Change
-* [#1685](https://github.com/cibernox/ember-power-select/pull/1685) Update ember-concurrency to v4 and move to peerDependencies ([@mkszepp](https://github.com/mkszepp))
+* [#1685](https://github.com/ember-power-addons/ember-power-select/pull/1685) Update ember-concurrency to v4 and move to peerDependencies ([@mkszepp](https://github.com/mkszepp))
 
 #### :rocket: Enhancement
-* [#1683](https://github.com/cibernox/ember-power-select/pull/1683) Add `template-registry` and activate glint in `docs` / `test-app` ([@mkszepp](https://github.com/mkszepp))
-* [#1682](https://github.com/cibernox/ember-power-select/pull/1682) Convert `@task` to the async-arrow fn ([@mkszepp](https://github.com/mkszepp))
+* [#1683](https://github.com/ember-power-addons/ember-power-select/pull/1683) Add `template-registry` and activate glint in `docs` / `test-app` ([@mkszepp](https://github.com/mkszepp))
+* [#1682](https://github.com/ember-power-addons/ember-power-select/pull/1682) Convert `@task` to the async-arrow fn ([@mkszepp](https://github.com/mkszepp))
 
 #### :bug: Bug Fix
-* [#1687](https://github.com/cibernox/ember-power-select/pull/1687) Forward @highlightOnHover & @typeAheadOptionMatcher on multiple select ([@mkszepp](https://github.com/mkszepp))
-* [#1674](https://github.com/cibernox/ember-power-select/pull/1674) fix: support numbers selection for `PowerSelect` component ([@artemgurzhii](https://github.com/artemgurzhii))
+* [#1687](https://github.com/ember-power-addons/ember-power-select/pull/1687) Forward @highlightOnHover & @typeAheadOptionMatcher on multiple select ([@mkszepp](https://github.com/mkszepp))
+* [#1674](https://github.com/ember-power-addons/ember-power-select/pull/1674) fix: support numbers selection for `PowerSelect` component ([@artemgurzhii](https://github.com/artemgurzhii))
 
 #### :memo: Documentation
-* [#1686](https://github.com/cibernox/ember-power-select/pull/1686) DOCS: Add section "Migrate from 7.0 to 8.0" ([@mkszepp](https://github.com/mkszepp))
-* [#1660](https://github.com/cibernox/ember-power-select/pull/1660) DOCS: Fix scss import statement ([@mkszepp](https://github.com/mkszepp))
+* [#1686](https://github.com/ember-power-addons/ember-power-select/pull/1686) DOCS: Add section "Migrate from 7.0 to 8.0" ([@mkszepp](https://github.com/mkszepp))
+* [#1660](https://github.com/ember-power-addons/ember-power-select/pull/1660) DOCS: Fix scss import statement ([@mkszepp](https://github.com/mkszepp))
 
 #### :house: Internal
-* [#1684](https://github.com/cibernox/ember-power-select/pull/1684) Stricter dep management ([@mkszepp](https://github.com/mkszepp))
+* [#1684](https://github.com/ember-power-addons/ember-power-select/pull/1684) Stricter dep management ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 2
 - Artem Hurzhii ([@artemgurzhii](https://github.com/artemgurzhii))
@@ -325,24 +325,24 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 ## v8.0.0-beta.5 (2024-01-18)
 
 #### :boom: Breaking Change
-* [#1641](https://github.com/cibernox/ember-power-select/pull/1641) Fix input width in PowerSelectMultiple ([@mkszepp](https://github.com/mkszepp))
-* [#1630](https://github.com/cibernox/ember-power-select/pull/1630) types: Separate Args and Signature ([@johanrd](https://github.com/johanrd))
+* [#1641](https://github.com/ember-power-addons/ember-power-select/pull/1641) Fix input width in PowerSelectMultiple ([@mkszepp](https://github.com/mkszepp))
+* [#1630](https://github.com/ember-power-addons/ember-power-select/pull/1630) types: Separate Args and Signature ([@johanrd](https://github.com/johanrd))
 
 #### :rocket: Enhancement
-* [#1650](https://github.com/cibernox/ember-power-select/pull/1650) Set `args.selected` as optional ([@johanrd](https://github.com/johanrd))
-* [#1649](https://github.com/cibernox/ember-power-select/pull/1649) Set `args.options` as optional ([@johanrd](https://github.com/johanrd))
-* [#1637](https://github.com/cibernox/ember-power-select/pull/1637) Allow to highlight an object option without use the same reference ([@rogeraraujo90](https://github.com/rogeraraujo90))
-* [#1632](https://github.com/cibernox/ember-power-select/pull/1632) Add option to use `ember-power-select.scss` ([@mkszepp](https://github.com/mkszepp))
+* [#1650](https://github.com/ember-power-addons/ember-power-select/pull/1650) Set `args.selected` as optional ([@johanrd](https://github.com/johanrd))
+* [#1649](https://github.com/ember-power-addons/ember-power-select/pull/1649) Set `args.options` as optional ([@johanrd](https://github.com/johanrd))
+* [#1637](https://github.com/ember-power-addons/ember-power-select/pull/1637) Allow to highlight an object option without use the same reference ([@rogeraraujo90](https://github.com/rogeraraujo90))
+* [#1632](https://github.com/ember-power-addons/ember-power-select/pull/1632) Add option to use `ember-power-select.scss` ([@mkszepp](https://github.com/mkszepp))
 
 #### :bug: Bug Fix
-* [#1641](https://github.com/cibernox/ember-power-select/pull/1641) Fix input width in PowerSelectMultiple ([@mkszepp](https://github.com/mkszepp))
-* [#1638](https://github.com/cibernox/ember-power-select/pull/1638) Update appReexports & remove unused util ([@mkszepp](https://github.com/mkszepp))
-* [#1631](https://github.com/cibernox/ember-power-select/pull/1631) Define `destination` as optional ([@johanrd](https://github.com/johanrd))
-* [#1630](https://github.com/cibernox/ember-power-select/pull/1630) types: Separate Args and Signature ([@johanrd](https://github.com/johanrd))
+* [#1641](https://github.com/ember-power-addons/ember-power-select/pull/1641) Fix input width in PowerSelectMultiple ([@mkszepp](https://github.com/mkszepp))
+* [#1638](https://github.com/ember-power-addons/ember-power-select/pull/1638) Update appReexports & remove unused util ([@mkszepp](https://github.com/mkszepp))
+* [#1631](https://github.com/ember-power-addons/ember-power-select/pull/1631) Define `destination` as optional ([@johanrd](https://github.com/johanrd))
+* [#1630](https://github.com/ember-power-addons/ember-power-select/pull/1630) types: Separate Args and Signature ([@johanrd](https://github.com/johanrd))
 
 #### :memo: Documentation
-* [#1640](https://github.com/cibernox/ember-power-select/pull/1640) DOCS: Remove `ember-href-to` package & replace usings ([@mkszepp](https://github.com/mkszepp))
-* [#1635](https://github.com/cibernox/ember-power-select/pull/1635) DOCS: Fix typo & usings ([@mkszepp](https://github.com/mkszepp))
+* [#1640](https://github.com/ember-power-addons/ember-power-select/pull/1640) DOCS: Remove `ember-href-to` package & replace usings ([@mkszepp](https://github.com/mkszepp))
+* [#1635](https://github.com/ember-power-addons/ember-power-select/pull/1635) DOCS: Fix typo & usings ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 3
 - Roger ([@rogeraraujo90](https://github.com/rogeraraujo90))
@@ -354,10 +354,10 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 ## v8.0.0-beta.3 (2024-01-04)
 
 #### :bug: Bug Fix
-* [#1628](https://github.com/cibernox/ember-power-select/pull/1628) Fix theme export for SCSS/LESS & fix primary less file ([@mkszepp](https://github.com/mkszepp))
+* [#1628](https://github.com/ember-power-addons/ember-power-select/pull/1628) Fix theme export for SCSS/LESS & fix primary less file ([@mkszepp](https://github.com/mkszepp))
 
 #### :memo: Documentation
-* [#1627](https://github.com/cibernox/ember-power-select/pull/1627) DOCS: Add additional option for css import ([@mkszepp](https://github.com/mkszepp))
+* [#1627](https://github.com/ember-power-addons/ember-power-select/pull/1627) DOCS: Add additional option for css import ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - [@mkszepp](https://github.com/mkszepp)
@@ -365,7 +365,7 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 ## v8.0.0-beta.2 (2024-01-02)
 
 #### :bug: Bug Fix
-* [#1626](https://github.com/cibernox/ember-power-select/pull/1626) Fix blueprint ([@mkszepp](https://github.com/mkszepp))
+* [#1626](https://github.com/ember-power-addons/ember-power-select/pull/1626) Fix blueprint ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - [@mkszepp](https://github.com/mkszepp)
@@ -373,8 +373,8 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 ## v8.0.0-beta.1 (2024-01-02)
 
 #### :bug: Bug Fix
-* [#1625](https://github.com/cibernox/ember-power-select/pull/1625) Fix test-support export & remove deprecated code ([@mkszepp](https://github.com/mkszepp))
-* [#1624](https://github.com/cibernox/ember-power-select/pull/1624) Fix blueprint export ([@mkszepp](https://github.com/mkszepp))
+* [#1625](https://github.com/ember-power-addons/ember-power-select/pull/1625) Fix test-support export & remove deprecated code ([@mkszepp](https://github.com/mkszepp))
+* [#1624](https://github.com/ember-power-addons/ember-power-select/pull/1624) Fix blueprint export ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - [@mkszepp](https://github.com/mkszepp)
@@ -382,15 +382,15 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 ## v8.0.0-beta.0 (2024-01-02)
 
 #### :boom: Breaking Change
-* [#1619](https://github.com/cibernox/ember-power-select/pull/1619) Addon to v2 ([@mkszepp](https://github.com/mkszepp))
-* [#1615](https://github.com/cibernox/ember-power-select/pull/1615) Update ember cli v4.12.1 to v5.4.1 & drop node v16 ([@mkszepp](https://github.com/mkszepp))
+* [#1619](https://github.com/ember-power-addons/ember-power-select/pull/1619) Addon to v2 ([@mkszepp](https://github.com/mkszepp))
+* [#1615](https://github.com/ember-power-addons/ember-power-select/pull/1615) Update ember cli v4.12.1 to v5.4.1 & drop node v16 ([@mkszepp](https://github.com/mkszepp))
 
 #### :house: Internal
-* [#1621](https://github.com/cibernox/ember-power-select/pull/1621) Fix doc ([@mkszepp](https://github.com/mkszepp))
-* [#1618](https://github.com/cibernox/ember-power-select/pull/1618) Remove overrides in `package.json` ([@mkszepp](https://github.com/mkszepp))
-* [#1617](https://github.com/cibernox/ember-power-select/pull/1617) Update typescript, drop mocha, testdouble (unused) ([@mkszepp](https://github.com/mkszepp))
-* [#1616](https://github.com/cibernox/ember-power-select/pull/1616) Drop `ember-text-measurer` from dependencies ([@mkszepp](https://github.com/mkszepp))
-* [#1614](https://github.com/cibernox/ember-power-select/pull/1614) Drop outdated devDependencies ([@mkszepp](https://github.com/mkszepp))
+* [#1621](https://github.com/ember-power-addons/ember-power-select/pull/1621) Fix doc ([@mkszepp](https://github.com/mkszepp))
+* [#1618](https://github.com/ember-power-addons/ember-power-select/pull/1618) Remove overrides in `package.json` ([@mkszepp](https://github.com/mkszepp))
+* [#1617](https://github.com/ember-power-addons/ember-power-select/pull/1617) Update typescript, drop mocha, testdouble (unused) ([@mkszepp](https://github.com/mkszepp))
+* [#1616](https://github.com/ember-power-addons/ember-power-select/pull/1616) Drop `ember-text-measurer` from dependencies ([@mkszepp](https://github.com/mkszepp))
+* [#1614](https://github.com/ember-power-addons/ember-power-select/pull/1614) Drop outdated devDependencies ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 1
 - [@mkszepp](https://github.com/mkszepp)
@@ -398,18 +398,18 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 ## v7.2.0 (2023-11-16)
 
 #### :rocket: Enhancement
-* [#1593](https://github.com/cibernox/ember-power-select/pull/1593) Allow `ember-truth-helpers` v4 as dependency ([@mkszepp](https://github.com/mkszepp))
+* [#1593](https://github.com/ember-power-addons/ember-power-select/pull/1593) Allow `ember-truth-helpers` v4 as dependency ([@mkszepp](https://github.com/mkszepp))
 
 #### :bug: Bug Fix
-* [#1612](https://github.com/cibernox/ember-power-select/pull/1612) Add missing dependency `@ember/render-modifiers` ([@mkszepp](https://github.com/mkszepp))
-* [#1603](https://github.com/cibernox/ember-power-select/pull/1603) isSliceable is not working for ember data 3.x hasmany relationships ([@betocantu93](https://github.com/betocantu93))
+* [#1612](https://github.com/ember-power-addons/ember-power-select/pull/1612) Add missing dependency `@ember/render-modifiers` ([@mkszepp](https://github.com/mkszepp))
+* [#1603](https://github.com/ember-power-addons/ember-power-select/pull/1603) isSliceable is not working for ember data 3.x hasmany relationships ([@betocantu93](https://github.com/betocantu93))
 
 #### :house: Internal
-* [#1613](https://github.com/cibernox/ember-power-select/pull/1613) Update release-it to v16 ([@mkszepp](https://github.com/mkszepp))
-* [#1610](https://github.com/cibernox/ember-power-select/pull/1610) Use ember-data 3.28 in ember 3.28 test & add ember 5 test ([@mkszepp](https://github.com/mkszepp))
-* [#1609](https://github.com/cibernox/ember-power-select/pull/1609) Update `ember-cli-mirage` to stable v3 ([@mkszepp](https://github.com/mkszepp))
-* [#1595](https://github.com/cibernox/ember-power-select/pull/1595) Update compatibility in readme ([@mkszepp](https://github.com/mkszepp))
-* [#1594](https://github.com/cibernox/ember-power-select/pull/1594) Add missing release notes for v7 ([@mkszepp](https://github.com/mkszepp))
+* [#1613](https://github.com/ember-power-addons/ember-power-select/pull/1613) Update release-it to v16 ([@mkszepp](https://github.com/mkszepp))
+* [#1610](https://github.com/ember-power-addons/ember-power-select/pull/1610) Use ember-data 3.28 in ember 3.28 test & add ember 5 test ([@mkszepp](https://github.com/mkszepp))
+* [#1609](https://github.com/ember-power-addons/ember-power-select/pull/1609) Update `ember-cli-mirage` to stable v3 ([@mkszepp](https://github.com/mkszepp))
+* [#1595](https://github.com/ember-power-addons/ember-power-select/pull/1595) Update compatibility in readme ([@mkszepp](https://github.com/mkszepp))
+* [#1594](https://github.com/ember-power-addons/ember-power-select/pull/1594) Add missing release notes for v7 ([@mkszepp](https://github.com/mkszepp))
 
 #### Committers: 2
 - Alberto Cantú Gómez ([@betocantu93](https://github.com/betocantu93))
@@ -421,10 +421,10 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 ## v7.1.1 (2023-08-18)
 
 #### :bug: Bug Fix
-* [#1589](https://github.com/cibernox/ember-power-select/pull/1589) fix: Update invalid type imports ([@HeroicEric](https://github.com/HeroicEric))
+* [#1589](https://github.com/ember-power-addons/ember-power-select/pull/1589) fix: Update invalid type imports ([@HeroicEric](https://github.com/HeroicEric))
 
 #### :house: Internal
-* [#1591](https://github.com/cibernox/ember-power-select/pull/1591) build: Fix embroider optimized CI builds ([@HeroicEric](https://github.com/HeroicEric))
+* [#1591](https://github.com/ember-power-addons/ember-power-select/pull/1591) build: Fix embroider optimized CI builds ([@HeroicEric](https://github.com/HeroicEric))
 
 #### Committers: 1
 - Eric Kelly ([@HeroicEric](https://github.com/HeroicEric))
@@ -433,24 +433,24 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 - Make it compatible with Ember 5.
 
 ## v7.0.0 (2023-03-06)
-* [#1572](https://github.com/cibernox/ember-power-select/pull/1572) Fix tests for embroider-optimized ([@mkszepp](https://github.com/mkszepp))
-* [#1570](https://github.com/cibernox/ember-power-select/pull/1570) Update to ember 4.8 & packages. Require node >= 16, Ember >= 3.28 ([@mkszepp](https://github.com/mkszepp))
-* [#1564](https://github.com/cibernox/ember-power-select/pull/1564) Remove ember-data array deprecation ([@mkszepp](https://github.com/mkszepp))
-* [#1567](https://github.com/cibernox/ember-power-select/pull/1567) Pass along the @animationEnabled argument to dropdown.Content, bump ember-basic-dropdown ([@ArnaudWeyts](https://github.com/ArnaudWeyts))
-* [#1560](https://github.com/cibernox/ember-power-select/pull/1560) Fix import from ember-basic-dropdown ([@wagenet](https://github.com/wagenet))
-* [#1548](https://github.com/cibernox/ember-power-select/pull/1548) Add type declarations ([@charlesfries](https://github.com/charlesfries))
-* [#1544](https://github.com/cibernox/ember-power-select/pull/1544) fix: redirects in netlify ([@wozny1989](https://github.com/wozny1989))
-* [#1306](https://github.com/cibernox/ember-power-select/pull/1306) Fix a11y issues with inputs ([@mydea](https://github.com/mydea))
-* [#1545](https://github.com/cibernox/ember-power-select/pull/1545) chore: snippet improvements ([@wozny1989](https://github.com/wozny1989))
-* [#1542](https://github.com/cibernox/ember-power-select/pull/1542) fix: display code snippets in documentation ([@wozny1989](https://github.com/wozny1989))
-* [#1540](https://github.com/cibernox/ember-power-select/pull/1540) be more permissive on ember-truth-helpers ([@miguelcobain](https://github.com/miguelcobain))
-* [#1305](https://github.com/cibernox/ember-power-select/pull/1305) Ensure multiple select ul has only li children ([@mydea](https://github.com/mydea))
-* [#1495](https://github.com/cibernox/ember-power-select/pull/1495) Fix error when pressing backspace in empty multiple-select component ([@gvdp](https://github.com/gvdp))
+* [#1572](https://github.com/ember-power-addons/ember-power-select/pull/1572) Fix tests for embroider-optimized ([@mkszepp](https://github.com/mkszepp))
+* [#1570](https://github.com/ember-power-addons/ember-power-select/pull/1570) Update to ember 4.8 & packages. Require node >= 16, Ember >= 3.28 ([@mkszepp](https://github.com/mkszepp))
+* [#1564](https://github.com/ember-power-addons/ember-power-select/pull/1564) Remove ember-data array deprecation ([@mkszepp](https://github.com/mkszepp))
+* [#1567](https://github.com/ember-power-addons/ember-power-select/pull/1567) Pass along the @animationEnabled argument to dropdown.Content, bump ember-basic-dropdown ([@ArnaudWeyts](https://github.com/ArnaudWeyts))
+* [#1560](https://github.com/ember-power-addons/ember-power-select/pull/1560) Fix import from ember-basic-dropdown ([@wagenet](https://github.com/wagenet))
+* [#1548](https://github.com/ember-power-addons/ember-power-select/pull/1548) Add type declarations ([@charlesfries](https://github.com/charlesfries))
+* [#1544](https://github.com/ember-power-addons/ember-power-select/pull/1544) fix: redirects in netlify ([@wozny1989](https://github.com/wozny1989))
+* [#1306](https://github.com/ember-power-addons/ember-power-select/pull/1306) Fix a11y issues with inputs ([@mydea](https://github.com/mydea))
+* [#1545](https://github.com/ember-power-addons/ember-power-select/pull/1545) chore: snippet improvements ([@wozny1989](https://github.com/wozny1989))
+* [#1542](https://github.com/ember-power-addons/ember-power-select/pull/1542) fix: display code snippets in documentation ([@wozny1989](https://github.com/wozny1989))
+* [#1540](https://github.com/ember-power-addons/ember-power-select/pull/1540) be more permissive on ember-truth-helpers ([@miguelcobain](https://github.com/miguelcobain))
+* [#1305](https://github.com/ember-power-addons/ember-power-select/pull/1305) Ensure multiple select ul has only li children ([@mydea](https://github.com/mydea))
+* [#1495](https://github.com/ember-power-addons/ember-power-select/pull/1495) Fix error when pressing backspace in empty multiple-select component ([@gvdp](https://github.com/gvdp))
 
 ## v6.0.1 (2022-08-23)
 
 #### :rocket: Enhancement
-* [#1406](https://github.com/cibernox/ember-power-select/pull/1406) Add support for stylus (Apple Pencil) ([@krasnoukhov](https://github.com/krasnoukhov))
+* [#1406](https://github.com/ember-power-addons/ember-power-select/pull/1406) Add support for stylus (Apple Pencil) ([@krasnoukhov](https://github.com/krasnoukhov))
 
 #### Committers: 1
 - Dmitry Krasnoukhov ([@krasnoukhov](https://github.com/krasnoukhov))
@@ -458,18 +458,18 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 ## v6.0.0 (2022-08-05)
 
 #### :boom: Breaking Change
-* [#1533](https://github.com/cibernox/ember-power-select/pull/1533) Require node >= 14, Ember >= 3.24 ([@rwwagner90](https://github.com/rwwagner90))
-* [#1526](https://github.com/cibernox/ember-power-select/pull/1526) Delete files array to fix TS, require ember-basic-dropdown 6+ ([@rwwagner90](https://github.com/rwwagner90))
+* [#1533](https://github.com/ember-power-addons/ember-power-select/pull/1533) Require node >= 14, Ember >= 3.24 ([@rwwagner90](https://github.com/rwwagner90))
+* [#1526](https://github.com/ember-power-addons/ember-power-select/pull/1526) Delete files array to fix TS, require ember-basic-dropdown 6+ ([@rwwagner90](https://github.com/rwwagner90))
 
 #### :rocket: Enhancement
-* [#1530](https://github.com/cibernox/ember-power-select/pull/1530) embroider-optimized support ([@rwwagner90](https://github.com/rwwagner90))
-* [#1529](https://github.com/cibernox/ember-power-select/pull/1529) Allow a wider range of ember-basic-dropdown versions ([@cibernox](https://github.com/cibernox))
+* [#1530](https://github.com/ember-power-addons/ember-power-select/pull/1530) embroider-optimized support ([@rwwagner90](https://github.com/rwwagner90))
+* [#1529](https://github.com/ember-power-addons/ember-power-select/pull/1529) Allow a wider range of ember-basic-dropdown versions ([@cibernox](https://github.com/cibernox))
 
 #### :house: Internal
-* [#1535](https://github.com/cibernox/ember-power-select/pull/1535) Add rwjblue release-it ([@rwwagner90](https://github.com/rwwagner90))
-* [#1532](https://github.com/cibernox/ember-power-select/pull/1532) Fix embroider-optimized ([@rwwagner90](https://github.com/rwwagner90))
-* [#1531](https://github.com/cibernox/ember-power-select/pull/1531) Update linting config, comply with prettier ([@rwwagner90](https://github.com/rwwagner90))
-* [#1506](https://github.com/cibernox/ember-power-select/pull/1506) Cleans up scrollTo's element finding ([@matthew-robertson](https://github.com/matthew-robertson))
+* [#1535](https://github.com/ember-power-addons/ember-power-select/pull/1535) Add rwjblue release-it ([@rwwagner90](https://github.com/rwwagner90))
+* [#1532](https://github.com/ember-power-addons/ember-power-select/pull/1532) Fix embroider-optimized ([@rwwagner90](https://github.com/rwwagner90))
+* [#1531](https://github.com/ember-power-addons/ember-power-select/pull/1531) Update linting config, comply with prettier ([@rwwagner90](https://github.com/rwwagner90))
+* [#1506](https://github.com/ember-power-addons/ember-power-select/pull/1506) Cleans up scrollTo's element finding ([@matthew-robertson](https://github.com/matthew-robertson))
 
 #### Committers: 4
 - Chris Manson ([@mansona](https://github.com/mansona))
@@ -1316,7 +1316,7 @@ For upgrade from v7 to v8 see [here](https://ember-power-select.com/docs/migrate
 
 # 0.9.0-beta.1
 - [FEATURE] Proper Accesibility!! Lots of roles and `aria-*` tags have been added to make the component
-  friendly, according with the guidelines in [the RFC](https://github.com/cibernox/ember-power-select/issues/293)
+  friendly, according with the guidelines in [the RFC](https://github.com/ember-power-addons/ember-power-select/issues/293)
 - [BUGFIX] When the component received a promise as `options` and also a `search` action, clearing
   the search must show the content of that promise.
 - [FEATURE] The `.ember-power-select-option`s added to wrap the `noMatchesMessage` and the `searchMessage`

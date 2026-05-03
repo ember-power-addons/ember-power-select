@@ -51,7 +51,7 @@ import CreateCustomOptions1 from '../../../components/snippets/create-custom-opt
     doesn't cover all edge cases. By example, it isn't possible to create a tag
     named "York" above because it would match "New York". Check the
     <a
-      href="https://github.com/cibernox/ember-power-select-with-create"
+      href="https://github.com/ember-power-addons/ember-power-select-with-create"
     >ember-power-select-with-create</a>
     addon for a more complete solution.
   </p>

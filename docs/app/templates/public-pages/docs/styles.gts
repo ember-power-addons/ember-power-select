@@ -41,7 +41,7 @@ import { LinkTo } from '@ember/routing';
   <p>
     You can find the entire list of available SCSS variables in
     <a
-      href="https://github.com/cibernox/ember-power-select/blob/master/ember-power-select/scss/variables.scss"
+      href="https://github.com/ember-power-addons/ember-power-select/blob/master/ember-power-select/scss/variables.scss"
     >the source code</a>.
   </p>
 
