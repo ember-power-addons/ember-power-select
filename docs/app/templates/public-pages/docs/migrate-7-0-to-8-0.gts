@@ -24,7 +24,7 @@ import { LinkTo } from '@ember/routing';
         <code>ember-concurrency</code>
         is now also a V2 addon. There are some manual steps necessary see
         <a
-          href="http://ember-concurrency.com/docs/installation"
+          href="https://ember-concurrency.com/docs/installation"
           target="_blank"
           rel="noopener noreferrer"
         >ember-concurrency installation</a></p>

@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+http://github.com/ember-power-addons/ember-power-select.git"
+    "url": "git+https://github.com/ember-power-addons/ember-power-select.git"
   },
   "license": "MIT",
   "author": {

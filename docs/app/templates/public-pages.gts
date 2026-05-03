@@ -90,7 +90,7 @@ export default class extends Component {
     <footer class="main-footer">
       <div class="main-footer-content">
         Deployed with love by
-        <a href="http://github.com/cibernox">Miguel Camba</a>
+        <a href="https://github.com/cibernox">Miguel Camba</a>
       </div>
     </footer>
 
