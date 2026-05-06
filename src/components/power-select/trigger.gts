@@ -67,9 +67,7 @@ export default class PowerSelectTrigger<
   get inputComponent(): ComponentLike<
     PowerSelectInputSignature<T, TExtra, IsMultiple>
   > {
-    return PowerSelectInput as ComponentLike<
-      PowerSelectInputSignature<T, TExtra, IsMultiple>
-    >;
+    return PowerSelectInput;
   }
 
   get selected() {
