@@ -24,9 +24,12 @@
   "imports": {
     "#src/*": "./src/*"
   },
+  "sass": "./ember-power-select.scss",
+  "style": "./dist/vendor/ember-power-select.css",
   "exports": {
     ".": {
       "types": "./declarations/index.d.ts",
+      "sass": "./ember-power-select.scss",
       "default": "./dist/index.js"
     },
     "./addon-main.js": "./addon-main.cjs",
@@ -52,8 +55,7 @@
     "ember-power-select.less",
     "ember-power-select.scss",
     "less",
-    "scss",
-    "src"
+    "scss"
   ],
   "scripts": {
     "build": "rollup --config",
@@ -73,7 +75,7 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.10.2",
-    "decorator-transforms": "^2.3.1",
+    "decorator-transforms": "^2.3.2",
     "ember-element-helper": "^0.8.8",
     "ember-modifier": "^4.3.0",
     "ember-truth-helpers": "^5.0.0"
@@ -85,7 +87,7 @@
     "@babel/runtime": "^7.29.2",
     "@ember/app-tsconfig": "^2.0.0",
     "@ember/library-tsconfig": "^2.0.0",
-    "@ember/test-helpers": "^5.4.1",
+    "@ember/test-helpers": "^5.4.2",
     "@ember/test-waiters": "^4.1.1",
     "@embroider/addon-dev": "^8.3.0",
     "@embroider/compat": "^4.1.17",
@@ -97,13 +99,13 @@
     "@glint/ember-tsc": "^1.5.0",
     "@glint/template": "^1.7.7",
     "@glint/tsserver-plugin": "^2.4.0",
-    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-babel": "^7.0.0",
     "@types/qunit": "^2.19.13",
     "@types/rsvp": "^4.0.9",
     "babel-plugin-ember-template-compilation": "^4.0.0",
     "concurrently": "^9.2.1",
     "dom-element-descriptors": "^0.5.1",
-    "ember-basic-dropdown": "git+https://github.com/ember-power-addons/ember-basic-dropdown#b90e03d0b8ab6d5c61093fabc3024c806d2585d9",
+    "ember-basic-dropdown": "git+https://github.com/ember-power-addons/ember-basic-dropdown#f76ebdbd8ea6db28dffc531744317c77b960c264",
     "ember-concurrency": "^5.2.0",
     "ember-modifier": "^4.3.0",
     "ember-page-title": "^9.0.3",
@@ -118,23 +120,23 @@
     "eslint-plugin-ember": "^12.7.5",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^17.24.0",
-    "globals": "^17.5.0",
-    "postcss": "^8.5.9",
+    "globals": "^17.6.0",
+    "postcss": "^8.5.14",
     "prettier": "^3.8.3",
-    "prettier-plugin-ember-template-tag": "^2.1.4",
-    "publint": "^0.3.18",
+    "prettier-plugin-ember-template-tag": "^2.1.5",
+    "publint": "^0.3.19",
     "qunit": "^2.25.0",
     "qunit-dom": "^3.5.1",
     "release-plan": "^0.18.0",
-    "rollup": "^4.60.1",
+    "rollup": "^4.60.3",
     "rollup-plugin-sass": "^1.15.3",
     "rsvp": "^4.8.5",
     "sass": "^1.99.0",
     "sass-embedded": "^1.99.0",
     "testem": "^3.20.0",
-    "typescript": "~5.9.3",
-    "typescript-eslint": "^8.58.2",
-    "vite": "^7.3.1"
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.59.2",
+    "vite": "^8.0.10"
   },
   "peerDependencies": {
     "@ember/test-helpers": "^5.0.0",
@@ -142,7 +144,7 @@
     "ember-basic-dropdown": "^8.11.0",
     "ember-concurrency": "^5.1.0"
   },
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@10.33.4",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
