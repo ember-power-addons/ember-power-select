@@ -24,9 +24,12 @@
   "imports": {
     "#src/*": "./src/*"
   },
+  "sass": "./ember-power-select.scss",
+  "style": "./dist/vendor/ember-power-select.css",
   "exports": {
     ".": {
       "types": "./declarations/index.d.ts",
+      "sass": "./ember-power-select.scss",
       "default": "./dist/index.js"
     },
     "./addon-main.js": "./addon-main.cjs",
@@ -52,8 +55,7 @@
     "ember-power-select.less",
     "ember-power-select.scss",
     "less",
-    "scss",
-    "src"
+    "scss"
   ],
   "scripts": {
     "build": "rollup --config",
