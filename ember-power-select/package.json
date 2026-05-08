@@ -14,9 +14,12 @@
     "name": "Miguel Camba",
     "email": "miguel.camba@gmail.com"
   },
+  "sass": "./ember-power-select.scss",
+  "style": "./dist/vendor/ember-power-select.css",
   "exports": {
     ".": {
       "types": "./declarations/index.d.ts",
+      "sass": "./ember-power-select.scss",
       "default": "./dist/index.js"
     },
     "./*": {
