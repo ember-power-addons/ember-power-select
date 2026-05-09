@@ -149,7 +149,7 @@ importers:
         version: 2.1.5(prettier@3.8.3)
       publint:
         specifier: ^0.3.19
-        version: 0.3.19
+        version: 0.3.20
       qunit:
         specifier: ^2.25.0
         version: 2.25.0
@@ -3119,7 +3119,7 @@ packages:
     resolution: {integrity: sha512-9wHk8x6dyuimoe18EdiDPWKExNdxYqo4fn4FwOVVper6RxT3cmpBwBkWWfSOCYJjQdIco/nPhJhNLmn4Ufg1Yg==}
 
   ember-basic-dropdown@https://codeload.github.com/ember-power-addons/ember-basic-dropdown/tar.gz/f76ebdbd8ea6db28dffc531744317c77b960c264:
-    resolution: {gitHosted: true, integrity: sha512-MT2XBjQ5ryJn5LcZ3fLh1um7bTuhwCtSN56qDE15yvzh/RVVi/zLUk/5oAe/3PDNk94Z84a6IsiatEyCR5tc6Q==, tarball: https://codeload.github.com/ember-power-addons/ember-basic-dropdown/tar.gz/f76ebdbd8ea6db28dffc531744317c77b960c264}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/ember-power-addons/ember-basic-dropdown/tar.gz/f76ebdbd8ea6db28dffc531744317c77b960c264}
     version: 8.11.0
     peerDependencies:
       '@ember/test-helpers': ^5.0.0
@@ -5323,8 +5323,8 @@ packages:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
     engines: {node: '>= 0.10'}
 
-  publint@0.3.19:
-    resolution: {integrity: sha512-J3p4GOocCRFyLLFRzGfIhAwWgk0Kkcdxj5iFspFvCYbyiJs5IhCM8gsIkcNeQL+tdpV671RtJQiTFSUKhl1Wjg==}
+  publint@0.3.20:
+    resolution: {integrity: sha512-UWqFYP7VBVCe9l/leEEGJrDs6Am4K4KapLmLi5qbt+9fA+Ny38ghdW+bw1nYfVqCK8/3kgsxjjhFjTYqYYRpyw==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -12580,7 +12580,7 @@ snapshots:
       forwarded: 0.2.0
       ipaddr.js: 1.9.1
 
-  publint@0.3.19:
+  publint@0.3.20:
     dependencies:
       '@publint/pack': 0.1.4
       package-manager-detector: 1.6.0
