@@ -18,7 +18,13 @@
 
 
 
+## v8.12.2 (2026-05-08)
 
+#### :bug: Bug Fix
+* [#2042](https://github.com/ember-power-addons/ember-power-select/pull/2042) Add sass/css export into package.json ([@mkszepp](https://github.com/mkszepp))
+
+#### Committers: 1
+- Markus Sanin ([@mkszepp](https://github.com/mkszepp))
 
 ## v8.12.1 (2025-12-07)
 
