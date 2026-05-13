@@ -157,7 +157,7 @@ export default class PowerSelectTrigger<
         }}
         class="ember-power-select-multiple-options"
         {{this.openChange @select.isOpen}}
-        {{on "pointerup" this.chooseOption}}
+        {{on "click" this.chooseOption}}
         ...attributes
       >
         {{#if (selectIsSelectedPresent this.selectedMultiple)}}
@@ -176,6 +176,7 @@ export default class PowerSelectTrigger<
                   aria-label="remove element"
                   class="ember-power-select-multiple-remove-btn"
                   data-selected-index={{idx}}
+                  {{on "touchend" this.stopPropagation}}
                   {{on "mousedown" this.stopPropagation}}
                 >
                   &times;
@@ -303,8 +304,9 @@ export default class PowerSelectTrigger<
           <span
             class="ember-power-select-clear-btn"
             role="button"
-            {{on "pointerup" this.clear}}
+            {{on "touchend" this.stopPropagation}}
             {{on "mousedown" this.stopPropagation}}
+            {{on "click" this.clear}}
           >&times;</span>
         {{/if}}
       {{else}}
