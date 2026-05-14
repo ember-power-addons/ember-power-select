@@ -92,7 +92,7 @@
     "globals": "^17.6.0",
     "memory-scroll": "^2.0.1",
     "prettier": "^3.8.3",
-    "prettier-plugin-ember-template-tag": "^2.1.5",
+    "prettier-plugin-ember-template-tag": "^2.1.6",
     "qunit": "^2.25.0",
     "qunit-dom": "^3.5.1",
     "rsvp": "^4.8.5",
