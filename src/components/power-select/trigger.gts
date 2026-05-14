@@ -79,13 +79,10 @@ export default class PowerSelectTrigger<
   }
 
   @action
-  clear(e: Event): false | void {
+  clear(e: Event): void {
     e.stopPropagation();
     const value = this.args.select.multiple ? [] : undefined;
     this.args.select.actions.select(value as Selected<T, IsMultiple>);
-    if (e.type === 'touchstart') {
-      return false;
-    }
   }
 
   isOptionDisabled(option: Option<T>): boolean {
@@ -113,6 +110,10 @@ export default class PowerSelectTrigger<
       const object = this.selectedObject(this.selectedMultiple, numericIndex);
       this.args.select.actions.choose(object);
     }
+  }
+
+  stopPropagation(e: Event): void {
+    e.stopPropagation();
   }
 
   openChange = modifier((element: Element, [isOpen]: [boolean]) => {
@@ -146,7 +147,6 @@ export default class PowerSelectTrigger<
   <template>
     {{#if @select.multiple}}
       {{! template-lint-disable no-invalid-interactive }}
-      {{! template-lint-disable no-pointer-down-event-binding }}
       {{! template-lint-disable no-unsupported-role-attributes }}
       {{! template-lint-disable require-aria-activedescendant-tabindex }}
       <ul
@@ -157,8 +157,7 @@ export default class PowerSelectTrigger<
         }}
         class="ember-power-select-multiple-options"
         {{this.openChange @select.isOpen}}
-        {{on "touchstart" this.chooseOption}}
-        {{on "mousedown" this.chooseOption}}
+        {{on "click" this.chooseOption}}
         ...attributes
       >
         {{#if (selectIsSelectedPresent this.selectedMultiple)}}
@@ -171,11 +170,14 @@ export default class PowerSelectTrigger<
                 }}"
             >
               {{#unless @select.disabled}}
+                {{! template-lint-disable no-pointer-down-event-binding }}
                 <span
                   role="button"
                   aria-label="remove element"
                   class="ember-power-select-multiple-remove-btn"
                   data-selected-index={{idx}}
+                  {{on "touchend" this.stopPropagation}}
+                  {{on "mousedown" this.stopPropagation}}
                 >
                   &times;
                 </span>
@@ -302,8 +304,9 @@ export default class PowerSelectTrigger<
           <span
             class="ember-power-select-clear-btn"
             role="button"
-            {{on "mousedown" this.clear}}
-            {{on "touchstart" this.clear}}
+            {{on "touchend" this.stopPropagation}}
+            {{on "mousedown" this.stopPropagation}}
+            {{on "click" this.clear}}
           >&times;</span>
         {{/if}}
       {{else}}
