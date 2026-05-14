@@ -128,7 +128,7 @@
     "qunit": "^2.25.0",
     "qunit-dom": "^3.5.1",
     "release-plan": "^0.18.0",
-    "rollup": "^4.60.3",
+    "rollup": "^4.60.4",
     "rollup-plugin-sass": "^1.15.3",
     "rsvp": "^4.8.5",
     "sass": "^1.99.0",
