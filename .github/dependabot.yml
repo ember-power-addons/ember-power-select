@@ -8,4 +8,4 @@ updates:
   open-pull-requests-limit: 15
   labels:
   - dependencies
-  versioning-strategy: increase-if-necessary
+  versioning-strategy: increase
