@@ -82,8 +82,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0(@babel/core@7.29.0)(rollup@4.60.3)
       '@types/qunit':
-        specifier: ^2.19.13
-        version: 2.19.13
+        specifier: ^2.19.14
+        version: 2.19.14
       '@types/rsvp':
         specifier: ^4.0.9
         version: 4.0.9
@@ -256,8 +256,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0(@babel/core@7.29.0)(rollup@4.60.3)
       '@types/qunit':
-        specifier: ^2.19.13
-        version: 2.19.13
+        specifier: ^2.19.14
+        version: 2.19.14
       '@types/rsvp':
         specifier: ^4.0.9
         version: 4.0.9
@@ -1975,8 +1975,8 @@ packages:
   '@types/node@25.6.0':
     resolution: {integrity: sha512-+qIYRKdNYJwY3vRCZMdJbPLJAtGjQBudzZzdzwQYkEPQd+PJGixUL5QfvCLDaULoLv+RhT3LDkwEfKaAkgSmNQ==}
 
-  '@types/qunit@2.19.13':
-    resolution: {integrity: sha512-N4xp3v4s7f0jb2Oij6+6xw5QhH7/IgHCoGIFLCWtbEWoPkGYp8Te4mIwIP21qaurr6ed5JiPMiy2/ZoiGPkLIw==}
+  '@types/qunit@2.19.14':
+    resolution: {integrity: sha512-ou2RMtwyDnW1btrMnDMZeL6V5/yRRbuHKrRC6y8IuzDljjVzw6wPCVFb8p4qJD0NkUkf3BdZeJJIBzjK1BUUDQ==}
 
   '@types/rsvp@4.0.9':
     resolution: {integrity: sha512-F6vaN5mbxw2MBCu/AD9fSKwrhnto2pE77dyUsi415qz9IP9ni9ZOWXHxnXfsM4NW9UjW+it189jvvqnhv37Z7Q==}
@@ -3119,7 +3119,7 @@ packages:
     resolution: {integrity: sha512-9wHk8x6dyuimoe18EdiDPWKExNdxYqo4fn4FwOVVper6RxT3cmpBwBkWWfSOCYJjQdIco/nPhJhNLmn4Ufg1Yg==}
 
   ember-basic-dropdown@https://codeload.github.com/ember-power-addons/ember-basic-dropdown/tar.gz/f76ebdbd8ea6db28dffc531744317c77b960c264:
-    resolution: {gitHosted: true, integrity: sha512-MT2XBjQ5ryJn5LcZ3fLh1um7bTuhwCtSN56qDE15yvzh/RVVi/zLUk/5oAe/3PDNk94Z84a6IsiatEyCR5tc6Q==, tarball: https://codeload.github.com/ember-power-addons/ember-basic-dropdown/tar.gz/f76ebdbd8ea6db28dffc531744317c77b960c264}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/ember-power-addons/ember-basic-dropdown/tar.gz/f76ebdbd8ea6db28dffc531744317c77b960c264}
     version: 8.11.0
     peerDependencies:
       '@ember/test-helpers': ^5.0.0
@@ -8662,7 +8662,7 @@ snapshots:
     dependencies:
       undici-types: 7.19.2
 
-  '@types/qunit@2.19.13': {}
+  '@types/qunit@2.19.14': {}
 
   '@types/rsvp@4.0.9': {}
 
