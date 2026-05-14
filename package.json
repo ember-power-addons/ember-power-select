@@ -124,7 +124,7 @@
     "postcss": "^8.5.14",
     "prettier": "^3.8.3",
     "prettier-plugin-ember-template-tag": "^2.1.6",
-    "publint": "^0.3.19",
+    "publint": "^0.3.21",
     "qunit": "^2.25.0",
     "qunit-dom": "^3.5.1",
     "release-plan": "^0.18.0",
