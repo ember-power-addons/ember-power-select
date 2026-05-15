@@ -87,7 +87,7 @@
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-ember": "^13.2.1",
-    "eslint-plugin-n": "^17.24.0",
+    "eslint-plugin-n": "^18.0.1",
     "eslint-plugin-qunit": "^8.2.6",
     "globals": "^17.6.0",
     "memory-scroll": "^2.0.1",
