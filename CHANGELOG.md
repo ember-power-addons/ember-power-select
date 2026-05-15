@@ -1,5 +1,82 @@
 # Changelog
 
+## Release (2026-05-15)
+
+* ember-power-select 9.0.0 (major)
+
+#### :boom: Breaking Change
+* `ember-power-select`
+  * [#2060](https://github.com/ember-power-addons/ember-power-select/pull/2060) Update `ember-basic-dropdown` to `^9.0.0` ([@mkszepp](https://github.com/mkszepp))
+  * [#2023](https://github.com/ember-power-addons/ember-power-select/pull/2023) Add wrapper div around options & afterOptionsComponent (possible breaking) ([@mkszepp](https://github.com/mkszepp))
+  * [#1976](https://github.com/ember-power-addons/ember-power-select/pull/1976) Remove deprecations & modernize `e.keyCode` with `e.key` ([@mkszepp](https://github.com/mkszepp))
+  * [#1974](https://github.com/ember-power-addons/ember-power-select/pull/1974) Drop support for Ember `ArrayProxy`, `PromiseProxyMixin`, `ObjectProxy` & remove last `addObserver`/`removeObserver`/`@ember/utils` usages ([@mkszepp](https://github.com/mkszepp))
+  * [#1966](https://github.com/ember-power-addons/ember-power-select/pull/1966) Fix Accessibility issue in label component (default should be `div` instead `label` tag) ([@mkszepp](https://github.com/mkszepp))
+  * [#1964](https://github.com/ember-power-addons/ember-power-select/pull/1964) Remove automatically added ember-basic-dropdown styles, Convert to modern scss api, Drop node-scss support & Remove built-in CSS/SCSS themes for Bootstrap and Material ([@mkszepp](https://github.com/mkszepp))
+  * [#1965](https://github.com/ember-power-addons/ember-power-select/pull/1965) Add css variables support & drop passing `$ember-power-select-line-height` without unit ([@mkszepp](https://github.com/mkszepp))
+  * [#1960](https://github.com/ember-power-addons/ember-power-select/pull/1960) Convert addon to gts & remove @embroider/util ([@c0rydoras](https://github.com/c0rydoras))
+  * [#1963](https://github.com/ember-power-addons/ember-power-select/pull/1963) Drop support for old dependencies/peerDependencies ([@mkszepp](https://github.com/mkszepp))
+  * [#1962](https://github.com/ember-power-addons/ember-power-select/pull/1962) Remove setup blueprints ([@mkszepp](https://github.com/mkszepp))
+  * [#1961](https://github.com/ember-power-addons/ember-power-select/pull/1961) Drop support for ember < 4.12 ([@mkszepp](https://github.com/mkszepp))
+  * [#1906](https://github.com/ember-power-addons/ember-power-select/pull/1906) Improve addon typing & convert helpers to plain functions ([@mkszepp](https://github.com/mkszepp))
+
+#### :rocket: Enhancement
+* `ember-power-select`
+  * [#2041](https://github.com/ember-power-addons/ember-power-select/pull/2041) Add sass/css export into package.json to support scss `pkg:` imports & update dependencies ([@mkszepp](https://github.com/mkszepp))
+  * [#2034](https://github.com/ember-power-addons/ember-power-select/pull/2034) Remove `Component` keyword in class name ([@mkszepp](https://github.com/mkszepp))
+  * [#1990](https://github.com/ember-power-addons/ember-power-select/pull/1990) Widen onInput return type for ember-concurrency compatibility ([@johanrd](https://github.com/johanrd))
+  * [#1991](https://github.com/ember-power-addons/ember-power-select/pull/1991) Widen search return type for void-returning ember-concurrency tasks ([@johanrd](https://github.com/johanrd))
+
+#### :bug: Bug Fix
+* `ember-power-select`
+  * [#2047](https://github.com/ember-power-addons/ember-power-select/pull/2047) A11y: fix incorrect handling on clear & selected item buttons ([@malatin3](https://github.com/malatin3))
+  * [#2041](https://github.com/ember-power-addons/ember-power-select/pull/2041) Add sass/css export into package.json to support scss `pkg:` imports & update dependencies ([@mkszepp](https://github.com/mkszepp))
+  * [#2036](https://github.com/ember-power-addons/ember-power-select/pull/2036) Improve check for property in object (avoid exception with warp drive schemas) ([@mkszepp](https://github.com/mkszepp))
+  * [#2033](https://github.com/ember-power-addons/ember-power-select/pull/2033) Improve check for input in trigger ([@mkszepp](https://github.com/mkszepp))
+  * [#2024](https://github.com/ember-power-addons/ember-power-select/pull/2024) Improve check for input in trigger ([@mkszepp](https://github.com/mkszepp))
+  * [#2022](https://github.com/ember-power-addons/ember-power-select/pull/2022) Prevent closing select when search field is in trigger and cursor was moved with mouse click ([@mkszepp](https://github.com/mkszepp))
+  * [#1992](https://github.com/ember-power-addons/ember-power-select/pull/1992) fix: prevent custom component from poisoning T inference ([@johanrd](https://github.com/johanrd))
+  * [#1989](https://github.com/ember-power-addons/ember-power-select/pull/1989)  Add default type param T=unknown to PowerSelectOptionsComponent ([@johanrd](https://github.com/johanrd))
+  * [#1988](https://github.com/ember-power-addons/ember-power-select/pull/1988) Add `IsMultiple` to beforeOption component as parameter ([@mkszepp](https://github.com/mkszepp))
+  * [#1983](https://github.com/ember-power-addons/ember-power-select/pull/1983) Add `ember-concurrency/async-arrow-task-transform` into babel publish config ([@mkszepp](https://github.com/mkszepp))
+  * [#1966](https://github.com/ember-power-addons/ember-power-select/pull/1966) Fix Accessibility issue in label component (default should be `div` instead `label` tag) ([@mkszepp](https://github.com/mkszepp))
+
+#### :memo: Documentation
+* `ember-power-select`
+  * [#2049](https://github.com/ember-power-addons/ember-power-select/pull/2049) Remove v8.x examples in docs ([@mkszepp](https://github.com/mkszepp))
+  * [#1985](https://github.com/ember-power-addons/ember-power-select/pull/1985) Fix SCSS deprecations in docs ([@mkszepp](https://github.com/mkszepp))
+  * [#1973](https://github.com/ember-power-addons/ember-power-select/pull/1973) Fix migrate docs ([@mkszepp](https://github.com/mkszepp))
+
+#### :house: Internal
+* `ember-power-select`
+  * [#2050](https://github.com/ember-power-addons/ember-power-select/pull/2050) Change versioning-strategy for dependabot to increase ([@mkszepp](https://github.com/mkszepp))
+  * [#2048](https://github.com/ember-power-addons/ember-power-select/pull/2048) Add changelog from v8.12.2 ([@mkszepp](https://github.com/mkszepp))
+  * [#2039](https://github.com/ember-power-addons/ember-power-select/pull/2039) Migrate from release-it to release-plan ([@mkszepp](https://github.com/mkszepp))
+  * [#2037](https://github.com/ember-power-addons/ember-power-select/pull/2037) Update repo link ([@mkszepp](https://github.com/mkszepp))
+  * [#2035](https://github.com/ember-power-addons/ember-power-select/pull/2035) Update dependencies ([@mkszepp](https://github.com/mkszepp))
+  * [#2013](https://github.com/ember-power-addons/ember-power-select/pull/2013) Change styleSheet loading for shadow root tests ([@mkszepp](https://github.com/mkszepp))
+  * [#2011](https://github.com/ember-power-addons/ember-power-select/pull/2011) Update embroider ([@mkszepp](https://github.com/mkszepp))
+  * [#2009](https://github.com/ember-power-addons/ember-power-select/pull/2009) Remove ember-lifeline from test-app ([@mkszepp](https://github.com/mkszepp))
+  * [#2008](https://github.com/ember-power-addons/ember-power-select/pull/2008) Update dependencies ([@mkszepp](https://github.com/mkszepp))
+  * [#1987](https://github.com/ember-power-addons/ember-power-select/pull/1987) Update ember-basic-dropdown ([@mkszepp](https://github.com/mkszepp))
+  * [#1986](https://github.com/ember-power-addons/ember-power-select/pull/1986) Replace `tracked-built-ins` usages in tests ([@mkszepp](https://github.com/mkszepp))
+  * [#1984](https://github.com/ember-power-addons/ember-power-select/pull/1984) Update dependencies ([@mkszepp](https://github.com/mkszepp))
+  * [#1981](https://github.com/ember-power-addons/ember-power-select/pull/1981) Update ember-basic-dropdown ([@mkszepp](https://github.com/mkszepp))
+  * [#1980](https://github.com/ember-power-addons/ember-power-select/pull/1980) Add keywords to package.json ([@mkszepp](https://github.com/mkszepp))
+  * [#1979](https://github.com/ember-power-addons/ember-power-select/pull/1979) Fix some errors/warnings from package.json ([@mkszepp](https://github.com/mkszepp))
+  * [#1978](https://github.com/ember-power-addons/ember-power-select/pull/1978) Remove disabled eslint rules & fix source ([@mkszepp](https://github.com/mkszepp))
+  * [#1977](https://github.com/ember-power-addons/ember-power-select/pull/1977) Update dependencies ([@mkszepp](https://github.com/mkszepp))
+  * [#1975](https://github.com/ember-power-addons/ember-power-select/pull/1975) Remove ember-data / miragejs (unused) ([@mkszepp](https://github.com/mkszepp))
+  * [#1971](https://github.com/ember-power-addons/ember-power-select/pull/1971) Convert to new addon v2 blueprint ([@mkszepp](https://github.com/mkszepp))
+  * [#1969](https://github.com/ember-power-addons/ember-power-select/pull/1969) Remove `ember-assign-helper` dependency ([@mkszepp](https://github.com/mkszepp))
+  * [#1968](https://github.com/ember-power-addons/ember-power-select/pull/1968) Move to glint v2 ([@mkszepp](https://github.com/mkszepp))
+  * [#1967](https://github.com/ember-power-addons/ember-power-select/pull/1967) Convert test app to gts ([@mkszepp](https://github.com/mkszepp))
+
+#### Committers: 4
+- Arthur ([@c0rydoras](https://github.com/c0rydoras))
+- Gregory Malatino ([@malatin3](https://github.com/malatin3))
+- Johan Røed ([@johanrd](https://github.com/johanrd))
+- Markus Sanin ([@mkszepp](https://github.com/mkszepp))
+
 
 
 
