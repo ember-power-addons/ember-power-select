@@ -1,14 +1,5 @@
 // In your app.scss
 
-// ember-power-select v8.x
-// Define your variables first
-$ember-power-select-border-color: #64a5ed;
-$ember-power-select-border-radius: 0;
-
-// Then use the styles, which will use your variable
-@import "ember-power-select";
-
-// ember-power-select v9.x+
 // Define your variables first
 @use "ember-power-select/scss/variables.scss" with (
   $ember-power-select-border-color: #64a5ed,
