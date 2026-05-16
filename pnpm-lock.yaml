@@ -76,8 +76,8 @@ importers:
         specifier: ^1.7.7
         version: 1.7.7
       '@glint/tsserver-plugin':
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^2.4.3
+        version: 2.4.3(ember-source@6.12.0(@glimmer/component@2.1.1)(rsvp@4.8.5))
       '@rollup/plugin-babel':
         specifier: ^7.0.0
         version: 7.0.0(@babel/core@7.29.0)(rollup@4.60.4)
@@ -250,8 +250,8 @@ importers:
         specifier: ^1.7.7
         version: 1.7.7
       '@glint/tsserver-plugin':
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^2.4.3
+        version: 2.4.3(ember-source@6.12.0(@glimmer/component@2.1.1)(rsvp@4.8.5))
       '@rollup/plugin-babel':
         specifier: ^7.0.0
         version: 7.0.0(@babel/core@7.29.0)(rollup@4.60.4)
@@ -1190,11 +1190,21 @@ packages:
     peerDependencies:
       typescript: '>=5.6.0'
 
+  '@glint/ember-tsc@1.6.2':
+    resolution: {integrity: sha512-9RH0m6eBooBLXm972JNraG56ASPCFyaZlkxdIDtAQ7RVFWbkrJjaaXIk5F55mR497NWdQycgKKvWRFck6CFk2Q==}
+    hasBin: true
+    peerDependencies:
+      ember-source: '>=3.28.0'
+      typescript: '>=5.6.0'
+    peerDependenciesMeta:
+      ember-source:
+        optional: true
+
   '@glint/template@1.7.7':
     resolution: {integrity: sha512-jcPdQ3A6cXo5h9RBi0tK4/o5qNn7868Y8xpkwWQNPAd8xQKuRKmG9dGJwUycXvtqISzfrnL1p3MQr3hYN/Ua6Q==}
 
-  '@glint/tsserver-plugin@2.4.0':
-    resolution: {integrity: sha512-3HD8v9c2PvIR1dOCJfeilgIjLnSCiBeEgi6NEm14oa90bw0mu9LVB/YO8aCAGWw9A/CERnrV4HZdHqsr3rdySQ==}
+  '@glint/tsserver-plugin@2.4.3':
+    resolution: {integrity: sha512-uMxXGmmTRQkJCDmNdVQyEaSyJWUXYkbkyjIuybXqp5q/T3bUxgGcbVr8lV6QGx6psXipm8BpyWeYMvxjd/uE0Q==}
 
   '@handlebars/parser@2.2.2':
     resolution: {integrity: sha512-n/SZW+12rwikx/f8YcSv9JCi5p9vn1Bnts9ZtVvfErG4h0gbjHI1H1ZMhVUnaOC7yzFc6PtsCKIK8XeTnL90Gw==}
@@ -6675,8 +6685,24 @@ packages:
       '@volar/language-service':
         optional: true
 
+  volar-service-html@0.0.71:
+    resolution: {integrity: sha512-e8tHPhgQ7ooLfudAEIku+kgd9pWkq3SSz8RbnQDI1+Eb8wbenkLGHqoirLqz5ORLV6wIMr2Iv08RWBG5eOcgpw==}
+    peerDependencies:
+      '@volar/language-service': ~2.4.0
+    peerDependenciesMeta:
+      '@volar/language-service':
+        optional: true
+
   volar-service-typescript@0.0.70:
     resolution: {integrity: sha512-l46Bx4cokkUedTd74ojO5H/zqHZJ8SUuyZ0IB8JN4jfRqUM3bQFBHoOwlZCyZmOeO0A3RQNkMnFclxO4c++gsg==}
+    peerDependencies:
+      '@volar/language-service': ~2.4.0
+    peerDependenciesMeta:
+      '@volar/language-service':
+        optional: true
+
+  volar-service-typescript@0.0.71:
+    resolution: {integrity: sha512-yTtM/BVT6hoyEYnDtaCyAtNhdNeS/mhTTABlBOdw3NNiRBUin3IznFJpgfjer4c6RYopiPjjQjc9VFhxVl1mLw==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
     peerDependenciesMeta:
@@ -8117,28 +8143,6 @@ snapshots:
     dependencies:
       '@glimmer/interfaces': 0.94.6
 
-  '@glint/ember-tsc@1.5.0(typescript@5.9.3)':
-    dependencies:
-      '@glimmer/syntax': 0.95.0
-      '@glint/template': 1.7.7
-      '@volar/kit': 2.4.28(typescript@5.9.3)
-      '@volar/language-core': 2.4.28
-      '@volar/language-server': 2.4.28
-      '@volar/language-service': 2.4.28
-      '@volar/source-map': 2.4.28
-      '@volar/test-utils': 2.4.28
-      '@volar/typescript': 2.4.28
-      content-tag: 4.1.1
-      silent-error: 1.1.1
-      typescript: 5.9.3
-      volar-service-html: 0.0.70(@volar/language-service@2.4.28)
-      volar-service-typescript: 0.0.70(@volar/language-service@2.4.28)
-      vscode-languageserver-protocol: 3.17.5
-      vscode-languageserver-textdocument: 1.0.12
-      vscode-uri: 3.1.0
-    transitivePeerDependencies:
-      - supports-color
-
   '@glint/ember-tsc@1.5.0(typescript@6.0.3)':
     dependencies:
       '@glimmer/syntax': 0.95.0
@@ -8161,16 +8165,41 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@glint/ember-tsc@1.6.2(ember-source@6.12.0(@glimmer/component@2.1.1)(rsvp@4.8.5))(typescript@5.9.3)':
+    dependencies:
+      '@glimmer/syntax': 0.95.0
+      '@glint/template': 1.7.7
+      '@volar/kit': 2.4.28(typescript@5.9.3)
+      '@volar/language-core': 2.4.28
+      '@volar/language-server': 2.4.28
+      '@volar/language-service': 2.4.28
+      '@volar/source-map': 2.4.28
+      '@volar/test-utils': 2.4.28
+      '@volar/typescript': 2.4.28
+      content-tag: 4.2.0
+      silent-error: 1.1.1
+      typescript: 5.9.3
+      volar-service-html: 0.0.71(@volar/language-service@2.4.28)
+      volar-service-typescript: 0.0.71(@volar/language-service@2.4.28)
+      vscode-languageserver-protocol: 3.17.5
+      vscode-languageserver-textdocument: 1.0.12
+      vscode-uri: 3.1.0
+    optionalDependencies:
+      ember-source: 6.12.0(@glimmer/component@2.1.1)(rsvp@4.8.5)
+    transitivePeerDependencies:
+      - supports-color
+
   '@glint/template@1.7.7': {}
 
-  '@glint/tsserver-plugin@2.4.0':
+  '@glint/tsserver-plugin@2.4.3(ember-source@6.12.0(@glimmer/component@2.1.1)(rsvp@4.8.5))':
     dependencies:
-      '@glint/ember-tsc': 1.5.0(typescript@5.9.3)
+      '@glint/ember-tsc': 1.6.2(ember-source@6.12.0(@glimmer/component@2.1.1)(rsvp@4.8.5))(typescript@5.9.3)
       '@volar/language-core': 2.4.28
       '@volar/typescript': 2.4.28
       jiti: 2.6.1
       typescript: 5.9.3
     transitivePeerDependencies:
+      - ember-source
       - supports-color
 
   '@handlebars/parser@2.2.2': {}
@@ -14308,7 +14337,26 @@ snapshots:
     optionalDependencies:
       '@volar/language-service': 2.4.28
 
+  volar-service-html@0.0.71(@volar/language-service@2.4.28):
+    dependencies:
+      vscode-html-languageservice: 5.6.2
+      vscode-languageserver-textdocument: 1.0.12
+      vscode-uri: 3.1.0
+    optionalDependencies:
+      '@volar/language-service': 2.4.28
+
   volar-service-typescript@0.0.70(@volar/language-service@2.4.28):
+    dependencies:
+      path-browserify: 1.0.1
+      semver: 7.8.0
+      typescript-auto-import-cache: 0.3.6
+      vscode-languageserver-textdocument: 1.0.12
+      vscode-nls: 5.2.0
+      vscode-uri: 3.1.0
+    optionalDependencies:
+      '@volar/language-service': 2.4.28
+
+  volar-service-typescript@0.0.71(@volar/language-service@2.4.28):
     dependencies:
       path-browserify: 1.0.1
       semver: 7.8.0
