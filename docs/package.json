@@ -97,7 +97,7 @@
     "qunit-dom": "^3.5.1",
     "rsvp": "^4.8.5",
     "sass-embedded": "^1.99.0",
-    "shiki": "^4.0.2",
+    "shiki": "^4.1.0",
     "stylelint": "^17.11.1",
     "stylelint-config-standard": "^40.0.0",
     "testem": "^3.20.0",
