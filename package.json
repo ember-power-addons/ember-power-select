@@ -131,7 +131,7 @@
     "rollup": "^4.60.4",
     "rollup-plugin-sass": "^1.15.3",
     "rsvp": "^4.8.5",
-    "sass": "^1.99.0",
+    "sass": "^1.100.0",
     "sass-embedded": "^1.99.0",
     "testem": "^3.20.0",
     "typescript": "~6.0.3",
