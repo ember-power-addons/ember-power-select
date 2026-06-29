@@ -744,7 +744,7 @@ export default class PowerSelect<
       e.stopImmediatePropagation();
       return;
     }
-    if (e.key.length === 1 && /^[a-z0-9]$/i.test(e.key)) {
+    if (e.key?.length === 1 && /^[a-z0-9]$/i.test(e.key)) {
       // Keys 0-9, a-z or numpad keys
       void this.triggerTypingTask.perform(e);
     } else if (e.key === ' ') {
@@ -1238,7 +1238,7 @@ export default class PowerSelect<
     let term;
 
     // Check if user intends to cycle through results. _repeatingChar can only be the first character.
-    const c = e.key.length === 1 ? e.key : '';
+    const c = e.key?.length === 1 ? e.key : '';
     if (c === this._repeatingChar) {
       term = c;
     } else {
