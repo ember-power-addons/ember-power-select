@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2026-06-29)
+
+* ember-power-select 9.0.1 (patch)
+
+#### :bug: Bug Fix
+* `ember-power-select`
+  * [#2079](https://github.com/ember-power-addons/ember-power-select/pull/2079) Fix error `TypeError: undefined is not an object (evaluating 'e.key.length')` ([@mkszepp](https://github.com/mkszepp))
+
+#### Committers: 1
+- Markus Sanin ([@mkszepp](https://github.com/mkszepp))
+
 ## Release (2026-05-15)
 
 * ember-power-select 9.0.0 (major)
