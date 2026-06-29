@@ -1,0 +1,174 @@
+{
+  "name": "ember-power-select",
+  "version": "9.0.1",
+  "description": "The extensible select component built for ember",
+  "keywords": [
+    "ember",
+    "ember-addon",
+    "combobox",
+    "form",
+    "multiselect",
+    "power-select",
+    "select",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ember-power-addons/ember-power-select.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Miguel Camba",
+    "email": "miguel.camba@gmail.com"
+  },
+  "imports": {
+    "#src/*": "./src/*"
+  },
+  "sass": "./ember-power-select.scss",
+  "style": "./dist/vendor/ember-power-select.css",
+  "exports": {
+    ".": {
+      "types": "./declarations/index.d.ts",
+      "sass": "./ember-power-select.scss",
+      "default": "./dist/index.js"
+    },
+    "./addon-main.js": "./addon-main.cjs",
+    "./*.css": "./dist/*.css",
+    "./*": {
+      "types": "./declarations/*.d.ts",
+      "default": "./dist/*.js"
+    },
+    "./ember-power-select.less": "./ember-power-select.less",
+    "./ember-power-select.scss": "./ember-power-select.scss",
+    "./_index.scss": "./_index.scss",
+    "./less/base.less": "./less/base.less",
+    "./scss/base.scss": "./scss/base.scss",
+    "./less/variables.less": "./less/variables.less",
+    "./scss/variables.scss": "./scss/variables.scss",
+    "./vendor/*": "./dist/vendor/*"
+  },
+  "files": [
+    "_index.scss",
+    "addon-main.cjs",
+    "declarations",
+    "dist",
+    "ember-power-select.less",
+    "ember-power-select.scss",
+    "less",
+    "scss"
+  ],
+  "scripts": {
+    "build": "rollup --config",
+    "format": "prettier . --cache --write",
+    "lint": "concurrently \"pnpm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
+    "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\" --prefixColors auto && pnpm run format",
+    "lint:format": "prettier . --cache --check",
+    "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
+    "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "lint:publish": "pnpm build && publint run --level error",
+    "lint:types": "ember-tsc --noEmit",
+    "start": "vite dev",
+    "test": "vite build --mode=development --out-dir dist-tests && testem --file testem.cjs ci --port 0"
+  },
+  "dependencies": {
+    "@embroider/addon-shim": "^1.10.2",
+    "decorator-transforms": "^2.3.2",
+    "ember-element-helper": "^0.8.8",
+    "ember-modifier": "^4.3.0",
+    "ember-truth-helpers": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/eslint-parser": "^7.28.6",
+    "@babel/plugin-transform-typescript": "^7.28.6",
+    "@babel/runtime": "^7.29.2",
+    "@ember/app-tsconfig": "^2.0.0",
+    "@ember/library-tsconfig": "^2.0.0",
+    "@ember/test-helpers": "^5.4.2",
+    "@ember/test-waiters": "^4.1.1",
+    "@embroider/addon-dev": "^8.3.0",
+    "@embroider/compat": "^4.1.18",
+    "@embroider/core": "^4.4.7",
+    "@embroider/macros": "^1.20.2",
+    "@embroider/vite": "^1.7.2",
+    "@eslint/js": "^9.39.2",
+    "@glimmer/component": "^2.1.1",
+    "@glint/ember-tsc": "^1.5.0",
+    "@glint/template": "^1.7.7",
+    "@glint/tsserver-plugin": "^2.4.0",
+    "@rollup/plugin-babel": "^7.0.0",
+    "@types/qunit": "^2.19.14",
+    "@types/rsvp": "^4.0.9",
+    "babel-plugin-ember-template-compilation": "^4.0.0",
+    "concurrently": "^9.2.1",
+    "dom-element-descriptors": "^0.5.1",
+    "ember-basic-dropdown": "^9.0.0",
+    "ember-concurrency": "^5.2.0",
+    "ember-modifier": "^4.3.0",
+    "ember-page-title": "^9.0.3",
+    "ember-qunit": "^9.0.4",
+    "ember-route-template": "^1.0.3",
+    "ember-source": "^6.12.0",
+    "ember-strict-application-resolver": "^0.1.1",
+    "ember-template-lint": "^7.9.3",
+    "ember-truth-helpers": "^5.0.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-ember": "^13.2.1",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "^17.24.0",
+    "globals": "^17.6.0",
+    "postcss": "^8.5.14",
+    "prettier": "^3.8.3",
+    "prettier-plugin-ember-template-tag": "^2.1.6",
+    "publint": "^0.3.21",
+    "qunit": "^2.25.0",
+    "qunit-dom": "^3.5.1",
+    "release-plan": "^0.18.0",
+    "rollup": "^4.60.4",
+    "rollup-plugin-sass": "^1.15.3",
+    "rsvp": "^4.8.5",
+    "sass": "^1.99.0",
+    "sass-embedded": "^1.99.0",
+    "testem": "^3.20.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.59.3",
+    "vite": "^8.0.13"
+  },
+  "peerDependencies": {
+    "@ember/test-helpers": "^5.0.0",
+    "@glimmer/component": "^2.0.0",
+    "ember-basic-dropdown": "^9.0.0",
+    "ember-concurrency": "^5.1.0"
+  },
+  "packageManager": "pnpm@10.33.4",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "ember": {
+    "edition": "octane"
+  },
+  "ember-addon": {
+    "version": 2,
+    "type": "addon",
+    "main": "addon-main.cjs",
+    "app-js": {
+      "./components/power-select.js": "./dist/_app_/components/power-select.js",
+      "./components/power-select/before-options.js": "./dist/_app_/components/power-select/before-options.js",
+      "./components/power-select/input.js": "./dist/_app_/components/power-select/input.js",
+      "./components/power-select/label.js": "./dist/_app_/components/power-select/label.js",
+      "./components/power-select/no-matches-message.js": "./dist/_app_/components/power-select/no-matches-message.js",
+      "./components/power-select/options.js": "./dist/_app_/components/power-select/options.js",
+      "./components/power-select/placeholder.js": "./dist/_app_/components/power-select/placeholder.js",
+      "./components/power-select/power-select-group.js": "./dist/_app_/components/power-select/power-select-group.js",
+      "./components/power-select/search-message.js": "./dist/_app_/components/power-select/search-message.js",
+      "./components/power-select/trigger.js": "./dist/_app_/components/power-select/trigger.js",
+      "./helpers/ember-power-select-is-array.js": "./dist/_app_/helpers/ember-power-select-is-array.js",
+      "./helpers/ember-power-select-is-equal.js": "./dist/_app_/helpers/ember-power-select-is-equal.js",
+      "./helpers/ember-power-select-is-group.js": "./dist/_app_/helpers/ember-power-select-is-group.js",
+      "./helpers/ember-power-select-is-selected-present.js": "./dist/_app_/helpers/ember-power-select-is-selected-present.js"
+    }
+  }
+}
