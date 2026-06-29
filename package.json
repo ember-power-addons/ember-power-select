@@ -111,7 +111,7 @@
     "ember-page-title": "^9.0.3",
     "ember-qunit": "^9.0.4",
     "ember-route-template": "^1.0.3",
-    "ember-source": "^6.12.0",
+    "ember-source": "^7.0.0",
     "ember-strict-application-resolver": "^0.1.1",
     "ember-template-lint": "^7.9.3",
     "ember-truth-helpers": "^5.0.0",
