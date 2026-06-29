@@ -105,7 +105,7 @@ export default class PowerSelectInput<
             this.args.select.actions.open(e);
           }
         }
-      } else if (e.key.length === 1 && /[a-z0-9 ]/i.test(e.key)) {
+      } else if (e.key?.length === 1 && /[a-z0-9 ]/i.test(e.key)) {
         // Keys 0-9, a-z or SPACE
         e.stopPropagation();
       }
