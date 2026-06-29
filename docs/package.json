@@ -103,6 +103,6 @@
     "testem": "^3.20.0",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.3",
-    "vite": "^8.0.13"
+    "vite": "^8.0.16"
   }
 }
