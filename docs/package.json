@@ -68,7 +68,7 @@
     "babel-plugin-ember-template-compilation": "^4.0.1",
     "concurrently": "^9.2.4",
     "decorator-transforms": "^2.4.0",
-    "ember-basic-dropdown": "^9.0.0",
+    "ember-basic-dropdown": "^9.0.1",
     "ember-cli": "~7.3.0",
     "ember-cli-babel": "^8.3.2",
     "ember-cli-deprecation-workflow": "^4.0.1",

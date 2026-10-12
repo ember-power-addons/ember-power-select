@@ -16,3 +16,6 @@ resolvePeersFromWorkspaceRoot: false
 packages:
   - .
   - docs
+
+minimumReleaseAgeExclude:
+  - ember-basic-dropdown@9.0.1
