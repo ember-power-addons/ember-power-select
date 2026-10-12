@@ -11,3 +11,6 @@ resolvePeersFromWorkspaceRoot: false
 packages:
   - .
   - docs
+
+allowBuilds:
+  '@parcel/watcher': true
