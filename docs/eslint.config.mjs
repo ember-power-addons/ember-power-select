@@ -81,7 +81,15 @@ export default defineConfig([
         ...globals.browser,
       },
     },
-    extends: [...ts.configs.recommendedTypeChecked, ember.configs.gts],
+    extends: [
+      ...ts.configs.recommendedTypeChecked,
+      // https://github.com/ember-cli/ember-addon-blueprint/issues/119
+      {
+        ...ts.configs.eslintRecommended,
+        files: undefined,
+      },
+      ember.configs.gts,
+    ],
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unsafe-assignment': 'off',

@@ -36,8 +36,7 @@ interface NumbersContext extends TestContext {
   searchFn: (term: string) => string[] | Promise<string[]>;
   endsWithMatcher: MatcherFn<string>;
   defaultHighlighted?:
-    | string
-    | ((params: DefaultHighlightedParams<string>) => string);
+    string | ((params: DefaultHighlightedParams<string>) => string);
   foo: () => void;
   onChange: (
     selection: MultipleSelected<string>,

@@ -348,19 +348,19 @@ importers:
   docs:
     devDependencies:
       '@babel/core':
-        specifier: ^7.29.0
+        specifier: ^7.29.7
         version: 7.29.7(supports-color@10.2.2)
       '@babel/eslint-parser':
-        specifier: ^7.28.6
+        specifier: ^7.29.7
         version: 7.29.9(@babel/core@7.29.7(supports-color@10.2.2))(eslint@9.39.5(jiti@2.7.0)(supports-color@10.2.2))
       '@babel/plugin-transform-runtime':
-        specifier: ^7.29.0
+        specifier: ^7.29.7
         version: 7.29.7(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@babel/plugin-transform-typescript':
-        specifier: ^7.28.6
+        specifier: ^7.29.7
         version: 7.29.9(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@babel/runtime':
-        specifier: ^7.29.2
+        specifier: ^7.29.7
         version: 7.29.10
       '@ember/app-tsconfig':
         specifier: ^2.1.0
@@ -396,20 +396,20 @@ importers:
         specifier: ^1.7.15
         version: 1.7.15(@babel/core@7.29.7(supports-color@10.2.2))(@embroider/core@4.6.9(@glint/template@1.9.0)(supports-color@10.2.2))(@glint/template@1.9.0)(supports-color@10.2.2)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0)(sass-embedded@1.105.1)(sass@1.105.1)(terser@5.51.2)(yaml@2.9.1))
       '@eslint/js':
-        specifier: ^9.39.4
+        specifier: ^9.39.5
         version: 9.39.5
       '@glimmer/component':
         specifier: ^2.1.1
         version: 2.1.1(supports-color@10.2.2)
       '@glint/ember-tsc':
         specifier: ^1.11.6
-        version: 1.11.6(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
+        version: 1.11.6(ember-source@7.3.0(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       '@glint/template':
         specifier: ^1.9.0
         version: 1.9.0
       '@glint/tsserver-plugin':
         specifier: ^2.7.9
-        version: 2.7.9(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
+        version: 2.7.9(ember-source@7.3.0(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2))(supports-color@10.2.2)
       '@rollup/plugin-babel':
         specifier: ^7.1.0
         version: 7.1.0(@babel/core@7.29.7(supports-color@10.2.2))(rollup@4.64.5)(supports-color@10.2.2)
@@ -423,7 +423,7 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1
       concurrently:
-        specifier: ^9.2.1
+        specifier: ^9.2.4
         version: 9.2.5
       decorator-transforms:
         specifier: ^2.4.0
@@ -432,8 +432,8 @@ importers:
         specifier: ^9.0.0
         version: 9.0.0(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.7.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@embroider/macros@1.21.3(@babel/core@7.29.7(supports-color@10.2.2))(@glint/template@1.9.0)(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2)
       ember-cli:
-        specifier: ~6.12.0
-        version: 6.12.0(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@26.6.5)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.10)(supports-color@10.2.2)(underscore@1.13.8)
+        specifier: ~7.3.0
+        version: 7.3.0(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@26.6.5)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.10)(supports-color@10.2.2)(underscore@1.13.8)
       ember-cli-babel:
         specifier: ^8.3.2
         version: 8.3.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -448,7 +448,7 @@ importers:
         version: 7.0.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       ember-load-initializers:
         specifier: ^3.0.1
-        version: 3.0.1(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))
+        version: 3.0.1(ember-source@7.3.0(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2))
       ember-modifier:
         specifier: ^4.3.0
         version: 4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -465,8 +465,8 @@ importers:
         specifier: ^13.2.0
         version: 13.2.0
       ember-source:
-        specifier: ~6.12.0
-        version: 6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2)
+        specifier: ~7.3.0
+        version: 7.3.0(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2)
       ember-source-channel-url:
         specifier: ^3.0.0
         version: 3.0.0
@@ -477,7 +477,7 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0(supports-color@10.2.2)
       eslint:
-        specifier: ^9.39.4
+        specifier: ^9.39.5
         version: 9.39.5(jiti@2.7.0)(supports-color@10.2.2)
       eslint-config-prettier:
         specifier: ^10.1.8
@@ -1221,26 +1221,23 @@ packages:
   '@ember-data/rfc395-data@0.0.4':
     resolution: {integrity: sha512-tGRdvgC9/QMQSuSuJV45xoyhI0Pzjm7A9o/MVVA3HakXIImJbbzx/k/6dO9CUEQXIyS2y0fW6C1XaYOG7rY0FQ==}
 
-  '@ember-tooling/blueprint-blueprint@0.2.1':
-    resolution: {integrity: sha512-eZ5qicL3gfFFbmzLaSiEWPSmoRUJGnqg+dQmU0R81vv+0Ni7W/cS7MXx1l4HpN9B7Yg4M9GgdQTkeJnb6abQug==}
+  '@ember-tooling/blueprint-blueprint@0.3.0':
+    resolution: {integrity: sha512-9mwMGda8OC9oEJbvxnXX1DT5ZFR6YQumfmPwV+uUJCbGsaUkgr1UeTkcpgdL+Izvb4kjF/+BWcOtnaSvmR7Yig==}
 
-  '@ember-tooling/blueprint-model@0.5.0':
-    resolution: {integrity: sha512-2zAebSmmzpUO2wt6EyfX5TlcmvB9cTkteuZ3QhPmXLMthUpU5nUifcz3hlYcXPK7WM0HdO9qL4GdGQCoxhzaGg==}
+  '@ember-tooling/blueprint-model@0.7.1':
+    resolution: {integrity: sha512-UqibAm7MWkSNdAnBfq2i36jaQpUjCvhdcRFiT+oWWXer5WgaoYFVJ+kHs5Ux2i42kCWjsztercepOEm+BhOyQw==}
 
-  '@ember-tooling/classic-build-addon-blueprint@6.12.0':
-    resolution: {integrity: sha512-2sf34DIJO6RnpzcQy0A4RmGNwukE4vihHv/b9loDZzV4lnFNOTyHua09S5ai4szO7Iv91Q2OPEgOBo09yG+7SQ==}
+  '@ember-tooling/classic-build-addon-blueprint@7.3.0':
+    resolution: {integrity: sha512-czapzVozpPlITjnMDEBUgX1zP0iiO2drmEnQmK2Z3fC5aW0mW7zJVAFRFsACfi46pL6Rhujvn6N0nr4acQIHaw==}
 
-  '@ember-tooling/classic-build-app-blueprint@6.12.0':
-    resolution: {integrity: sha512-dU6ig33VN+SA2yrkyJGdCMzJ6hB0fRVXpcSpnmWl2RI7TQCxlQsYR162BkMUdRN6ZWbycalDjWGW0r8KrIxzgA==}
+  '@ember-tooling/classic-build-app-blueprint@7.3.0':
+    resolution: {integrity: sha512-b8yI/kWqmxWKiZUfObL0hsJu61wUGXQAgmIr4HnerW2Uyge/Jta7py/cNVa+GLDl/xOWjZJltIr1EqIyoF6Sng==}
 
-  '@ember/app-blueprint@6.12.3':
-    resolution: {integrity: sha512-Bf950zkgbKn6/pMunLTk/mkqInHU8CaNTvjR/umX1CjUNFRPTZPQb19OhstlBYTl+99jUN3feZ0xfuOt1t6c7A==}
+  '@ember/app-blueprint@7.3.1':
+    resolution: {integrity: sha512-wCZ5pkNvSOU6ZBofSR6xtXs+vL5Z8wQm49qn6VmATxiPhc5IYHYqX5FdLLXVWOe8iQQ4XVxEL6w1iTc/f2hE9Q==}
 
   '@ember/app-tsconfig@2.1.0':
     resolution: {integrity: sha512-s44smHIQVM2Ews1+bIAwqibVF6OHsw3/G14xV0DA0/GchVolqTG/Kfzqn/jZnU4zlXPEndJdTpn+PFEsuFs7mg==}
-
-  '@ember/edition-utils@1.2.0':
-    resolution: {integrity: sha512-VmVq/8saCaPdesQmftPqbFtxJWrzxNGSQ+e8x8LLe3Hjm36pJ04Q8LeORGZkAeOhldoUX9seLGmSaHeXkIqoog==}
 
   '@ember/library-tsconfig@3.0.0':
     resolution: {integrity: sha512-2o4D+YB0efPe8HJJlaC303qx8dWH2khcKe5ctp4fMCfqP9EibNnyWScNb2MkaFjEqrdRXqTVK+lGHXOoM70omw==}
@@ -2706,8 +2703,8 @@ packages:
   babel-plugin-syntax-dynamic-import@6.18.0:
     resolution: {integrity: sha512-MioUE+LfjCEz65Wf7Z/Rm4XCP5k2c+TbMd2Z2JKc7U9uwjBhAfNPE48KC4GTGKhppMeYVepwDBNO/nGY6NYHBA==}
 
-  babel-remove-types@1.1.0:
-    resolution: {integrity: sha512-2wszSY8Pll8uefPFrJcOb2cP67epjpDnLADtzgQ9u1WgFJmBdJAkx5MGISjFCg/56Q8YgzA/o9RBMpScjhf+dw==}
+  babel-remove-types@2.0.0:
+    resolution: {integrity: sha512-HHLQOs/c2h//gl7f5VDa/r1Nd2gIk0kgzC1v01BSCEK5IJu1Zc4/fUj5uYCzC8Q0NWiucCgWKr9a43qmHkY6oA==}
 
   babylon@6.18.0:
     resolution: {integrity: sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ==}
@@ -3095,9 +3092,9 @@ packages:
   config-chain@1.1.13:
     resolution: {integrity: sha512-qj+f8APARXHrM0hraqXYb2/bOVSV4PvJQlNZ/DVj0QrmNM2q2euizkeuVckQ57J+W0mRH6Hvi+k50M4Jul2VRQ==}
 
-  configstore@7.1.0:
-    resolution: {integrity: sha512-N4oog6YJWbR9kGyXvS7jEykLDXIE2C0ILYqNBZBp9iwiJpoCBWYsuAdW6PPFn6w06jjnC+3JstVvWHO4cZqvRg==}
-    engines: {node: '>=18'}
+  configstore@8.0.0:
+    resolution: {integrity: sha512-U51WPZg+o6FDFhBCV6yYFEspGMCoHvCgJSGFw9AwsW2u75gYBPoDlYca5XfDs4TdMUu3/y0R6FFdvvgyH31mKQ==}
+    engines: {node: '>=20'}
 
   connect@3.7.0:
     resolution: {integrity: sha512-ZqRXc+tZukToSNmh5C2iWMSoV3X1YUcPbqEM4DkEG5tNQXrQUZCNVGGv3IuicnkMtPfGf3Xtp8WCXs295iQ1pQ==}
@@ -3449,10 +3446,6 @@ packages:
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
 
-  diff@7.0.0:
-    resolution: {integrity: sha512-PJWHUb1RFevKCwaFA9RlG5tCd+FO5iRh9A8HEtkmBH2Li03iJriB6m6JIN4rGz3K3JLawI7/veA1xzRKP6ISBw==}
-    engines: {node: '>=0.3.1'}
-
   diff@8.0.4:
     resolution: {integrity: sha512-DPi0FmjiSU5EvQV0++GFDOJ9ASQUVFh5kD+OzOnYdi7n3Wpm9hWWGfB/O2blfHcMVTL5WkQXSnRiK9makhrcnw==}
     engines: {node: '>=0.3.1'}
@@ -3467,9 +3460,9 @@ packages:
   dot-case@3.0.4:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
 
-  dot-prop@9.0.0:
-    resolution: {integrity: sha512-1gxPBJpI/pcjQhKgIU91II6Wkay+dLcN3M6rf2uwP8hRur3HtQXjVrdAK3sjC0piaEuxzMwjXChcETiJl47lAQ==}
-    engines: {node: '>=18'}
+  dot-prop@10.2.0:
+    resolution: {integrity: sha512-BTJ9aZYL3vCfZlZOBLy9v8TUqWGQ0pzFnygKwFZt5udj6viBoFIBviKPUoZLDCPn1FoXffv6McQFDenrm5Krfw==}
+    engines: {node: '>=20'}
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -3548,8 +3541,8 @@ packages:
     resolution: {integrity: sha512-rk7GY+FmLn/2e22HsZs0Ycrz8HQ1W3Fv+2TFOuEFW9optnDXDgkntPBIl6gact/LHsfBM5RKbM3dHsIIeLgl0Q==}
     engines: {node: 10.* || >= 12.*}
 
-  ember-cli@6.12.0:
-    resolution: {integrity: sha512-DDFTHdDofuRCZnu5FO79patRi1W4ndKFLcgb0MsspC+jyS9hgxDepBBFuV6daIjaTq5RvWdZRf5tjQ141VmcTw==}
+  ember-cli@7.3.0:
+    resolution: {integrity: sha512-FZX9IoFioIn6V86t2TwbNtcr+TyzYoSf+dMR6tA/tFCePDJtIhnrMOChnYrgsSbuTecwSP3vivjHfrezrQHOOA==}
     engines: {node: '>= 20.19.0'}
     hasBin: true
 
@@ -3623,12 +3616,6 @@ packages:
     resolution: {integrity: sha512-vF/8BraOc66ZxIDo3VuNP7iiDrnXEINclJgSJmqwAAEpg84Zb1DHPI22XTXSDA+E8fW5btPUxu65c3ZXi8AQFA==}
     engines: {node: 10.* || 12.* || >= 14}
     hasBin: true
-
-  ember-source@6.12.0:
-    resolution: {integrity: sha512-cApfEKxltl2VWt0o24XISsdkpyqqtT8wG0/EWokjeyqBPRCOIej2PMzRkLAu3A5AWpuWoJ//yq04mDix7axA7w==}
-    engines: {node: '>= 20.19'}
-    peerDependencies:
-      '@glimmer/component': '>= 1.1.2'
 
   ember-source@7.3.0:
     resolution: {integrity: sha512-N6KJ02uztRAzMWo5ZjSNW7qDRVRaw5+rBMUtcwYaGOExQmIp1X82243Mk8RC3RfZuugqjnRZ5u2QQeSHXMJSrg==}
@@ -4681,6 +4668,10 @@ packages:
   is-regex@1.2.1:
     resolution: {integrity: sha512-MjYsKHO5O7mCsmRGxWcLWheFqN9DJ/2TmngvjKXihe6efViPqc274+Fx/4fYj/r03+ESvBdTXK0V6tA3rgez1g==}
     engines: {node: '>= 0.4'}
+
+  is-safe-filename@0.1.1:
+    resolution: {integrity: sha512-4SrR7AdnY11LHfDKTZY1u6Ga3RuxZdl3YKWWShO5iyuG5h8QS4GD2tOb04peBJ5I7pXbR+CGBNEhTcwK+FzN3g==}
+    engines: {node: '>=20'}
 
   is-set@2.0.3:
     resolution: {integrity: sha512-iPAjerrse27/ygGLxw+EBR9agv9Y6uLeYVJMu+QNCoouJ1/1ri0mGrcWpfCqFZuzzx3WjtwxG098X+n4OuRkPg==}
@@ -5932,13 +5923,6 @@ packages:
     resolution: {integrity: sha512-nLTrUKm2UyiL7rlhapu/Zl45FwNgkZGaCpZbIHajDYgwlJCOzLSk+cIPAnsEqV955GjILJnKbdQC1nVPz+gAYQ==}
     engines: {node: '>= 18'}
 
-  router_js@8.0.6:
-    resolution: {integrity: sha512-AjGxRDIpTGoAG8admFmvP/cxn1AlwwuosCclMU4R5oGHGt7ER0XtB3l9O04ToBDdPe4ivM/YcLopgBEpJssJ/Q==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      route-recognizer: ^0.3.4
-      rsvp: ^4.8.5
-
   rrweb-cssom@0.7.1:
     resolution: {integrity: sha512-TrEMa7JGdVm0UThDJSx7ddw5nVm3UJS9o9CCIZ72B1vSyEZoziDqBYP3XIoi/12lKrJR8rE3jeFHMok2F/Mnsg==}
 
@@ -6136,6 +6120,9 @@ packages:
   saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
     engines: {node: '>=v12.22.7'}
+
+  semver-deprecate@1.1.0:
+    resolution: {integrity: sha512-5AcYPbRIw9vs80YkyRxmm3Lbe88STkwNIpTKKX0Kxyy/T0yR05BTZ6JhV9B5pjTyc81SjztcFPY93kDPRFwlyA==}
 
   semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
@@ -6488,6 +6475,10 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
+  tagged-tag@1.0.0:
+    resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
+    engines: {node: '>=20'}
+
   tap-parser@18.3.4:
     resolution: {integrity: sha512-CiqzdpWn2CvONcWp7UNMF9/rCPJwCz0es+qykkgJruu1Y/rAS8A5MEQujmjx9NErfst3dGiZJU3lDS2jBsgbPA==}
     engines: {node: 20 || >=22}
@@ -6622,6 +6613,10 @@ packages:
   type-fest@4.41.0:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
+
+  type-fest@5.10.0:
+    resolution: {integrity: sha512-NoSdpq/WEiAg5sjmBkmV/hfxv6HJH4NqPNrqjtSO5CwRmpsDfaf4begxW34KdJykH/l1yHtwBWQkCRdoXO8mPA==}
+    engines: {node: '>=20'}
 
   type-is@2.1.0:
     resolution: {integrity: sha512-faYHw0anBbc/kWF3zFTEnxSFOAGUX9GFbOBthvDdLsIlEoWOFOtS0zgCiQYwIskL9iGXZL3kAXD8OoZ4GmMATA==}
@@ -7959,23 +7954,35 @@ snapshots:
 
   '@ember-data/rfc395-data@0.0.4': {}
 
-  '@ember-tooling/blueprint-blueprint@0.2.1': {}
+  '@ember-tooling/blueprint-blueprint@0.3.0': {}
 
-  '@ember-tooling/blueprint-model@0.5.0(supports-color@10.2.2)':
+  '@ember-tooling/blueprint-model@0.7.1(supports-color@10.2.2)':
     dependencies:
-      chalk: 4.1.2
-      diff: 7.0.0
+      babel-remove-types: 2.0.0(supports-color@10.2.2)
+      chalk: 5.6.2
+      content-tag: 4.2.1
+      core-object: 3.1.5
+      diff: 8.0.4
+      ember-cli-normalize-entity-name: 1.0.0(supports-color@10.2.2)
+      ember-cli-string-utils: 1.1.0
+      fs-extra: 11.4.1
+      heimdalljs-logger: 0.1.10(supports-color@10.2.2)
+      inflection: 3.0.2
       isbinaryfile: 5.0.7
       lodash: 4.18.1
+      markdown-it: 14.3.2
+      markdown-it-terminal: 0.4.0(markdown-it@14.3.2)
+      minimatch: 10.2.6
       promise.hash.helper: 1.0.8
       quick-temp: 0.1.9
       silent-error: 1.1.1(supports-color@10.2.2)
+      walk-sync: 4.0.2
     transitivePeerDependencies:
       - supports-color
 
-  '@ember-tooling/classic-build-addon-blueprint@6.12.0(supports-color@10.2.2)':
+  '@ember-tooling/classic-build-addon-blueprint@7.3.0(supports-color@10.2.2)':
     dependencies:
-      '@ember-tooling/blueprint-model': 0.5.0(supports-color@10.2.2)
+      '@ember-tooling/blueprint-model': 0.7.1(supports-color@10.2.2)
       chalk: 5.6.2
       ember-cli-normalize-entity-name: 1.0.0(supports-color@10.2.2)
       ember-cli-string-utils: 1.1.0
@@ -7987,26 +7994,22 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember-tooling/classic-build-app-blueprint@6.12.0(supports-color@10.2.2)':
+  '@ember-tooling/classic-build-app-blueprint@7.3.0(supports-color@10.2.2)':
     dependencies:
-      '@ember-tooling/blueprint-model': 0.5.0(supports-color@10.2.2)
+      '@ember-tooling/blueprint-model': 0.7.1(supports-color@10.2.2)
       chalk: 5.6.2
       ember-cli-string-utils: 1.1.0
     transitivePeerDependencies:
       - supports-color
 
-  '@ember/app-blueprint@6.12.3':
+  '@ember/app-blueprint@7.3.1':
     dependencies:
-      chalk: 4.1.2
       ejs: 3.1.10
       ember-cli-string-utils: 1.1.0
       lodash: 4.18.1
-      sort-package-json: 3.7.1
-      walk-sync: 3.0.0
+      walk-sync: 4.0.2
 
   '@ember/app-tsconfig@2.1.0': {}
-
-  '@ember/edition-utils@1.2.0': {}
 
   '@ember/library-tsconfig@3.0.0': {}
 
@@ -8333,56 +8336,6 @@ snapshots:
     dependencies:
       '@glimmer/interfaces': 0.94.6
 
-  '@glint/ember-tsc@1.11.6(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
-    dependencies:
-      '@glimmer/syntax': 0.95.0
-      '@glint/template': 1.9.0
-      '@volar/kit': 2.4.28(typescript@5.9.3)
-      '@volar/language-core': 2.4.28
-      '@volar/language-server': 2.4.28(typescript@5.9.3)
-      '@volar/language-service': 2.4.28(typescript@5.9.3)
-      '@volar/source-map': 2.4.28
-      '@volar/test-utils': 2.4.28(typescript@5.9.3)
-      '@volar/typescript': 2.4.28(typescript@5.9.3)
-      content-tag: 4.2.1
-      ember-estree: 0.8.1
-      silent-error: 1.1.1(supports-color@10.2.2)
-      typescript: 5.9.3
-      volar-service-html: 0.0.71(@volar/language-service@2.4.28(typescript@5.9.3))
-      volar-service-typescript: 0.0.71(@volar/language-service@2.4.28(typescript@5.9.3))(typescript@5.9.3)
-      vscode-languageserver-protocol: 3.18.4
-      vscode-languageserver-textdocument: 1.0.15
-      vscode-uri: 3.2.0
-    optionalDependencies:
-      ember-source: 6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2)
-    transitivePeerDependencies:
-      - supports-color
-
-  '@glint/ember-tsc@1.11.6(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)':
-    dependencies:
-      '@glimmer/syntax': 0.95.0
-      '@glint/template': 1.9.0
-      '@volar/kit': 2.4.28(typescript@6.0.3)
-      '@volar/language-core': 2.4.28
-      '@volar/language-server': 2.4.28(typescript@6.0.3)
-      '@volar/language-service': 2.4.28(typescript@6.0.3)
-      '@volar/source-map': 2.4.28
-      '@volar/test-utils': 2.4.28(typescript@6.0.3)
-      '@volar/typescript': 2.4.28(typescript@6.0.3)
-      content-tag: 4.2.1
-      ember-estree: 0.8.1
-      silent-error: 1.1.1(supports-color@10.2.2)
-      typescript: 6.0.3
-      volar-service-html: 0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))
-      volar-service-typescript: 0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))(typescript@6.0.3)
-      vscode-languageserver-protocol: 3.18.4
-      vscode-languageserver-textdocument: 1.0.15
-      vscode-uri: 3.2.0
-    optionalDependencies:
-      ember-source: 6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2)
-    transitivePeerDependencies:
-      - supports-color
-
   '@glint/ember-tsc@1.11.6(ember-source@7.3.0(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
     dependencies:
       '@glimmer/syntax': 0.95.0
@@ -8434,17 +8387,6 @@ snapshots:
       - supports-color
 
   '@glint/template@1.9.0': {}
-
-  '@glint/tsserver-plugin@2.7.9(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)':
-    dependencies:
-      '@glint/ember-tsc': 1.11.6(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
-      '@volar/language-core': 2.4.28
-      '@volar/typescript': 2.4.28(typescript@5.9.3)
-      jiti: 2.7.0
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - ember-source
-      - supports-color
 
   '@glint/tsserver-plugin@2.7.9(ember-source@7.3.0(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2))(supports-color@10.2.2)':
     dependencies:
@@ -9708,12 +9650,12 @@ snapshots:
 
   babel-plugin-syntax-dynamic-import@6.18.0: {}
 
-  babel-remove-types@1.1.0(supports-color@10.2.2):
+  babel-remove-types@2.0.0(supports-color@10.2.2):
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.2.2)
       '@babel/plugin-syntax-decorators': 7.29.7(@babel/core@7.29.7(supports-color@10.2.2))
       '@babel/plugin-transform-typescript': 7.29.9(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
-      prettier: 2.8.8
+      prettier: 3.9.10
     transitivePeerDependencies:
       - supports-color
 
@@ -10280,11 +10222,12 @@ snapshots:
       ini: 1.3.8
       proto-list: 1.2.4
 
-  configstore@7.1.0:
+  configstore@8.0.0:
     dependencies:
       atomically: 2.1.1
-      dot-prop: 9.0.0
+      dot-prop: 10.2.0
       graceful-fs: 4.2.11
+      is-safe-filename: 0.1.1
       xdg-basedir: 5.1.0
 
   connect@3.7.0(supports-color@10.2.2):
@@ -10476,8 +10419,6 @@ snapshots:
     dependencies:
       dequal: 2.0.3
 
-  diff@7.0.0: {}
-
   diff@8.0.4: {}
 
   doctrine@2.1.0:
@@ -10491,9 +10432,9 @@ snapshots:
       no-case: 3.0.4
       tslib: 2.8.1
 
-  dot-prop@9.0.0:
+  dot-prop@10.2.0:
     dependencies:
-      type-fest: 4.41.0
+      type-fest: 5.10.0
 
   dunder-proto@1.0.1:
     dependencies:
@@ -10620,15 +10561,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli@6.12.0(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@26.6.5)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.10)(supports-color@10.2.2)(underscore@1.13.8):
+  ember-cli@7.3.0(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@26.6.5)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.10)(supports-color@10.2.2)(underscore@1.13.8):
     dependencies:
-      '@ember-tooling/blueprint-blueprint': 0.2.1
-      '@ember-tooling/blueprint-model': 0.5.0(supports-color@10.2.2)
-      '@ember-tooling/classic-build-addon-blueprint': 6.12.0(supports-color@10.2.2)
-      '@ember-tooling/classic-build-app-blueprint': 6.12.0(supports-color@10.2.2)
-      '@ember/app-blueprint': 6.12.3
+      '@ember-tooling/blueprint-blueprint': 0.3.0
+      '@ember-tooling/blueprint-model': 0.7.1(supports-color@10.2.2)
+      '@ember-tooling/classic-build-addon-blueprint': 7.3.0(supports-color@10.2.2)
+      '@ember-tooling/classic-build-app-blueprint': 7.3.0(supports-color@10.2.2)
+      '@ember/app-blueprint': 7.3.1
       '@pnpm/find-workspace-dir': 1000.1.5
-      babel-remove-types: 1.1.0(supports-color@10.2.2)
+      babel-remove-types: 2.0.0(supports-color@10.2.2)
       broccoli: 4.0.0(supports-color@10.2.2)
       broccoli-concat: 4.2.7(supports-color@10.2.2)
       broccoli-config-loader: 1.0.1(supports-color@10.2.2)
@@ -10647,7 +10588,7 @@ snapshots:
       ci-info: 4.4.0
       clean-base-url: 1.0.0
       compression: 1.8.2(supports-color@10.2.2)
-      configstore: 7.1.0
+      configstore: 8.0.0
       console-ui: 3.1.2
       content-tag: 4.2.1
       core-object: 3.1.5
@@ -10696,6 +10637,7 @@ snapshots:
       safe-stable-stringify: 2.5.0
       sane: 5.0.1
       semver: 7.8.5
+      semver-deprecate: 1.1.0
       silent-error: 1.1.1(supports-color@10.2.2)
       sort-package-json: 3.7.1
       symlink-or-copy: 1.3.1
@@ -10816,9 +10758,9 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  ember-load-initializers@3.0.1(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2)):
+  ember-load-initializers@3.0.1(ember-source@7.3.0(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2)):
     dependencies:
-      ember-source: 6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2)
+      ember-source: 7.3.0(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2)
 
   ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
@@ -10867,37 +10809,6 @@ snapshots:
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
-
-  ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2):
-    dependencies:
-      '@babel/core': 7.29.7(supports-color@10.2.2)
-      '@ember/edition-utils': 1.2.0
-      '@embroider/addon-shim': 1.10.3(supports-color@10.2.2)
-      '@glimmer/component': 2.1.1(supports-color@10.2.2)
-      '@simple-dom/interface': 1.4.0
-      backburner.js: 2.8.0
-      broccoli-file-creator: 2.1.1
-      broccoli-funnel: 3.0.8(supports-color@10.2.2)
-      broccoli-merge-trees: 4.2.0(supports-color@10.2.2)
-      chalk: 4.1.2
-      ember-cli-babel: 8.3.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
-      ember-cli-get-component-path-option: 1.0.0
-      ember-cli-is-package-missing: 1.0.0
-      ember-cli-normalize-entity-name: 1.0.0(supports-color@10.2.2)
-      ember-cli-path-utils: 1.0.0
-      ember-cli-string-utils: 1.1.0
-      ember-cli-typescript-blueprint-polyfill: 0.1.0(supports-color@10.2.2)
-      ember-cli-version-checker: 5.1.2(supports-color@10.2.2)
-      ember-router-generator: 2.0.0(supports-color@10.2.2)
-      inflection: 2.0.1
-      route-recognizer: 0.3.4
-      router_js: 8.0.6(route-recognizer@0.3.4)(rsvp@4.8.5)
-      semver: 7.8.5
-      silent-error: 1.1.1(supports-color@10.2.2)
-      simple-html-tokenizer: 0.5.11
-    transitivePeerDependencies:
-      - rsvp
-      - supports-color
 
   ember-source@7.3.0(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
@@ -12225,6 +12136,8 @@ snapshots:
       gopd: 1.2.0
       has-tostringtag: 1.0.2
       hasown: 2.0.4
+
+  is-safe-filename@0.1.1: {}
 
   is-set@2.0.3: {}
 
@@ -13557,12 +13470,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  router_js@8.0.6(route-recognizer@0.3.4)(rsvp@4.8.5):
-    dependencies:
-      '@glimmer/env': 0.1.7
-      route-recognizer: 0.3.4
-      rsvp: 4.8.5
-
   rrweb-cssom@0.7.1: {}
 
   rrweb-cssom@0.8.0: {}
@@ -13732,6 +13639,11 @@ snapshots:
   saxes@6.0.0:
     dependencies:
       xmlchars: 2.2.0
+
+  semver-deprecate@1.1.0:
+    dependencies:
+      chalk: 5.6.2
+      semver: 7.8.5
 
   semver@5.7.2: {}
 
@@ -14184,6 +14096,8 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
+  tagged-tag@1.0.0: {}
+
   tap-parser@18.3.4:
     dependencies:
       events-to-array: 2.0.3
@@ -14404,6 +14318,10 @@ snapshots:
       prelude-ls: 1.2.1
 
   type-fest@4.41.0: {}
+
+  type-fest@5.10.0:
+    dependencies:
+      tagged-tag: 1.0.0
 
   type-is@2.1.0:
     dependencies:
