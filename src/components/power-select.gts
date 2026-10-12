@@ -1,5 +1,5 @@
 import Component from '@glimmer/component';
-import { tracked } from '@glimmer/tracking';
+import { cached, tracked } from '@glimmer/tracking';
 import { action, get } from '@ember/object';
 import { guidFor } from '@ember/object/internals';
 import isEqual from '../utils/equal.ts';
@@ -339,11 +339,6 @@ export default class PowerSelect<
     | Promise<readonly T[]>
     | CancellablePromise<readonly T[]>
     | Promise<void>;
-  private _filterResultsCache: {
-    results: T[];
-    options: T[];
-    searchText: string;
-  } = { results: [], options: [], searchText: this.searchText };
 
   // Lifecycle hooks
   constructor(owner: Owner, args: PowerSelectArgs<T, IsMultiple, TExtra>) {
@@ -425,33 +420,23 @@ export default class PowerSelect<
     );
   }
 
+  // Cached so that unrelated state changes (e.g. `highlighted`) don't produce a new array.
+  // Filtering copies groups, so recomputing would give new group objects on every access,
+  // causing `{{#each}}` to tear down and re-render all grouped options (see #2088).
+  @cached
   get results(): T[] {
     if (this.searchText.length > 0) {
       if (this.args.search) {
         return toPlainArray(this._searchResult || this.options) as T[];
       } else {
-        if (
-          this._filterResultsCache.options === this.options &&
-          this._filterResultsCache.searchText === this.searchText
-        ) {
-          // This is an optimization to avoid filtering several times, which may be a bit expensive
-          // if there are many options, if neither the options nor the searchtext have changed
-          return this._filterResultsCache.results;
-        }
-        const results = this._filter(this.options, this.searchText);
-        // eslint-disable-next-line ember/no-side-effects
-        this._filterResultsCache = {
-          results,
-          options: this.options,
-          searchText: this.searchText,
-        };
-        return results;
+        return this._filter(this.options, this.searchText);
       }
     } else {
       return this.options;
     }
   }
 
+  @cached
   get options(): T[] {
     if (this._resolvedOptions) {
       return toPlainArray(this._resolvedOptions) as T[];
