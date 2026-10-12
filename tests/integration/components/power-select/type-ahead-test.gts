@@ -113,8 +113,7 @@ type Group =
       groupName: string;
       disabled?: boolean;
       options: (
-        | string
-        | { groupName: string; disabled?: boolean; options: string[] }
+        string | { groupName: string; disabled?: boolean; options: string[] }
       )[];
     }
   | string;

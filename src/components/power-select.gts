@@ -333,12 +333,9 @@ export default class PowerSelect<
   private _uid = guidFor(this);
   private _lastOptionsPromise?: Promise<readonly T[]>;
   private _lastSelectedPromise?:
-    | PromiseProxy<Selected<T, IsMultiple>>
-    | Promise<Selected<T, IsMultiple>>;
+    PromiseProxy<Selected<T, IsMultiple>> | Promise<Selected<T, IsMultiple>>;
   private _lastSearchPromise?:
-    | Promise<readonly T[]>
-    | CancellablePromise<readonly T[]>
-    | Promise<void>;
+    Promise<readonly T[]> | CancellablePromise<readonly T[]> | Promise<void>;
 
   // Lifecycle hooks
   constructor(owner: Owner, args: PowerSelectArgs<T, IsMultiple, TExtra>) {

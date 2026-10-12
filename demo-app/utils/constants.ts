@@ -159,8 +159,7 @@ export type GroupedNumberWithDisabled =
       groupName: string;
       disabled?: boolean;
       options: (
-        | string
-        | { groupName: string; disabled?: boolean; options: string[] }
+        string | { groupName: string; disabled?: boolean; options: string[] }
       )[];
     }
   | string;
@@ -185,8 +184,7 @@ export type GroupedNumbersWithCustomProperty =
       groupName: string;
       variant: string;
       options: (
-        | string
-        | { groupName: string; variant: string; options: string[] }
+        string | { groupName: string; variant: string; options: string[] }
       )[];
     }
   | string;

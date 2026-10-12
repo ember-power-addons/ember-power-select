@@ -53,12 +53,11 @@ type GroupWithOptionsPrev = [never, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 type GroupWithOptions<T, Depth extends number = 5> = Depth extends 0
   ? never
   : T extends { groupName: string; options: infer O }
-    ?
-        | T
-        | GroupWithOptions<
-            O extends readonly unknown[] ? O[number] : never,
-            GroupWithOptionsPrev[Depth]
-          >
+    ? | T
+      | GroupWithOptions<
+          O extends readonly unknown[] ? O[number] : never,
+          GroupWithOptionsPrev[Depth]
+        >
     : T extends readonly (infer U)[]
       ? GroupWithOptions<U, GroupWithOptionsPrev[Depth]>
       : never;

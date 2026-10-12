@@ -1,3 +1,8 @@
+allowBuilds:
+  '@parcel/watcher': true
+  core-js: false
+  esbuild: false
+
 # Docs: https://pnpm.io/settings
 # https://github.com/emberjs/rfcs/pull/907
 
@@ -11,3 +16,6 @@ resolvePeersFromWorkspaceRoot: false
 packages:
   - .
   - docs
+
+minimumReleaseAgeExclude:
+  - ember-basic-dropdown@9.0.1
