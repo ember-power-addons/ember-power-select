@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from '../../../helpers';
-import { render, click } from '@ember/test-helpers';
+import { render, click, triggerEvent } from '@ember/test-helpers';
 import { typeInSearch, clickTrigger } from '#src/test-support/helpers.ts';
 import {
   groupedNumbers,
@@ -424,6 +424,72 @@ module(
       assert
         .dom('.ember-power-select-options', getRootNode(this.element))
         .doesNotExist('The dropdown has dissapeared');
+    });
+
+    test<GroupedNumbersContext>('Hovering a grouped option after searching does not re-render the groups, so the option can be clicked (#2088)', async function (assert) {
+      const self = this;
+
+      assert.expect(5);
+
+      this.groupedNumbers = groupedNumbers;
+      this.selected = undefined;
+      this.foo = (selected) => {
+        this.set('selected', selected);
+      };
+      await render<GroupedNumbersContext>(
+        <template>
+          <HostWrapper>
+            <PowerSelect
+              @options={{self.groupedNumbers}}
+              @selected={{self.selected}}
+              @onChange={{self.foo}}
+              @searchEnabled={{true}}
+              as |option|
+            >
+              {{option}}
+            </PowerSelect>
+          </HostWrapper>
+        </template>,
+      );
+
+      await clickTrigger(
+        getRootNode(this.element).querySelector(
+          '.ember-power-select-trigger',
+        ) as HTMLElement,
+      );
+      await typeInSearch('', 'two', getRootNode(this.element));
+
+      const findOption = () =>
+        Array.from(
+          getRootNode(this.element).querySelectorAll(
+            '.ember-power-select-option',
+          ),
+        ).find((e) => e.textContent?.trim() === 'two') as HTMLElement;
+      const groupBefore = getRootNode(this.element).querySelector(
+        '.ember-power-select-group',
+      );
+      const option = findOption();
+      assert.ok(option, 'The option is rendered');
+
+      await triggerEvent(option, 'mouseover');
+
+      assert.true(
+        option.isConnected,
+        'The hovered option was not destroyed and re-rendered',
+      );
+      assert.strictEqual(
+        getRootNode(this.element).querySelector('.ember-power-select-group'),
+        groupBefore,
+        'The group element was not re-rendered',
+      );
+      assert
+        .dom(option)
+        .hasAttribute('aria-current', 'true', 'The option is highlighted');
+
+      await click(option);
+      assert
+        .dom('.ember-power-select-trigger', getRootNode(this.element))
+        .hasText('two', 'The hovered option was selected');
     });
 
     test<GroupedNumbersContext>("Clicking on the title of a group doesn't performs any action nor closes the dropdown", async function (assert) {
