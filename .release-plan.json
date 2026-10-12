@@ -2,17 +2,21 @@
   "solution": {
     "ember-power-select": {
       "impact": "patch",
-      "oldVersion": "9.0.1",
-      "newVersion": "9.0.2",
+      "oldVersion": "9.0.2",
+      "newVersion": "9.0.3",
       "tagName": "latest",
       "constraints": [
         {
           "impact": "patch",
           "reason": "Appears in changelog section :bug: Bug Fix"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2026-07-28)\n\n* ember-power-select 9.0.2 (patch)\n\n#### :bug: Bug Fix\n* `ember-power-select`\n  * [#2084](https://github.com/ember-power-addons/ember-power-select/pull/2084) Treat empty strings as an `undefined` selection ([@Windvis](https://github.com/Windvis))\n\n#### Committers: 1\n- Sam Van Campenhout ([@Windvis](https://github.com/Windvis))\n"
+  "description": "## Release (2026-10-12)\n\n* ember-power-select 9.0.3 (patch)\n\n#### :bug: Bug Fix\n* `ember-power-select`\n  * [#2089](https://github.com/ember-power-addons/ember-power-select/pull/2089) Fix grouped options re-rendering on hover after search (Chrome: options unclickable) ([@mkszepp](https://github.com/mkszepp))\n\n#### :house: Internal\n* `ember-power-select`\n  * [#2090](https://github.com/ember-power-addons/ember-power-select/pull/2090) Update packages ([@mkszepp](https://github.com/mkszepp))\n\n#### Committers: 1\n- Markus Sanin ([@mkszepp](https://github.com/mkszepp))\n"
 }

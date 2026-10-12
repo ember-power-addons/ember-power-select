@@ -1,5 +1,20 @@
 # Changelog
 
+## Release (2026-10-12)
+
+* ember-power-select 9.0.3 (patch)
+
+#### :bug: Bug Fix
+* `ember-power-select`
+  * [#2089](https://github.com/ember-power-addons/ember-power-select/pull/2089) Fix grouped options re-rendering on hover after search (Chrome: options unclickable) ([@mkszepp](https://github.com/mkszepp))
+
+#### :house: Internal
+* `ember-power-select`
+  * [#2090](https://github.com/ember-power-addons/ember-power-select/pull/2090) Update packages ([@mkszepp](https://github.com/mkszepp))
+
+#### Committers: 1
+- Markus Sanin ([@mkszepp](https://github.com/mkszepp))
+
 ## Release (2026-07-28)
 
 * ember-power-select 9.0.2 (patch)
