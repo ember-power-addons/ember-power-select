@@ -4,7 +4,7 @@
   "packages": [
     {
       "name": "@ember/addon-blueprint",
-      "version": "0.17.1",
+      "version": "0.18.1",
       "blueprints": [
         {
           "name": "@ember/addon-blueprint",

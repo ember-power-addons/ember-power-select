@@ -75,6 +75,16 @@ wouldn't work. If you find a problem please file an issue.
 In testing it requires ember-cli-qunit. This component also provides some convenient [test helpers](http://www.ember-power-select.com/docs/test-helpers)
 to interact with the component in acceptance tests.
 
+> TODO: Document the package's public API.
+>
+> For each public api (including components, helpers, modifiers, and other apis) include:
+>
+> - The import path for a consumer (e.g. `import MyAddonsComponent from 'my-addon/components/my-addons-component'`)
+> - What it does
+> - Parameters/options
+> - Return value
+> - Example usage
+
 ## Contributing
 
 Any contribution is welcome. Please read our [guidelines](CONTRIBUTING.md).

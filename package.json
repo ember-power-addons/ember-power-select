@@ -65,7 +65,7 @@
     "lint:format": "prettier . --cache --check",
     "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
     "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
-    "lint:js": "eslint . --cache",
+    "lint:js": "eslint .",
     "lint:js:fix": "eslint . --fix",
     "lint:publish": "pnpm build && publint run --level error",
     "lint:types": "ember-tsc --noEmit",
