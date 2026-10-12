@@ -1,5 +1,6 @@
 allowBuilds:
   '@parcel/watcher': true
+  core-js: false
   esbuild: false
 
 # Docs: https://pnpm.io/settings
