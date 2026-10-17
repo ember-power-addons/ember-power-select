@@ -192,8 +192,8 @@ importers:
         specifier: ^7.28.6
         version: 7.29.9(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@babel/runtime':
-        specifier: ^7.29.2
-        version: 7.29.10
+        specifier: ^8.0.7
+        version: 8.0.7
       '@ember/app-tsconfig':
         specifier: ^2.1.0
         version: 2.1.0
@@ -360,8 +360,8 @@ importers:
         specifier: ^7.29.7
         version: 7.29.9(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@babel/runtime':
-        specifier: ^7.29.7
-        version: 7.29.10
+        specifier: ^8.0.7
+        version: 8.0.7
       '@ember/app-tsconfig':
         specifier: ^2.1.0
         version: 2.1.0
@@ -1107,6 +1107,9 @@ packages:
   '@babel/runtime@7.29.10':
     resolution: {integrity: sha512-NpugTzbKgGrNe45Ui32cN8vCFFMxVtP/9rtfwv0nP5FRDAjvYBxJcLVpYA9mr1jxP6cnIT7x9LUzuDTbWYYNRA==}
     engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@8.0.7':
+    resolution: {integrity: sha512-k0hagDDq/6w4v+0Sp4wFvIz/yswH5O7Va6aRTnD7N62Tnborp4X+YB+H3XUcWVSR4aE47WPEXiIIZchBs0GmYg==}
 
   '@babel/template@7.29.7':
     resolution: {integrity: sha512-puq+Gf35oI24FeN11LkoUQFqv9uwNeWpxXZi/Ji3rRIoKAzKnxRaZ+Gkj0vKS9ZCiTESfng1N9LyOyXvo+m+Gg==}
@@ -7859,6 +7862,8 @@ snapshots:
       esutils: 2.0.3
 
   '@babel/runtime@7.29.10': {}
+
+  '@babel/runtime@8.0.7': {}
 
   '@babel/template@7.29.7':
     dependencies:

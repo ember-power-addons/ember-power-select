@@ -84,7 +84,7 @@
     "@babel/core": "^7.29.0",
     "@babel/eslint-parser": "^7.28.6",
     "@babel/plugin-transform-typescript": "^7.28.6",
-    "@babel/runtime": "^7.29.2",
+    "@babel/runtime": "^8.0.7",
     "@ember/app-tsconfig": "^2.1.0",
     "@ember/library-tsconfig": "^3.0.0",
     "@ember/test-helpers": "^5.7.0",
