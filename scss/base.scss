@@ -1,0 +1,358 @@
+@use "sass:math";
+@use "variables";
+
+.ember-power-select-dropdown * {
+  box-sizing: border-box;
+}
+
+// Trigger
+.ember-power-select-trigger {
+  position: relative;
+  border-top: variables.$ember-power-select-trigger-border-top;
+  border-bottom: variables.$ember-power-select-trigger-border-bottom;
+  border-right: variables.$ember-power-select-trigger-border-right;
+  border-left: variables.$ember-power-select-trigger-border-left;
+  border-radius: variables.$ember-power-select-trigger-default-border-radius;
+  background-color: variables.$ember-power-select-background-color;
+  line-height: variables.$ember-power-select-line-height;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  min-height: variables.$ember-power-select-line-height;
+  user-select: none;
+  -webkit-user-select: none;
+  color: variables.$ember-power-select-text-color;
+  /* Minimum clearfix for modern browsers */
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &:not(.ember-power-select-multiple-trigger) {
+    .ember-power-select-input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.ember-power-select-trigger:focus,
+.ember-power-select-trigger--active {
+  border-top: variables.$ember-power-select-active-trigger-border-top;
+  border-bottom: variables.$ember-power-select-active-trigger-border-bottom;
+  border-right: variables.$ember-power-select-active-trigger-border-right;
+  border-left: variables.$ember-power-select-active-trigger-border-left;
+  box-shadow: variables.$ember-power-select-focus-box-shadow;
+  @if variables.$ember-power-select-focus-outline {
+    outline: variables.$ember-power-select-focus-outline;
+  }
+}
+.ember-basic-dropdown-trigger--below.ember-power-select-trigger[aria-expanded="true"],
+.ember-basic-dropdown-trigger--in-place.ember-power-select-trigger[aria-expanded="true"] {
+  border-bottom-left-radius: variables.$ember-power-select-opened-border-radius;
+  border-bottom-right-radius: variables.$ember-power-select-opened-border-radius;
+}
+.ember-basic-dropdown-trigger--above.ember-power-select-trigger[aria-expanded="true"] {
+  border-top-left-radius: variables.$ember-power-select-opened-border-radius;
+  border-top-right-radius: variables.$ember-power-select-opened-border-radius;
+}
+.ember-power-select-placeholder {
+  color: variables.$ember-power-select-placeholder-color;
+  display: block;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ember-power-select-status-icon {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; // Vertical center trick!
+  border-style: solid;
+  border-width: 7px 4px 0 4px;
+  border-color: variables.$ember-power-select-trigger-icon-color transparent
+    transparent transparent;
+  .ember-basic-dropdown-trigger[aria-expanded="true"] & {
+    transform: rotate(180deg);
+  }
+}
+.ember-power-select-clear-btn {
+  position: absolute;
+  cursor: pointer;
+}
+
+// Multiple select
+.ember-power-select-multiple-options {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+
+  & li.ember-power-select-trigger-multiple-input-container {
+    flex-grow: 1;
+    display: flex;
+
+    & input {
+      flex-grow: 1;
+    }
+  }
+}
+
+.ember-power-select-trigger-multiple-input {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  text-indent: 2px;
+  &:disabled {
+    background-color: variables.$ember-power-select-disabled-background-color;
+  }
+  /* There's a browser bug where this selectos cannot be chained with commas */
+  &::placeholder {
+    opacity: 1;
+    color: variables.$ember-power-select-placeholder-color;
+  }
+  &::-webkit-input-placeholder {
+    opacity: 1;
+    color: variables.$ember-power-select-placeholder-color;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+    color: variables.$ember-power-select-placeholder-color;
+  }
+  &::-ms-input-placeholder {
+    opacity: 1;
+    color: variables.$ember-power-select-placeholder-color;
+  }
+}
+
+.ember-power-select-multiple-option {
+  border: variables.$ember-power-select-multiple-option-border;
+  border-radius: variables.$ember-power-select-multiple-option-border-radius;
+  color: variables.$ember-power-select-multiple-selection-color;
+  background-color: variables.$ember-power-select-multiple-selection-background-color;
+  padding: variables.$ember-power-select-multiple-option-padding;
+  line-height: variables.$ember-power-select-multiple-option-line-height;
+  margin: 2px 0 2px 3px;
+}
+.ember-power-select-multiple-remove-btn {
+  cursor: pointer;
+  &:not(:hover) {
+    opacity: 0.5;
+  }
+}
+// Search bar
+.ember-power-select-search {
+  padding: 4px;
+}
+.ember-power-select-search-input {
+  border: variables.$ember-power-select-search-field-border;
+  border-radius: variables.$ember-power-select-search-input-border-radius;
+  width: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0 5px;
+  &:focus {
+    border: variables.$ember-power-select-search-field-focus-border;
+    box-shadow: variables.$ember-power-select-focus-box-shadow;
+    @if variables.$ember-power-select-focus-outline {
+      outline: variables.$ember-power-select-focus-outline;
+    }
+  }
+}
+.ember-power-select-search-input-field {
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  display: block;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  background-color: transparent;
+}
+
+// Dropdown
+.ember-power-select-dropdown {
+  border-left: variables.$ember-power-select-dropdown-left-border;
+  border-right: variables.$ember-power-select-dropdown-right-border;
+  line-height: variables.$ember-power-select-line-height;
+  border-radius: variables.$ember-power-select-dropdown-default-border-radius;
+  box-shadow: variables.$ember-power-select-dropdown-box-shadow;
+  overflow: hidden;
+  color: variables.$ember-power-select-text-color;
+  background-color: variables.$ember-power-select-background-color;
+}
+.ember-power-select-dropdown.ember-basic-dropdown-content--above {
+  @if (variables.$ember-power-select-dropdown-margin != 0) {
+    transform: translateY(
+      calc(-1 * #{variables.$ember-power-select-dropdown-margin})
+    );
+  }
+  border-top: variables.$ember-power-select-dropdown-top-border;
+  border-bottom: variables.$ember-power-select-dropdown-contiguous-border;
+  border-bottom-left-radius: variables.$ember-power-select-opened-border-radius;
+  border-bottom-right-radius: variables.$ember-power-select-opened-border-radius;
+}
+.ember-power-select-dropdown.ember-basic-dropdown-content--below,
+.ember-power-select-dropdown.ember-basic-dropdown-content--in-place {
+  @if (variables.$ember-power-select-dropdown-margin != 0) {
+    transform: translateY(#{variables.$ember-power-select-dropdown-margin});
+  }
+  border-top: variables.$ember-power-select-dropdown-contiguous-border;
+  border-bottom: variables.$ember-power-select-dropdown-bottom-border;
+  border-top-left-radius: variables.$ember-power-select-opened-border-radius;
+  border-top-right-radius: variables.$ember-power-select-opened-border-radius;
+}
+.ember-power-select-dropdown.ember-basic-dropdown-content--in-place {
+  // Dropdown when rendered in place
+  width: 100%;
+}
+// Options
+.ember-power-select-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  &[role="listbox"] {
+    overflow-y: auto; /* in firefox in windows this can cause a word-break issue. Try `overflow-y: scroll` if that happens */
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(
+      #{variables.$ember-power-select-number-of-visible-options} *
+        #{variables.$ember-power-select-line-height}
+    );
+  }
+}
+
+.ember-power-select-option {
+  cursor: pointer;
+  padding: 0 variables.$ember-power-select-option-padding;
+}
+.ember-power-select-group[aria-disabled="true"] {
+  color: variables.$ember-power-select-disabled-option-color;
+  cursor: not-allowed;
+}
+.ember-power-select-group[aria-disabled="true"] .ember-power-select-option,
+.ember-power-select-option[aria-disabled="true"] {
+  color: variables.$ember-power-select-disabled-option-color;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.ember-power-select-option[aria-selected="true"] {
+  background-color: variables.$ember-power-select-selected-background;
+}
+.ember-power-select-option[aria-current="true"] {
+  background-color: variables.$ember-power-select-highlighted-background;
+  color: variables.$ember-power-select-highlighted-color;
+}
+
+// Groups
+.ember-power-select-group-name {
+  cursor: default;
+  font-weight: bold;
+}
+
+// Disabled styles
+.ember-power-select-trigger[aria-disabled="true"] {
+  background-color: variables.$ember-power-select-disabled-background-color;
+}
+
+// LTR styles
+.ember-power-select-trigger {
+  padding: variables.$ember-power-select-trigger-ltr-padding;
+}
+.ember-power-select-selected-item,
+.ember-power-select-placeholder {
+  margin-left: 8px;
+}
+.ember-power-select-status-icon {
+  right: 5px;
+}
+.ember-power-select-clear-btn {
+  right: variables.$ember-power-select-clear-btn-margin;
+}
+
+.ember-power-select-group {
+  .ember-power-select-group {
+    .ember-power-select-group-name {
+      padding-left: calc(3 * #{variables.$ember-power-select-option-padding});
+    }
+    .ember-power-select-option {
+      padding-left: calc(5 * #{variables.$ember-power-select-option-padding});
+    }
+  }
+  .ember-power-select-option {
+    padding-left: calc(3 * #{variables.$ember-power-select-option-padding});
+  }
+  .ember-power-select-group-name {
+    padding-left: variables.$ember-power-select-option-padding;
+  }
+}
+
+// RTL styles
+.ember-power-select-trigger[dir="rtl"] {
+  padding: variables.$ember-power-select-trigger-rtl-padding;
+  .ember-power-select-selected-item,
+  .ember-power-select-placeholder {
+    margin-right: 8px;
+  }
+  .ember-power-select-multiple-option {
+    float: right;
+  }
+  .ember-power-select-trigger-multiple-input {
+    float: right;
+  }
+  .ember-power-select-status-icon {
+    left: 5px;
+    right: initial;
+  }
+  .ember-power-select-clear-btn {
+    left: variables.$ember-power-select-clear-btn-margin;
+    right: initial;
+  }
+}
+
+.ember-power-select-visually-hidden {
+  height: 1px;
+  left: -9999px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.ember-power-select-dropdown[dir="rtl"] {
+  .ember-power-select-group {
+    .ember-power-select-group {
+      .ember-power-select-group-name {
+        padding-right: calc(
+          3 * #{variables.$ember-power-select-option-padding}
+        );
+      }
+      .ember-power-select-option {
+        padding-right: calc(
+          5 * #{variables.$ember-power-select-option-padding}
+        );
+      }
+    }
+    .ember-power-select-option {
+      padding-right: calc(3 * #{variables.$ember-power-select-option-padding});
+    }
+    .ember-power-select-group-name {
+      padding-right: variables.$ember-power-select-option-padding;
+    }
+  }
+}

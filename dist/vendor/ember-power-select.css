@@ -1,0 +1,335 @@
+.ember-power-select-dropdown * {
+  box-sizing: border-box;
+}
+
+.ember-power-select-trigger {
+  position: relative;
+  border-top: var(--ember-power-select-trigger-border-top, var(--ember-power-select-trigger-border, 1px solid #aaa));
+  border-bottom: var(--ember-power-select-trigger-border-bottom, var(--ember-power-select-trigger-border, 1px solid #aaa));
+  border-right: var(--ember-power-select-trigger-border-right, var(--ember-power-select-trigger-border, 1px solid #aaa));
+  border-left: var(--ember-power-select-trigger-border-left, var(--ember-power-select-trigger-border, 1px solid #aaa));
+  border-radius: var(--ember-power-select-trigger-default-border-radius, var(--ember-power-select-default-border-radius, 4px));
+  background-color: var(--ember-power-select-background-color, #fff);
+  line-height: var(--ember-power-select-line-height, 1.75em);
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  min-height: var(--ember-power-select-line-height, 1.75em);
+  user-select: none;
+  -webkit-user-select: none;
+  color: var(--ember-power-select-text-color, inherit);
+  /* Minimum clearfix for modern browsers */
+}
+.ember-power-select-trigger:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ember-power-select-trigger:not(.ember-power-select-multiple-trigger) .ember-power-select-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ember-power-select-trigger:focus,
+.ember-power-select-trigger--active {
+  border-top: var(--ember-power-select-active-trigger-border-top, var(--ember-power-select-active-trigger-border, 1px solid #aaa));
+  border-bottom: var(--ember-power-select-active-trigger-border-bottom, var(--ember-power-select-active-trigger-border, 1px solid #aaa));
+  border-right: var(--ember-power-select-active-trigger-border-right, var(--ember-power-select-active-trigger-border, 1px solid #aaa));
+  border-left: var(--ember-power-select-active-trigger-border-left, var(--ember-power-select-active-trigger-border, 1px solid #aaa));
+  box-shadow: var(--ember-power-select-focus-box-shadow, none);
+  outline: var(--ember-power-select-focus-outline, none);
+}
+
+.ember-basic-dropdown-trigger--below.ember-power-select-trigger[aria-expanded=true],
+.ember-basic-dropdown-trigger--in-place.ember-power-select-trigger[aria-expanded=true] {
+  border-bottom-left-radius: var(--ember-power-select-opened-border-radius, 0);
+  border-bottom-right-radius: var(--ember-power-select-opened-border-radius, 0);
+}
+
+.ember-basic-dropdown-trigger--above.ember-power-select-trigger[aria-expanded=true] {
+  border-top-left-radius: var(--ember-power-select-opened-border-radius, 0);
+  border-top-right-radius: var(--ember-power-select-opened-border-radius, 0);
+}
+
+.ember-power-select-placeholder {
+  color: var(--ember-power-select-placeholder-color, #999);
+  display: block;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ember-power-select-status-icon {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-style: solid;
+  border-width: 7px 4px 0 4px;
+  border-color: var(--ember-power-select-trigger-icon-color, var(--ember-power-select-border-color, #aaa)) transparent transparent transparent;
+}
+.ember-basic-dropdown-trigger[aria-expanded=true] .ember-power-select-status-icon {
+  transform: rotate(180deg);
+}
+
+.ember-power-select-clear-btn {
+  position: absolute;
+  cursor: pointer;
+}
+
+.ember-power-select-multiple-options {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+.ember-power-select-multiple-options li.ember-power-select-trigger-multiple-input-container {
+  flex-grow: 1;
+  display: flex;
+}
+.ember-power-select-multiple-options li.ember-power-select-trigger-multiple-input-container input {
+  flex-grow: 1;
+}
+
+.ember-power-select-trigger-multiple-input {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  padding: 0;
+  background-color: transparent;
+  text-indent: 2px;
+}
+.ember-power-select-trigger-multiple-input:disabled {
+  background-color: var(--ember-power-select-disabled-background-color, #eee);
+}
+.ember-power-select-trigger-multiple-input {
+  /* There's a browser bug where this selectos cannot be chained with commas */
+}
+.ember-power-select-trigger-multiple-input::placeholder {
+  opacity: 1;
+  color: var(--ember-power-select-placeholder-color, #999);
+}
+.ember-power-select-trigger-multiple-input::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--ember-power-select-placeholder-color, #999);
+}
+.ember-power-select-trigger-multiple-input::-moz-placeholder {
+  opacity: 1;
+  color: var(--ember-power-select-placeholder-color, #999);
+}
+.ember-power-select-trigger-multiple-input::-ms-input-placeholder {
+  opacity: 1;
+  color: var(--ember-power-select-placeholder-color, #999);
+}
+
+.ember-power-select-multiple-option {
+  border: var(--ember-power-select-multiple-option-border, 1px solid var(--ember-power-select-multiple-option-border-color, gray));
+  border-radius: var(--ember-power-select-multiple-option-border-radius, var(--ember-power-select-default-border-radius, 4px));
+  color: var(--ember-power-select-multiple-selection-color, #333);
+  background-color: var(--ember-power-select-multiple-selection-background-color, #e4e4e4);
+  padding: var(--ember-power-select-multiple-option-padding, 0 4px);
+  line-height: var(--ember-power-select-multiple-option-line-height, 1.45);
+  margin: 2px 0 2px 3px;
+}
+
+.ember-power-select-multiple-remove-btn {
+  cursor: pointer;
+}
+.ember-power-select-multiple-remove-btn:not(:hover) {
+  opacity: 0.5;
+}
+
+.ember-power-select-search {
+  padding: 4px;
+}
+
+.ember-power-select-search-input {
+  border: var(--ember-power-select-search-field-border, var(--ember-power-select-default-border, 1px solid #aaa));
+  border-radius: var(--ember-power-select-search-input-border-radius, 0);
+  width: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0 5px;
+}
+.ember-power-select-search-input:focus {
+  border: var(--ember-power-select-search-field-focus-border, var(--ember-power-select-default-focus-border, 1px solid #aaa));
+  box-shadow: var(--ember-power-select-focus-box-shadow, none);
+  outline: var(--ember-power-select-focus-outline, none);
+}
+
+.ember-power-select-search-input-field {
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  display: block;
+  line-height: inherit;
+  -webkit-appearance: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.ember-power-select-dropdown {
+  border-left: var(--ember-power-select-dropdown-left-border, var(--ember-power-select-dropdown-border, 1px solid #aaa));
+  border-right: var(--ember-power-select-dropdown-right-border, var(--ember-power-select-dropdown-border, 1px solid #aaa));
+  line-height: var(--ember-power-select-line-height, 1.75em);
+  border-radius: var(--ember-power-select-dropdown-default-border-radius, var(--ember-power-select-default-border-radius, 4px));
+  box-shadow: var(--ember-power-select-dropdown-box-shadow, none);
+  overflow: hidden;
+  color: var(--ember-power-select-text-color, inherit);
+  background-color: var(--ember-power-select-background-color, #fff);
+}
+
+.ember-power-select-dropdown.ember-basic-dropdown-content--above {
+  transform: translateY(calc(-1 * var(--ember-power-select-dropdown-margin, 0)));
+  border-top: var(--ember-power-select-dropdown-top-border, var(--ember-power-select-dropdown-border, 1px solid #aaa));
+  border-bottom: var(--ember-power-select-dropdown-contiguous-border, none);
+  border-bottom-left-radius: var(--ember-power-select-opened-border-radius, 0);
+  border-bottom-right-radius: var(--ember-power-select-opened-border-radius, 0);
+}
+
+.ember-power-select-dropdown.ember-basic-dropdown-content--below,
+.ember-power-select-dropdown.ember-basic-dropdown-content--in-place {
+  transform: translateY(var(--ember-power-select-dropdown-margin, 0));
+  border-top: var(--ember-power-select-dropdown-contiguous-border, none);
+  border-bottom: var(--ember-power-select-dropdown-bottom-border, var(--ember-power-select-dropdown-border, 1px solid #aaa));
+  border-top-left-radius: var(--ember-power-select-opened-border-radius, 0);
+  border-top-right-radius: var(--ember-power-select-opened-border-radius, 0);
+}
+
+.ember-power-select-dropdown.ember-basic-dropdown-content--in-place {
+  width: 100%;
+}
+
+.ember-power-select-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.ember-power-select-options[role=listbox] {
+  overflow-y: auto; /* in firefox in windows this can cause a word-break issue. Try `overflow-y: scroll` if that happens */
+  -webkit-overflow-scrolling: touch;
+  max-height: calc(var(--ember-power-select-number-of-visible-options, 7) * var(--ember-power-select-line-height, 1.75em));
+}
+
+.ember-power-select-option {
+  cursor: pointer;
+  padding: 0 var(--ember-power-select-option-padding, 8px);
+}
+
+.ember-power-select-group[aria-disabled=true] {
+  color: var(--ember-power-select-disabled-option-color, #999);
+  cursor: not-allowed;
+}
+
+.ember-power-select-group[aria-disabled=true] .ember-power-select-option,
+.ember-power-select-option[aria-disabled=true] {
+  color: var(--ember-power-select-disabled-option-color, #999);
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.ember-power-select-option[aria-selected=true] {
+  background-color: var(--ember-power-select-selected-background, #ddd);
+}
+
+.ember-power-select-option[aria-current=true] {
+  background-color: var(--ember-power-select-highlighted-background, #5897fb);
+  color: var(--ember-power-select-highlighted-color, #fff);
+}
+
+.ember-power-select-group-name {
+  cursor: default;
+  font-weight: bold;
+}
+
+.ember-power-select-trigger[aria-disabled=true] {
+  background-color: var(--ember-power-select-disabled-background-color, #eee);
+}
+
+.ember-power-select-trigger {
+  padding: var(--ember-power-select-trigger-ltr-padding, 0 16px 0 0);
+}
+
+.ember-power-select-selected-item,
+.ember-power-select-placeholder {
+  margin-left: 8px;
+}
+
+.ember-power-select-status-icon {
+  right: 5px;
+}
+
+.ember-power-select-clear-btn {
+  right: var(--ember-power-select-clear-btn-margin, 25px);
+}
+
+.ember-power-select-group .ember-power-select-group .ember-power-select-group-name {
+  padding-left: calc(3 * var(--ember-power-select-option-padding, 8px));
+}
+.ember-power-select-group .ember-power-select-group .ember-power-select-option {
+  padding-left: calc(5 * var(--ember-power-select-option-padding, 8px));
+}
+.ember-power-select-group .ember-power-select-option {
+  padding-left: calc(3 * var(--ember-power-select-option-padding, 8px));
+}
+.ember-power-select-group .ember-power-select-group-name {
+  padding-left: var(--ember-power-select-option-padding, 8px);
+}
+
+.ember-power-select-trigger[dir=rtl] {
+  padding: var(--ember-power-select-trigger-rtl-padding, 0 0 0 16px);
+}
+.ember-power-select-trigger[dir=rtl] .ember-power-select-selected-item,
+.ember-power-select-trigger[dir=rtl] .ember-power-select-placeholder {
+  margin-right: 8px;
+}
+.ember-power-select-trigger[dir=rtl] .ember-power-select-multiple-option {
+  float: right;
+}
+.ember-power-select-trigger[dir=rtl] .ember-power-select-trigger-multiple-input {
+  float: right;
+}
+.ember-power-select-trigger[dir=rtl] .ember-power-select-status-icon {
+  left: 5px;
+  right: initial;
+}
+.ember-power-select-trigger[dir=rtl] .ember-power-select-clear-btn {
+  left: var(--ember-power-select-clear-btn-margin, 25px);
+  right: initial;
+}
+
+.ember-power-select-visually-hidden {
+  height: 1px;
+  left: -9999px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.ember-power-select-dropdown[dir=rtl] .ember-power-select-group .ember-power-select-group .ember-power-select-group-name {
+  padding-right: calc(3 * var(--ember-power-select-option-padding, 8px));
+}
+.ember-power-select-dropdown[dir=rtl] .ember-power-select-group .ember-power-select-group .ember-power-select-option {
+  padding-right: calc(5 * var(--ember-power-select-option-padding, 8px));
+}
+.ember-power-select-dropdown[dir=rtl] .ember-power-select-group .ember-power-select-option {
+  padding-right: calc(3 * var(--ember-power-select-option-padding, 8px));
+}
+.ember-power-select-dropdown[dir=rtl] .ember-power-select-group .ember-power-select-group-name {
+  padding-right: var(--ember-power-select-option-padding, 8px);
+}
