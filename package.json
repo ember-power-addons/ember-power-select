@@ -103,7 +103,7 @@
     "@types/qunit": "^2.19.14",
     "@types/rsvp": "^4.0.9",
     "babel-plugin-ember-template-compilation": "^4.0.1",
-    "concurrently": "^9.2.1",
+    "concurrently": "^10.0.6",
     "dom-element-descriptors": "^0.5.1",
     "ember-basic-dropdown": "^9.0.1",
     "ember-concurrency": "^5.3.0",
