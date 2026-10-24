@@ -132,7 +132,7 @@
     "rollup-plugin-sass": "^1.15.3",
     "rsvp": "^4.8.5",
     "sass": "^1.105.1",
-    "sass-embedded": "^1.105.1",
+    "sass-embedded": "^1.106.0",
     "testem": "^3.21.3",
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.72.0",
