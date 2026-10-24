@@ -61,7 +61,7 @@
     "@glimmer/component": "^2.1.1",
     "@glint/ember-tsc": "^1.11.6",
     "@glint/template": "^1.9.0",
-    "@glint/tsserver-plugin": "^2.7.9",
+    "@glint/tsserver-plugin": "^2.7.12",
     "@rollup/plugin-babel": "^7.1.0",
     "@types/qunit": "^2.19.14",
     "@types/rsvp": "^4.0.9",
