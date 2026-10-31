@@ -95,7 +95,7 @@
     "@embroider/macros": "^1.21.3",
     "@embroider/vite": "^1.7.15",
     "@eslint/js": "^9.39.2",
-    "@glimmer/component": "^2.2.0",
+    "@glimmer/component": "^2.2.1",
     "@glint/ember-tsc": "^1.11.6",
     "@glint/template": "^1.9.0",
     "@glint/tsserver-plugin": "^2.7.12",
@@ -140,7 +140,7 @@
   },
   "peerDependencies": {
     "@ember/test-helpers": "^5.7.0",
-    "@glimmer/component": "^2.2.0",
+    "@glimmer/component": "^2.2.1",
     "ember-basic-dropdown": "^9.0.1",
     "ember-concurrency": "^5.3.0"
   },
