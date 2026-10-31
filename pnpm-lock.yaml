@@ -378,8 +378,8 @@ importers:
         specifier: ^4.1.27
         version: 4.1.27(@embroider/core@4.6.9(@glint/template@1.9.0)(supports-color@10.2.2))(@glint/template@1.9.0)(supports-color@10.2.2)
       '@embroider/config-meta-loader':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.0.1
+        version: 1.0.1
       '@embroider/core':
         specifier: ^4.6.9
         version: 4.6.9(@glint/template@1.9.0)(supports-color@10.2.2)
@@ -1275,8 +1275,8 @@ packages:
     peerDependencies:
       '@embroider/core': ^4.6.9
 
-  '@embroider/config-meta-loader@1.0.0':
-    resolution: {integrity: sha512-qznkdjgEGPe6NM94hZNXvOm/WhrJwBh8FtSQZ+nGjh9TOjY42tOiTEevFuM0onNXUn6bpdGzmjwKo2xY2jxQxQ==}
+  '@embroider/config-meta-loader@1.0.1':
+    resolution: {integrity: sha512-dCnFKo9HajfexgizXjAmhDM4y2J8bDRCI9fcvkRp/d1yNcTKD0E189/9373w9WD5rp+RBuT5EiEz/5b8sy6sOA==}
     engines: {node: 12.* || 14.* || >= 16}
 
   '@embroider/core@4.6.9':
@@ -8166,7 +8166,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@embroider/config-meta-loader@1.0.0': {}
+  '@embroider/config-meta-loader@1.0.1': {}
 
   '@embroider/core@4.6.9(@glint/template@1.9.0)(supports-color@10.2.2)':
     dependencies:
