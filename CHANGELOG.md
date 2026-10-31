@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2026-10-12)
 
 * ember-power-select 9.0.3 (patch)
