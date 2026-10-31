@@ -91,7 +91,7 @@
     "@ember/test-waiters": "^4.1.2",
     "@embroider/addon-dev": "^8.4.2",
     "@embroider/compat": "^4.1.27",
-    "@embroider/core": "^4.6.9",
+    "@embroider/core": "^4.6.10",
     "@embroider/macros": "^1.21.4",
     "@embroider/vite": "^1.7.15",
     "@eslint/js": "^9.39.2",
