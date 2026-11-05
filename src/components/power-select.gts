@@ -275,7 +275,9 @@ const isCancellablePromise = <T,>(
   );
 };
 
-const toPlainArray = <T,>(collection: T | T[] | Sliceable<T>): T[] | T => {
+const toPlainArray = <T,>(
+  collection: T | readonly T[] | Sliceable<T>,
+): readonly T[] | T => {
   if (isSliceable<T>(collection)) {
     return collection.slice();
   } else {
@@ -421,10 +423,10 @@ export default class PowerSelect<
   // Filtering copies groups, so recomputing would give new group objects on every access,
   // causing `{{#each}}` to tear down and re-render all grouped options (see #2088).
   @cached
-  get results(): T[] {
+  get results(): readonly T[] {
     if (this.searchText.length > 0) {
       if (this.args.search) {
-        return toPlainArray(this._searchResult || this.options) as T[];
+        return toPlainArray(this._searchResult || this.options) as readonly T[];
       } else {
         return this._filter(this.options, this.searchText);
       }
@@ -434,12 +436,12 @@ export default class PowerSelect<
   }
 
   @cached
-  get options(): T[] {
+  get options(): readonly T[] {
     if (this._resolvedOptions) {
-      return toPlainArray(this._resolvedOptions) as T[];
+      return toPlainArray(this._resolvedOptions) as readonly T[];
     }
     if (this.args.options) {
-      return toPlainArray(this.args.options as T[]) as T[];
+      return toPlainArray(this.args.options as readonly T[]) as readonly T[];
     } else {
       return [];
     }
@@ -1161,7 +1163,11 @@ export default class PowerSelect<
     this._highlight(highlighted);
   }
 
-  _filter(options: T[], term: string, skipDisabled = false): T[] {
+  _filter(
+    options: readonly T[],
+    term: string,
+    skipDisabled = false,
+  ): readonly T[] {
     const matcher = this.args.matcher || defaultMatcher;
     const optionMatcher = getOptionMatcher(
       matcher as MatcherFn<T>,

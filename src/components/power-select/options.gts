@@ -180,7 +180,7 @@ export default class PowerSelectOptions<
 
   options(group: GroupObject<T>): readonly T[] {
     if (group && typeof group === 'object' && 'options' in group) {
-      return group.options as T[];
+      return group.options as readonly T[];
     }
 
     return [];
@@ -204,7 +204,7 @@ export default class PowerSelectOptions<
         'options' in option &&
         option.options
       ) {
-        option = (option.options as T[])[parseInt(parts[i] ?? '', 10)];
+        option = (option.options as readonly T[])[parseInt(parts[i] ?? '', 10)];
       }
     }
     return option as Option<T>;
