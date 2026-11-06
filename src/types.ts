@@ -64,7 +64,7 @@ type GroupWithOptions<T, Depth extends number = 5> = Depth extends 0
 
 export type GroupObject<T> = Extract<
   GroupWithOptions<T, 5>,
-  { groupName: string; options: unknown[]; disabled?: boolean }
+  { groupName: string; options: readonly unknown[]; disabled?: boolean }
 >;
 
 export interface GroupBase<T = unknown> {
