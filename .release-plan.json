@@ -2,8 +2,8 @@
   "solution": {
     "ember-power-select": {
       "impact": "patch",
-      "oldVersion": "9.0.2",
-      "newVersion": "9.0.3",
+      "oldVersion": "9.0.3",
+      "newVersion": "9.0.4",
       "tagName": "latest",
       "constraints": [
         {
@@ -18,5 +18,5 @@
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2026-10-12)\n\n* ember-power-select 9.0.3 (patch)\n\n#### :bug: Bug Fix\n* `ember-power-select`\n  * [#2089](https://github.com/ember-power-addons/ember-power-select/pull/2089) Fix grouped options re-rendering on hover after search (Chrome: options unclickable) ([@mkszepp](https://github.com/mkszepp))\n\n#### :house: Internal\n* `ember-power-select`\n  * [#2090](https://github.com/ember-power-addons/ember-power-select/pull/2090) Update packages ([@mkszepp](https://github.com/mkszepp))\n\n#### Committers: 1\n- Markus Sanin ([@mkszepp](https://github.com/mkszepp))\n"
+  "description": "## Release (2026-11-06)\n\n* ember-power-select 9.0.4 (patch)\n\n#### :bug: Bug Fix\n* `ember-power-select`\n  * [#2122](https://github.com/ember-power-addons/ember-power-select/pull/2122) Use `readonly` arrays consistently for options and results ([@mkszepp](https://github.com/mkszepp))\n\n#### :house: Internal\n* `ember-power-select`\n  * [#2123](https://github.com/ember-power-addons/ember-power-select/pull/2123) Update dependencies ([@mkszepp](https://github.com/mkszepp))\n\n#### Committers: 1\n- Markus Sanin ([@mkszepp](https://github.com/mkszepp))\n"
 }

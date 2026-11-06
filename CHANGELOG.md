@@ -1,5 +1,20 @@
 # Changelog
 
+## Release (2026-11-06)
+
+* ember-power-select 9.0.4 (patch)
+
+#### :bug: Bug Fix
+* `ember-power-select`
+  * [#2122](https://github.com/ember-power-addons/ember-power-select/pull/2122) Use `readonly` arrays consistently for options and results ([@mkszepp](https://github.com/mkszepp))
+
+#### :house: Internal
+* `ember-power-select`
+  * [#2123](https://github.com/ember-power-addons/ember-power-select/pull/2123) Update dependencies ([@mkszepp](https://github.com/mkszepp))
+
+#### Committers: 1
+- Markus Sanin ([@mkszepp](https://github.com/mkszepp))
+
 ## Release (2026-10-12)
 
 * ember-power-select 9.0.3 (patch)
