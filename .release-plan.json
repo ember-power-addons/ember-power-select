@@ -2,21 +2,17 @@
   "solution": {
     "ember-power-select": {
       "impact": "patch",
-      "oldVersion": "9.0.3",
-      "newVersion": "9.0.4",
+      "oldVersion": "9.0.4",
+      "newVersion": "9.0.5",
       "tagName": "latest",
       "constraints": [
         {
           "impact": "patch",
           "reason": "Appears in changelog section :bug: Bug Fix"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2026-11-06)\n\n* ember-power-select 9.0.4 (patch)\n\n#### :bug: Bug Fix\n* `ember-power-select`\n  * [#2122](https://github.com/ember-power-addons/ember-power-select/pull/2122) Use `readonly` arrays consistently for options and results ([@mkszepp](https://github.com/mkszepp))\n\n#### :house: Internal\n* `ember-power-select`\n  * [#2123](https://github.com/ember-power-addons/ember-power-select/pull/2123) Update dependencies ([@mkszepp](https://github.com/mkszepp))\n\n#### Committers: 1\n- Markus Sanin ([@mkszepp](https://github.com/mkszepp))\n"
+  "description": "## Release (2026-11-07)\n\n* ember-power-select 9.0.5 (patch)\n\n#### :bug: Bug Fix\n* `ember-power-select`\n  * [#2126](https://github.com/ember-power-addons/ember-power-select/pull/2126) Do not use isEmpty from @ember/utils in the trigger ([@johanrd](https://github.com/johanrd))\n\n#### Committers: 1\n- Johan Røed ([@johanrd](https://github.com/johanrd))\n"
 }
