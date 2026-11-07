@@ -3,7 +3,7 @@ import { action } from '@ember/object';
 import { get } from '@ember/object';
 import { modifier } from 'ember-modifier';
 import PowerSelectInput, { type PowerSelectInputSignature } from './input.gts';
-import { and, eq, isEmpty, not, notEq, or } from 'ember-truth-helpers';
+import { and, eq, not, notEq, or } from 'ember-truth-helpers';
 import { on } from '@ember/modifier';
 import selectIsSelectedPresent from '../../helpers/ember-power-select-is-selected-present.ts';
 import type { PowerSelectArgs } from '../power-select.gts';
@@ -249,7 +249,7 @@ export default class PowerSelectTrigger<
                   @inputComponent={{InputComponent}}
                   @displayPlaceholder={{and
                     (not @select.searchText)
-                    (isEmpty @select.selected)
+                    (not this.selectedMultiple.length)
                   }}
                 />
               {{/let}}
@@ -339,10 +339,7 @@ export default class PowerSelectTrigger<
                 @isMultipleWithSearch={{true}}
                 @inputComponent={{InputComponent}}
                 @extra={{@extra}}
-                @displayPlaceholder={{and
-                  (not @select.searchText)
-                  (isEmpty this.selected)
-                }}
+                @displayPlaceholder={{not @select.searchText}}
               />
             {{/let}}
           {{/let}}
