@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2026-11-07)
+
+* ember-power-select 9.0.5 (patch)
+
+#### :bug: Bug Fix
+* `ember-power-select`
+  * [#2126](https://github.com/ember-power-addons/ember-power-select/pull/2126) Do not use isEmpty from @ember/utils in the trigger ([@johanrd](https://github.com/johanrd))
+
+#### Committers: 1
+- Johan Røed ([@johanrd](https://github.com/johanrd))
+
 ## Release (2026-11-06)
 
 * ember-power-select 9.0.4 (patch)
