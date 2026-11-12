@@ -2,8 +2,8 @@
   "solution": {
     "ember-power-select": {
       "impact": "patch",
-      "oldVersion": "9.0.4",
-      "newVersion": "9.0.5",
+      "oldVersion": "9.0.5",
+      "newVersion": "9.0.6",
       "tagName": "latest",
       "constraints": [
         {
@@ -14,5 +14,5 @@
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2026-11-07)\n\n* ember-power-select 9.0.5 (patch)\n\n#### :bug: Bug Fix\n* `ember-power-select`\n  * [#2126](https://github.com/ember-power-addons/ember-power-select/pull/2126) Do not use isEmpty from @ember/utils in the trigger ([@johanrd](https://github.com/johanrd))\n\n#### Committers: 1\n- Johan Røed ([@johanrd](https://github.com/johanrd))\n"
+  "description": "## Release (2026-11-12)\n\n* ember-power-select 9.0.6 (patch)\n\n#### :bug: Bug Fix\n* `ember-power-select`\n  * [#2131](https://github.com/ember-power-addons/ember-power-select/pull/2131) Show placeholder in multiple select when `@selected` is an empty array ([@mkszepp](https://github.com/mkszepp))\n  * [#2129](https://github.com/ember-power-addons/ember-power-select/pull/2129) Don't choose an option on the mouseup of the mousedown that opened the select ([@johanrd](https://github.com/johanrd))\n\n#### Committers: 2\n- Johan Røed ([@johanrd](https://github.com/johanrd))\n- Markus Sanin ([@mkszepp](https://github.com/mkszepp))\n"
 }
