@@ -338,6 +338,9 @@ export default class PowerSelect<
     PromiseProxy<Selected<T, IsMultiple>> | Promise<Selected<T, IsMultiple>>;
   private _lastSearchPromise?:
     Promise<readonly T[]> | CancellablePromise<readonly T[]> | Promise<void>;
+  // The mousedown that opened the dropdown, until its mouseup has happened
+  private _openingMouseDown?: MouseEvent;
+  private _openingMouseDownRoot?: Node;
 
   // Lifecycle hooks
   constructor(owner: Owner, args: PowerSelectArgs<T, IsMultiple, TExtra>) {
@@ -350,6 +353,7 @@ export default class PowerSelect<
 
   willDestroy() {
     super.willDestroy();
+    this._forgetOpeningMouseDown();
   }
 
   // Getters
@@ -625,6 +629,18 @@ export default class PowerSelect<
 
     this.focusInput(this.storedAPI);
 
+    this._forgetOpeningMouseDown();
+    if (e instanceof MouseEvent && e.type === 'mousedown' && e.target) {
+      // Bubble phase on the root, so it runs after the options' mouseup handler
+      this._openingMouseDown = e;
+      this._openingMouseDownRoot = (e.target as Node).getRootNode();
+      this._openingMouseDownRoot.addEventListener(
+        'mouseup',
+        this._forgetOpeningMouseDown,
+        { once: true },
+      );
+    }
+
     if (e) {
       if (
         e instanceof KeyboardEvent &&
@@ -656,7 +672,30 @@ export default class PowerSelect<
     if (this.args.onClose && this.args.onClose(this.storedAPI, e) === false) {
       return false;
     }
+    this._forgetOpeningMouseDown();
     this._highlight(undefined);
+  }
+
+  _forgetOpeningMouseDown = (): void => {
+    this._openingMouseDownRoot?.removeEventListener(
+      'mouseup',
+      this._forgetOpeningMouseDown,
+    );
+    this._openingMouseDown = undefined;
+    this._openingMouseDownRoot = undefined;
+  };
+
+  // When the dropdown renders under the cursor (e.g. pressing the trigger's
+  // bottom edge), releasing the button without moving must not choose an option.
+  _isReleaseOfOpeningMouseDown(e?: Event): boolean {
+    const opening = this._openingMouseDown;
+    return (
+      opening !== undefined &&
+      e instanceof MouseEvent &&
+      e.type === 'mouseup' &&
+      Math.abs(opening.clientX - e.clientX) < 2 &&
+      Math.abs(opening.clientY - e.clientY) < 2
+    );
   }
 
   @action
@@ -834,6 +873,9 @@ export default class PowerSelect<
 
   @action
   _choose(selected: Option<T>, e?: Event): void {
+    if (this._isReleaseOfOpeningMouseDown(e)) {
+      return;
+    }
     const buildSelection = this.buildSelection;
     const selection = buildSelection
       ? buildSelection(selected, this.storedAPI)
