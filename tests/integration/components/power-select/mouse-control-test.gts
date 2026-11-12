@@ -411,6 +411,136 @@ module(
         .hasText('two', 'The element has been selected');
     });
 
+    test<NumbersContext>('Releasing the mouse over an option without moving after the mousedown that opened the select does not choose it (#1408, #1263)', async function (assert) {
+      const self = this;
+
+      this.numbers = numbers;
+      await render<NumbersContext>(
+        <template>
+          <HostWrapper>
+            <PowerSelect
+              @options={{self.numbers}}
+              @selected={{self.selected}}
+              @onChange={{fn (mut self.selected)}}
+              as |option|
+            >
+              {{option}}
+            </PowerSelect>
+          </HostWrapper>
+        </template>,
+      );
+
+      const root = getRootNode(this.element);
+      await triggerEvent(
+        root.querySelector('.ember-power-select-trigger') as HTMLElement,
+        'mousedown',
+        { clientX: 50, clientY: 40 },
+      );
+      // The dropdown rendered under the cursor, so the release lands on an option
+      await triggerEvent(
+        root.querySelector(
+          '.ember-power-select-option:nth-child(1)',
+        ) as HTMLElement,
+        'mouseup',
+        { clientX: 51, clientY: 41 },
+      );
+      assert
+        .dom('.ember-power-select-dropdown', root)
+        .exists('The select is still open');
+      assert.strictEqual(self.selected, undefined, 'Nothing was selected');
+
+      await click(
+        root.querySelector(
+          '.ember-power-select-option:nth-child(1)',
+        ) as HTMLElement,
+        { clientX: 50, clientY: 40 },
+      );
+      assert
+        .dom('.ember-power-select-trigger', root)
+        .hasText('one', 'A later click on the same spot selects the option');
+    });
+
+    test<
+      NumbersContext<true>
+    >('Releasing the mouse over an option without moving after the mousedown that opened a multiple select does not choose it (#1408)', async function (assert) {
+      const self = this;
+
+      this.numbers = numbers;
+      await render<NumbersContext<true>>(
+        <template>
+          <HostWrapper>
+            <PowerSelect
+              @multiple={{true}}
+              @options={{self.numbers}}
+              @selected={{self.selected}}
+              @onChange={{fn (mut self.selected)}}
+              as |option|
+            >
+              {{option}}
+            </PowerSelect>
+          </HostWrapper>
+        </template>,
+      );
+
+      const root = getRootNode(this.element);
+      await triggerEvent(
+        root.querySelector('.ember-power-select-trigger') as HTMLElement,
+        'mousedown',
+        { clientX: 50, clientY: 40 },
+      );
+      await triggerEvent(
+        root.querySelector(
+          '.ember-power-select-option:nth-child(1)',
+        ) as HTMLElement,
+        'mouseup',
+        { clientX: 50, clientY: 40 },
+      );
+      assert
+        .dom('.ember-power-select-dropdown', root)
+        .exists('The select is still open');
+      assert.strictEqual(self.selected, undefined, 'Nothing was selected');
+    });
+
+    test<NumbersContext>('Pressing on the trigger, dragging to an option and releasing chooses it', async function (assert) {
+      const self = this;
+
+      this.numbers = numbers;
+      await render<NumbersContext>(
+        <template>
+          <HostWrapper>
+            <PowerSelect
+              @options={{self.numbers}}
+              @selected={{self.selected}}
+              @onChange={{fn (mut self.selected)}}
+              as |option|
+            >
+              {{option}}
+            </PowerSelect>
+          </HostWrapper>
+        </template>,
+      );
+
+      const root = getRootNode(this.element);
+      await triggerEvent(
+        root.querySelector('.ember-power-select-trigger') as HTMLElement,
+        'mousedown',
+        { clientX: 50, clientY: 40 },
+      );
+      await triggerEvent(
+        root.querySelector(
+          '.ember-power-select-option:nth-child(3)',
+        ) as HTMLElement,
+        'mouseup',
+        { clientX: 50, clientY: 90 },
+      );
+      assert
+        .dom('.ember-power-select-dropdown', root)
+        .doesNotExist('The select is closed');
+      assert
+        .dom('.ember-power-select-trigger', root)
+        .hasText('three', 'The option was chosen');
+    });
+
     test<NumbersContext>('Clicking on a wrapped option should select it', async function (assert) {
       const self = this;
 
