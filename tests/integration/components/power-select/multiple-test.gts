@@ -1628,6 +1628,59 @@ module(
         .doesNotExist('The placeholder is gone');
     });
 
+    test<NumbersContext>('The placeholder is visible when `@selected` is an empty array and search is disabled (issue #2128)', async function (assert) {
+      const self = this;
+
+      assert.expect(3);
+
+      this.numbers = numbers;
+      this.selected = [];
+      await render<NumbersContext>(
+        <template>
+          <HostWrapper>
+            <PowerSelect
+              @multiple={{true}}
+              @options={{self.numbers}}
+              @selected={{self.selected}}
+              @onChange={{fn (mut self.selected)}}
+              @placeholder="Select stuff here"
+              as |option|
+            >
+              {{option}}
+            </PowerSelect>
+          </HostWrapper>
+        </template>,
+      );
+
+      assert
+        .dom('.ember-power-select-placeholder', getRootNode(this.element))
+        .hasText('Select stuff here', 'There is a placeholder');
+      await clickTrigger(
+        getRootNode(this.element).querySelector(
+          '.ember-power-select-trigger',
+        ) as HTMLElement,
+      );
+      await click(
+        getRootNode(this.element).querySelector(
+          '.ember-power-select-option:nth-child(2)',
+        ) as HTMLElement,
+      );
+      assert
+        .dom('.ember-power-select-placeholder', getRootNode(this.element))
+        .doesNotExist('The placeholder is gone');
+      await click(
+        getRootNode(this.element).querySelector(
+          '.ember-power-select-multiple-remove-btn',
+        ) as HTMLElement,
+      );
+      assert
+        .dom('.ember-power-select-placeholder', getRootNode(this.element))
+        .hasText(
+          'Select stuff here',
+          'The placeholder is back after removing all options',
+        );
+    });
+
     test<NumbersContext>('If the placeholder is null the placeholders shouldn\'t be "null" (issue #94)', async function (assert) {
       const self = this;
 

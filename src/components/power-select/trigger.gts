@@ -160,7 +160,7 @@ export default class PowerSelectTrigger<
         {{on "click" this.chooseOption}}
         ...attributes
       >
-        {{#if (selectIsSelectedPresent this.selectedMultiple)}}
+        {{#if this.selectedMultiple.length}}
           {{#each this.selectedMultiple as |opt idx|}}
             <li
               class="ember-power-select-multiple-option
