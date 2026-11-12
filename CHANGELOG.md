@@ -1,5 +1,18 @@
 # Changelog
 
+## Release (2026-11-12)
+
+* ember-power-select 9.0.6 (patch)
+
+#### :bug: Bug Fix
+* `ember-power-select`
+  * [#2131](https://github.com/ember-power-addons/ember-power-select/pull/2131) Show placeholder in multiple select when `@selected` is an empty array ([@mkszepp](https://github.com/mkszepp))
+  * [#2129](https://github.com/ember-power-addons/ember-power-select/pull/2129) Don't choose an option on the mouseup of the mousedown that opened the select ([@johanrd](https://github.com/johanrd))
+
+#### Committers: 2
+- Johan Røed ([@johanrd](https://github.com/johanrd))
+- Markus Sanin ([@mkszepp](https://github.com/mkszepp))
+
 ## Release (2026-11-07)
 
 * ember-power-select 9.0.5 (patch)
