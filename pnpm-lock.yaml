@@ -220,7 +220,7 @@ importers:
         version: 1.21.4(@babel/core@7.29.13(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)
       '@embroider/vite':
         specifier: ^1.8.0
-        version: 1.8.0(@babel/core@7.29.13(supports-color@10.2.2))(@embroider/core@4.6.10(@glint/template@1.11.1)(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.0)(sass@1.108.0)(terser@5.51.2)(yaml@2.9.1))
+        version: 1.8.0(@babel/core@7.29.13(supports-color@10.2.2))(@embroider/core@4.6.10(@glint/template@1.11.1)(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.0)(sass@1.108.2)(terser@5.51.2)(yaml@2.9.1))
       '@eslint/js':
         specifier: ^9.39.2
         version: 9.39.5
@@ -327,8 +327,8 @@ importers:
         specifier: ^4.8.5
         version: 4.8.5
       sass:
-        specifier: ^1.108.0
-        version: 1.108.0
+        specifier: ^1.108.2
+        version: 1.108.2
       sass-embedded:
         specifier: ^1.108.0
         version: 1.108.0
@@ -343,7 +343,7 @@ importers:
         version: 8.72.1(eslint@9.39.5(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       vite:
         specifier: ^8.3.6
-        version: 8.3.6(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.0)(sass@1.108.0)(terser@5.51.2)(yaml@2.9.1)
+        version: 8.3.6(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.0)(sass@1.108.2)(terser@5.51.2)(yaml@2.9.1)
 
   docs:
     devDependencies:
@@ -6130,6 +6130,11 @@ packages:
     engines: {node: '>=20.19.0'}
     hasBin: true
 
+  sass@1.108.2:
+    resolution: {integrity: sha512-kugK8djotnG9HQRPTOf36asKYlxg8rWWsNLYHOgWDIVOiZQqlRfKBgF4XXM6kfw146kIDMvm57B4GIkvDSyTzA==}
+    engines: {node: '>=20.19.0'}
+    hasBin: true
+
   saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
     engines: {node: '>=v12.22.7'}
@@ -8242,6 +8247,32 @@ snapshots:
       send: 1.2.1(supports-color@10.2.2)
       terser: 5.51.2
       vite: 8.3.6(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.0)(sass@1.108.0)(terser@5.51.2)(yaml@2.9.1)
+    optionalDependencies:
+      '@babel/core': 7.29.13(supports-color@10.2.2)
+    transitivePeerDependencies:
+      - '@glint/template'
+      - bufferutil
+      - canvas
+      - supports-color
+      - utf-8-validate
+
+  '@embroider/vite@1.8.0(@babel/core@7.29.13(supports-color@10.2.2))(@embroider/core@4.6.10(@glint/template@1.11.1)(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.0)(sass@1.108.2)(terser@5.51.2)(yaml@2.9.1))':
+    dependencies:
+      '@embroider/core': 4.6.10(@glint/template@1.11.1)(supports-color@10.2.2)
+      '@embroider/macros': 1.21.4(@babel/core@7.29.13(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)
+      '@embroider/reverse-exports': 0.2.0
+      assert-never: 1.4.0
+      browserslist: 4.29.5
+      browserslist-to-esbuild: 2.1.1(browserslist@4.29.5)
+      chalk: 5.6.2
+      content-tag: 4.2.1
+      debug: 4.4.3(supports-color@10.2.2)
+      fast-glob: 3.3.3
+      fs-extra: 10.1.0
+      jsdom: 25.0.1(supports-color@10.2.2)
+      send: 1.2.1(supports-color@10.2.2)
+      terser: 5.51.2
+      vite: 8.3.6(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.0)(sass@1.108.2)(terser@5.51.2)(yaml@2.9.1)
     optionalDependencies:
       '@babel/core': 7.29.13(supports-color@10.2.2)
     transitivePeerDependencies:
@@ -13498,7 +13529,7 @@ snapshots:
     dependencies:
       '@rollup/pluginutils': 5.5.1(rollup@4.67.5)
       resolve: 1.22.14
-      sass: 1.108.0
+      sass: 1.108.2
     transitivePeerDependencies:
       - rollup
 
@@ -13705,6 +13736,15 @@ snapshots:
       sass-embedded-win32-x64: 1.108.0
 
   sass@1.108.0:
+    dependencies:
+      chokidar: 5.0.0
+      immutable: 5.1.9
+      source-map-js: 1.2.2
+    optionalDependencies:
+      '@parcel/watcher': 2.6.0
+    optional: true
+
+  sass@1.108.2:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.9
@@ -14578,6 +14618,22 @@ snapshots:
       fsevents: 2.3.3
       jiti: 2.7.0
       sass: 1.108.0
+      sass-embedded: 1.108.0
+      terser: 5.51.2
+      yaml: 2.9.1
+
+  vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0)(sass-embedded@1.108.0)(sass@1.108.2)(terser@5.51.2)(yaml@2.9.1):
+    dependencies:
+      lightningcss: 1.33.0
+      picomatch: 4.0.7
+      postcss: 8.5.32
+      rolldown: 1.2.16
+      tinyglobby: 0.2.17
+    optionalDependencies:
+      '@types/node': 26.6.6
+      fsevents: 2.3.3
+      jiti: 2.7.0
+      sass: 1.108.2
       sass-embedded: 1.108.0
       terser: 5.51.2
       yaml: 2.9.1
