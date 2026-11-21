@@ -98,7 +98,7 @@
     "@glimmer/component": "^2.2.1",
     "@glint/ember-tsc": "^1.14.3",
     "@glint/template": "^1.11.1",
-    "@glint/tsserver-plugin": "^2.7.16",
+    "@glint/tsserver-plugin": "^2.7.17",
     "@rollup/plugin-babel": "^7.1.0",
     "@types/qunit": "^2.19.14",
     "@types/rsvp": "^4.0.9",
