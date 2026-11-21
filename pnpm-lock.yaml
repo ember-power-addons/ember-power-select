@@ -432,8 +432,8 @@ importers:
         specifier: ^9.0.1
         version: 9.0.1(@babel/core@7.29.13(supports-color@10.2.2))(@ember/test-helpers@5.8.0(@babel/core@7.29.13(supports-color@10.2.2)))(@embroider/macros@1.21.4(@babel/core@7.29.13(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2))(@glimmer/component@2.2.1)
       ember-cli:
-        specifier: ~7.3.0
-        version: 7.3.0(@babel/core@7.29.13(supports-color@10.2.2))(@types/node@26.6.6)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.10)(supports-color@10.2.2)(underscore@1.13.8)
+        specifier: ~7.4.0
+        version: 7.4.0(@babel/core@7.29.13(supports-color@10.2.2))(@types/node@26.6.6)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.10)(supports-color@10.2.2)(underscore@1.13.8)
       ember-cli-babel:
         specifier: ^8.3.2
         version: 8.3.2(@babel/core@7.29.13(supports-color@10.2.2))(supports-color@10.2.2)
@@ -1230,14 +1230,14 @@ packages:
   '@ember-tooling/blueprint-model@0.7.1':
     resolution: {integrity: sha512-UqibAm7MWkSNdAnBfq2i36jaQpUjCvhdcRFiT+oWWXer5WgaoYFVJ+kHs5Ux2i42kCWjsztercepOEm+BhOyQw==}
 
-  '@ember-tooling/classic-build-addon-blueprint@7.3.0':
-    resolution: {integrity: sha512-czapzVozpPlITjnMDEBUgX1zP0iiO2drmEnQmK2Z3fC5aW0mW7zJVAFRFsACfi46pL6Rhujvn6N0nr4acQIHaw==}
+  '@ember-tooling/classic-build-addon-blueprint@7.4.0':
+    resolution: {integrity: sha512-dEIz+/OIQeFCyOFS9knfY2izkfMuo+Gnw9YQ14jKHqX1phC05yWxvh/EJhNX9YaEnGPY7nuVjfpCg+Ykv9MBVg==}
 
-  '@ember-tooling/classic-build-app-blueprint@7.3.0':
-    resolution: {integrity: sha512-b8yI/kWqmxWKiZUfObL0hsJu61wUGXQAgmIr4HnerW2Uyge/Jta7py/cNVa+GLDl/xOWjZJltIr1EqIyoF6Sng==}
+  '@ember-tooling/classic-build-app-blueprint@7.4.0':
+    resolution: {integrity: sha512-qe+dlF4gJE0Dk/MS4aEUjauAG7hT7+qev6lPES4V+0tUFFKn0+GGWAN4Lx/QtNJ8HhFBjz/juSxVvVJnH07QSA==}
 
-  '@ember/app-blueprint@7.3.1':
-    resolution: {integrity: sha512-wCZ5pkNvSOU6ZBofSR6xtXs+vL5Z8wQm49qn6VmATxiPhc5IYHYqX5FdLLXVWOe8iQQ4XVxEL6w1iTc/f2hE9Q==}
+  '@ember/app-blueprint@7.4.1':
+    resolution: {integrity: sha512-wwEdPUuCb9j1CsfWynWG7RGMxOfaCbC8KVjJyvcDY+EeDC2JcSFtE5ftJlSInv8fv4M0SjZYacGG7oJK3cLXYw==}
 
   '@ember/app-tsconfig@2.1.0':
     resolution: {integrity: sha512-s44smHIQVM2Ews1+bIAwqibVF6OHsw3/G14xV0DA0/GchVolqTG/Kfzqn/jZnU4zlXPEndJdTpn+PFEsuFs7mg==}
@@ -3536,9 +3536,9 @@ packages:
     resolution: {integrity: sha512-rk7GY+FmLn/2e22HsZs0Ycrz8HQ1W3Fv+2TFOuEFW9optnDXDgkntPBIl6gact/LHsfBM5RKbM3dHsIIeLgl0Q==}
     engines: {node: 10.* || >= 12.*}
 
-  ember-cli@7.3.0:
-    resolution: {integrity: sha512-FZX9IoFioIn6V86t2TwbNtcr+TyzYoSf+dMR6tA/tFCePDJtIhnrMOChnYrgsSbuTecwSP3vivjHfrezrQHOOA==}
-    engines: {node: '>= 20.19.0'}
+  ember-cli@7.4.0:
+    resolution: {integrity: sha512-jTZtUvft2zytEosy0mb0hOead7W4UZ6TcWuHR0hrvI/XHG847qcqKPFGzpUZ+PH712wjTkE1l6T7v6w6UR8GQQ==}
+    engines: {node: '>= 22.22.0'}
     hasBin: true
 
   ember-concurrency@5.3.0:
@@ -4248,6 +4248,10 @@ packages:
 
   glob@13.0.6:
     resolution: {integrity: sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==}
+    engines: {node: 18 || 20 || >=22}
+
+  glob@13.0.7:
+    resolution: {integrity: sha512-wfsFgXQ8A3SEI9XGf7Nl3Y9l7ffSrGh7SUCT7vU/2CzYPep9kjxAn1S40F9OPKxAMGCVl7HtNlJhrCJUeUq83g==}
     engines: {node: 18 || 20 || >=22}
 
   glob@14.0.3:
@@ -8003,7 +8007,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember-tooling/classic-build-addon-blueprint@7.3.0(supports-color@10.2.2)':
+  '@ember-tooling/classic-build-addon-blueprint@7.4.0(supports-color@10.2.2)':
     dependencies:
       '@ember-tooling/blueprint-model': 0.7.1(supports-color@10.2.2)
       chalk: 5.6.2
@@ -8017,7 +8021,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember-tooling/classic-build-app-blueprint@7.3.0(supports-color@10.2.2)':
+  '@ember-tooling/classic-build-app-blueprint@7.4.0(supports-color@10.2.2)':
     dependencies:
       '@ember-tooling/blueprint-model': 0.7.1(supports-color@10.2.2)
       chalk: 5.6.2
@@ -8025,7 +8029,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember/app-blueprint@7.3.1':
+  '@ember/app-blueprint@7.4.1':
     dependencies:
       ejs: 3.1.10
       ember-cli-string-utils: 1.1.0
@@ -10617,13 +10621,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli@7.3.0(@babel/core@7.29.13(supports-color@10.2.2))(@types/node@26.6.6)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.10)(supports-color@10.2.2)(underscore@1.13.8):
+  ember-cli@7.4.0(@babel/core@7.29.13(supports-color@10.2.2))(@types/node@26.6.6)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.10)(supports-color@10.2.2)(underscore@1.13.8):
     dependencies:
       '@ember-tooling/blueprint-blueprint': 0.3.0
       '@ember-tooling/blueprint-model': 0.7.1(supports-color@10.2.2)
-      '@ember-tooling/classic-build-addon-blueprint': 7.3.0(supports-color@10.2.2)
-      '@ember-tooling/classic-build-app-blueprint': 7.3.0(supports-color@10.2.2)
-      '@ember/app-blueprint': 7.3.1
+      '@ember-tooling/classic-build-addon-blueprint': 7.4.0(supports-color@10.2.2)
+      '@ember-tooling/classic-build-app-blueprint': 7.4.0(supports-color@10.2.2)
+      '@ember/app-blueprint': 7.4.1
       '@pnpm/find-workspace-dir': 1000.1.5
       babel-remove-types: 2.0.0(supports-color@10.2.2)
       broccoli: 4.0.0(supports-color@10.2.2)
@@ -10665,7 +10669,7 @@ snapshots:
       fs-tree-diff: 2.0.1(supports-color@10.2.2)
       get-caller-file: 2.0.5
       git-repo-info: 2.1.1
-      glob: 13.0.6
+      glob: 13.0.7
       heimdalljs: 0.2.6
       heimdalljs-fs-monitor: 1.1.2(supports-color@10.2.2)
       heimdalljs-graph: 1.0.0
@@ -11756,6 +11760,12 @@ snapshots:
       path-scurry: 1.11.1
 
   glob@13.0.6:
+    dependencies:
+      minimatch: 10.2.6
+      minipass: 7.1.3
+      path-scurry: 2.0.2
+
+  glob@13.0.7:
     dependencies:
       minimatch: 10.2.6
       minipass: 7.1.3
