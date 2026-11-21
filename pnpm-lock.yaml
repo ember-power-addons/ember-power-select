@@ -229,13 +229,13 @@ importers:
         version: 2.2.1
       '@glint/ember-tsc':
         specifier: ^1.14.3
-        version: 1.14.3(ember-source@7.4.0(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
+        version: 1.14.3(ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       '@glint/template':
         specifier: ^1.11.1
         version: 1.11.1
       '@glint/tsserver-plugin':
         specifier: ^2.7.16
-        version: 2.7.16(ember-source@7.4.0(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)
+        version: 2.7.16(ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)
       '@rollup/plugin-babel':
         specifier: ^7.1.0
         version: 7.1.0(@babel/core@7.29.13(supports-color@10.2.2))(rollup@4.67.5)(supports-color@10.2.2)
@@ -270,8 +270,8 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3
       ember-source:
-        specifier: ^7.3.1
-        version: 7.4.0(@glimmer/component@2.2.1)(supports-color@10.2.2)
+        specifier: ^7.4.1
+        version: 7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2)
       ember-strict-application-resolver:
         specifier: ^0.1.1
         version: 0.1.1(@babel/core@7.29.13(supports-color@10.2.2))
@@ -403,13 +403,13 @@ importers:
         version: 2.2.1
       '@glint/ember-tsc':
         specifier: ^1.14.3
-        version: 1.14.3(ember-source@7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
+        version: 1.14.3(ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       '@glint/template':
         specifier: ^1.11.1
         version: 1.11.1
       '@glint/tsserver-plugin':
         specifier: ^2.7.16
-        version: 2.7.16(ember-source@7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)
+        version: 2.7.16(ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)
       '@rollup/plugin-babel':
         specifier: ^7.1.0
         version: 7.1.0(@babel/core@7.29.13(supports-color@10.2.2))(rollup@4.67.5)(supports-color@10.2.2)
@@ -448,7 +448,7 @@ importers:
         version: 7.0.0(@babel/core@7.29.13(supports-color@10.2.2))
       ember-load-initializers:
         specifier: ^3.0.1
-        version: 3.0.1(ember-source@7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2))
+        version: 3.0.1(ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2))
       ember-modifier:
         specifier: ^4.3.0
         version: 4.3.0(@babel/core@7.29.13(supports-color@10.2.2))
@@ -465,8 +465,8 @@ importers:
         specifier: ^13.2.0
         version: 13.2.0
       ember-source:
-        specifier: ~7.3.1
-        version: 7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2)
+        specifier: ~7.4.1
+        version: 7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2)
       ember-source-channel-url:
         specifier: ^3.0.0
         version: 3.0.0
@@ -3609,14 +3609,8 @@ packages:
     engines: {node: 10.* || 12.* || >= 14}
     hasBin: true
 
-  ember-source@7.3.1:
-    resolution: {integrity: sha512-SUW2wZdQmhDsabN253DxgYvZyZFWzcVD/Db6pjVRbm4uipz9G4GrpXyjCGzSlujXuYNDohdGe16NUEHbTTaUKQ==}
-    engines: {node: '>= 20.19'}
-    peerDependencies:
-      '@glimmer/component': '>= 1.1.2'
-
-  ember-source@7.4.0:
-    resolution: {integrity: sha512-E4qPgmFkfNnS99PJILflF/j0Mm/nqxlhYpdCkiFc7iE9/vBIGLCBFldntpgt3pV/8HB+/drMKVEWYWv+JADR4w==}
+  ember-source@7.4.1:
+    resolution: {integrity: sha512-fjRkrRPT9RsPv9pCevSJfRfJsBlJpTapT+p74ShtoPwEgoJG5OclT8/RXP/iu0gVLMvsD7RuTy4RxltlMEP6Ug==}
     engines: {node: '>= 20.19'}
     peerDependencies:
       '@glimmer/component': '>= 1.1.2'
@@ -8325,7 +8319,7 @@ snapshots:
     dependencies:
       simple-html-tokenizer: 1.0.0
 
-  '@glint/ember-tsc@1.14.3(ember-source@7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
+  '@glint/ember-tsc@1.14.3(ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
     dependencies:
       '@glimmer/syntax': 0.97.0
       '@glint/template': 1.11.1
@@ -8346,11 +8340,11 @@ snapshots:
       vscode-languageserver-textdocument: 1.0.16
       vscode-uri: 3.2.0
     optionalDependencies:
-      ember-source: 7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2)
+      ember-source: 7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
-  '@glint/ember-tsc@1.14.3(ember-source@7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)':
+  '@glint/ember-tsc@1.14.3(ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)':
     dependencies:
       '@glimmer/syntax': 0.97.0
       '@glint/template': 1.11.1
@@ -8371,76 +8365,15 @@ snapshots:
       vscode-languageserver-textdocument: 1.0.16
       vscode-uri: 3.2.0
     optionalDependencies:
-      ember-source: 7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2)
-    transitivePeerDependencies:
-      - supports-color
-
-  '@glint/ember-tsc@1.14.3(ember-source@7.4.0(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
-    dependencies:
-      '@glimmer/syntax': 0.97.0
-      '@glint/template': 1.11.1
-      '@volar/kit': 2.4.30(typescript@5.9.3)
-      '@volar/language-core': 2.4.30
-      '@volar/language-server': 2.4.30(typescript@5.9.3)
-      '@volar/language-service': 2.4.30(typescript@5.9.3)
-      '@volar/source-map': 2.4.30
-      '@volar/test-utils': 2.4.30(typescript@5.9.3)
-      '@volar/typescript': 2.4.30(typescript@5.9.3)
-      content-tag: 4.2.1
-      ember-estree: 0.9.0
-      silent-error: 1.1.1(supports-color@10.2.2)
-      typescript: 5.9.3
-      volar-service-html: 0.0.71(@volar/language-service@2.4.30(typescript@5.9.3))
-      volar-service-typescript: 0.0.71(@volar/language-service@2.4.30(typescript@5.9.3))(typescript@5.9.3)
-      vscode-languageserver-protocol: 3.18.5
-      vscode-languageserver-textdocument: 1.0.16
-      vscode-uri: 3.2.0
-    optionalDependencies:
-      ember-source: 7.4.0(@glimmer/component@2.2.1)(supports-color@10.2.2)
-    transitivePeerDependencies:
-      - supports-color
-
-  '@glint/ember-tsc@1.14.3(ember-source@7.4.0(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)':
-    dependencies:
-      '@glimmer/syntax': 0.97.0
-      '@glint/template': 1.11.1
-      '@volar/kit': 2.4.30(typescript@6.0.3)
-      '@volar/language-core': 2.4.30
-      '@volar/language-server': 2.4.30(typescript@6.0.3)
-      '@volar/language-service': 2.4.30(typescript@6.0.3)
-      '@volar/source-map': 2.4.30
-      '@volar/test-utils': 2.4.30(typescript@6.0.3)
-      '@volar/typescript': 2.4.30(typescript@6.0.3)
-      content-tag: 4.2.1
-      ember-estree: 0.9.0
-      silent-error: 1.1.1(supports-color@10.2.2)
-      typescript: 6.0.3
-      volar-service-html: 0.0.71(@volar/language-service@2.4.30(typescript@6.0.3))
-      volar-service-typescript: 0.0.71(@volar/language-service@2.4.30(typescript@6.0.3))(typescript@6.0.3)
-      vscode-languageserver-protocol: 3.18.5
-      vscode-languageserver-textdocument: 1.0.16
-      vscode-uri: 3.2.0
-    optionalDependencies:
-      ember-source: 7.4.0(@glimmer/component@2.2.1)(supports-color@10.2.2)
+      ember-source: 7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2)
     transitivePeerDependencies:
       - supports-color
 
   '@glint/template@1.11.1': {}
 
-  '@glint/tsserver-plugin@2.7.16(ember-source@7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)':
+  '@glint/tsserver-plugin@2.7.16(ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)':
     dependencies:
-      '@glint/ember-tsc': 1.14.3(ember-source@7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
-      '@volar/language-core': 2.4.30
-      '@volar/typescript': 2.4.30(typescript@5.9.3)
-      jiti: 2.7.0
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - ember-source
-      - supports-color
-
-  '@glint/tsserver-plugin@2.7.16(ember-source@7.4.0(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)':
-    dependencies:
-      '@glint/ember-tsc': 1.14.3(ember-source@7.4.0(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
+      '@glint/ember-tsc': 1.14.3(ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
       '@volar/language-core': 2.4.30
       '@volar/typescript': 2.4.30(typescript@5.9.3)
       jiti: 2.7.0
@@ -10803,9 +10736,9 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
 
-  ember-load-initializers@3.0.1(ember-source@7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2)):
+  ember-load-initializers@3.0.1(ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2)):
     dependencies:
-      ember-source: 7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2)
+      ember-source: 7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2)
 
   ember-modifier@4.3.0(@babel/core@7.29.13(supports-color@10.2.2)):
     dependencies:
@@ -10848,30 +10781,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  ember-source@7.3.1(@glimmer/component@2.2.1)(supports-color@10.2.2):
-    dependencies:
-      '@babel/core': 7.29.13(supports-color@10.2.2)
-      '@embroider/addon-shim': 1.11.0
-      '@glimmer/component': 2.2.1
-      '@simple-dom/interface': 1.4.0
-      backburner.js: 2.8.0
-      broccoli-file-creator: 2.1.1
-      chalk: 4.1.2
-      ember-cli-get-component-path-option: 1.0.0
-      ember-cli-normalize-entity-name: 1.0.0(supports-color@10.2.2)
-      ember-cli-path-utils: 1.0.0
-      ember-cli-string-utils: 1.1.0
-      ember-cli-typescript-blueprint-polyfill: 0.1.0(supports-color@10.2.2)
-      ember-router-generator: 2.0.0(supports-color@10.2.2)
-      inflection: 2.0.1
-      route-recognizer: 0.3.4
-      semver: 7.8.6
-      silent-error: 1.1.1(supports-color@10.2.2)
-      simple-html-tokenizer: 0.5.11
-    transitivePeerDependencies:
-      - supports-color
-
-  ember-source@7.4.0(@glimmer/component@2.2.1)(supports-color@10.2.2):
+  ember-source@7.4.1(@glimmer/component@2.2.1)(supports-color@10.2.2):
     dependencies:
       '@babel/core': 7.29.13(supports-color@10.2.2)
       '@embroider/addon-shim': 1.11.0
